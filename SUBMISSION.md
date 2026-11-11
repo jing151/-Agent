@@ -1,5 +1,6 @@
-# 校招提交信息
+# Enterprise Knowledge Q&A Agent 提交说明
 
+- 项目名称：Enterprise Knowledge Q&A Agent（企业知识问答 Agent）。
 - 选题：题号3，企业知识问答 Agent。
 - GitHub：https://github.com/jing151/-Agent
 - 最终commit SHA：运行 `git rev-parse HEAD` 获取，实际值在本次交付回复中提供。

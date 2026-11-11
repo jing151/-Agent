@@ -10,7 +10,7 @@
     ".env.example": "5e569d4ebb254130417408c330a719ab8335f8b6b6c4d873e5a8765c29b523c9",
     ".gitignore": "1d292f1d94c66266b2f1115dfcb03bfc4cb5e14be2be8af4c80fa74258c6cb60",
     "pyproject.toml": "403c36169f41b09d9a3fd12e2da4233ad53577efabd71fd309ceb5c60bee890b",
-    "README.md": "c01305a6b7f2af978c7392349b9e6b8a945be650757cbd971e8bcf4c2a1a565a",
+    "README.md": "e6cee81850c08dbcf76024b577a2abee52958230c6c4a15446b5f64be865ab55",
     "requirements-lock.txt": "f215f66919edd29aee6155f19e3fdd4a0c311227c06a1c8b2623607d4d25a77b",
     "requirements.txt": "b0afbf20e2a4d90686382c0302b9f048cf92f1fc01ab6fae60e0655bc2bd7ae9",
     "data/documents.json": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
@@ -506,8 +506,9 @@
     "data/evidence-variants/D_C.json": "129a7ac5eeb9d0f3137c0e746b01e30006c2cf6a53526ce70f8489174c1125f3",
     "data/variants/documents_d01_only.json": "7b3d11037b3c323c4c686d2e7e709f4bcb67faa55999394d6bca6545079e9cbe",
     ".gitattributes": "b4cc58264b909482109b1282b26ac8cfc557b27632e1a1dd5d51093bc1a603fd",
-    "SUBMISSION.md": "0b93b2960dcf98cd5ec19c16e691759f843e2ad1b7f927744e8213adad256a3c"
+    "SUBMISSION.md": "ffa20fdf333a9ce37886a154d49eff46f97d19aae6f8e30bf17842c896637eee"
   },
   "publication_repository": "https://github.com/jing151/-Agent",
-  "assignment_number": 3
+  "assignment_number": 3,
+  "project_name": "Enterprise Knowledge Q&A Agent"
 }

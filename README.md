@@ -1,4 +1,4 @@
-# 题号3：企业知识问答 Agent
+# Enterprise Knowledge Q&A Agent
 
 面向员工制度与FAQ的原生Python ReAct CLI。模型根据SEARCH/READ的Observation重新选择补检、读取、追问或结束；最多8轮决策、6次工具尝试。数据为7份带ID、版本日期的合成资料。
 
