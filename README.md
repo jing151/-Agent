@@ -1,4 +1,4 @@
-# 企业知识问答 Agent
+# 题号3：企业知识问答 Agent
 
 面向员工制度与FAQ的原生Python ReAct CLI。模型根据SEARCH/READ的Observation重新选择补检、读取、追问或结束；最多8轮决策、6次工具尝试。数据为7份带ID、版本日期的合成资料。
 
@@ -53,6 +53,6 @@ Mock和脚本化模型只验证流程，不能证明真实模型泛化。真实�
 
 `src/`代码；`tests/`自包含测试；`examples/acceptance/`实际验收输入输出/Trace；`examples/tests/`测试结果；`examples/real/`代表性真实路径；`examples/real-archive/`原始实测档案；`data/`合成资料；`docs/01`至`06`为需求、设计、评估、AI披露、复盘与题面核对。
 
-题目名称：企业知识问答 Agent。正式题号、本人贡献与实际用时待本人确认；仓库：[jing151/-Agent](https://github.com/jing151/-Agent)。最终commit SHA以实际推送后的交付回复及`git rev-parse HEAD`为准。AI范围已如实披露，未编造个人经历或人工签字。该仓库公开，推送后核对匿名读取。
+题号3：企业知识问答 Agent。本人投入约4小时，主要负责需求确认、交付范围与验证要求；框架搭建、实现和实验执行由AI辅助完成，具体分工见[AI使用与本人贡献](docs/04-ai-usage.md)。仓库：[jing151/-Agent](https://github.com/jing151/-Agent)；公开可读。简短说明见[提交说明](SUBMISSION.md)，最终commit SHA使用`git rev-parse HEAD`获取。
 
 `.env.example`给出真实模式所需变量，本包没有实际密钥。现成真实材料已随包保存，默认运行与测试均离线。

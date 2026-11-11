@@ -10,16 +10,16 @@
     ".env.example": "5e569d4ebb254130417408c330a719ab8335f8b6b6c4d873e5a8765c29b523c9",
     ".gitignore": "1d292f1d94c66266b2f1115dfcb03bfc4cb5e14be2be8af4c80fa74258c6cb60",
     "pyproject.toml": "403c36169f41b09d9a3fd12e2da4233ad53577efabd71fd309ceb5c60bee890b",
-    "README.md": "72c594fda88bea5a1520d1a0fd6e58f0c56f4248c4186935a565eff166da316d",
+    "README.md": "c01305a6b7f2af978c7392349b9e6b8a945be650757cbd971e8bcf4c2a1a565a",
     "requirements-lock.txt": "f215f66919edd29aee6155f19e3fdd4a0c311227c06a1c8b2623607d4d25a77b",
     "requirements.txt": "b0afbf20e2a4d90686382c0302b9f048cf92f1fc01ab6fae60e0655bc2bd7ae9",
     "data/documents.json": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
-    "docs/01-requirements.md": "6784080881b737a9d36e62253279b9ba0a8697e019d8457728f56d43037f255d",
+    "docs/01-requirements.md": "9fa6bda59bb29ea15c8065f2e8222f581a2734da07b394144fbaa014983ff630",
     "docs/02-solution.md": "942057e055b9d837d79571a296d6430322ec6eebc681bcd7c760b773110d0ac7",
     "docs/03-evaluation.md": "767dade44f63cc1118b969fe9cc340088ab6fe413a9b3a5a944bc9a1b3ec1fcc",
-    "docs/04-ai-usage.md": "12a84c9ab7387bc16042fe134a7a917ec39a669e70c5c7788568fd86806d8e3b",
-    "docs/05-retrospective.md": "b9b65ae78a818f5679fc167ea26ad12bef6982c1284e918a8247a0e892db296a",
-    "docs/06-assignment-checklist.md": "490628d50f5a6ba2b51bbbccca2c5aa6271be104fa66e2fb91b22edf0ea231cf",
+    "docs/04-ai-usage.md": "afe7367676c97b54208715ca371fe7c2b35aabf7b22c49fb2fdc6b5485691523",
+    "docs/05-retrospective.md": "f99a8730a9b838b0e303d286b2d29c13e40fcb62a0c69671b8af9f908780d324",
+    "docs/06-assignment-checklist.md": "8b90ee8029ca00c4b227f8b950f984f8eb75d1391ccf7b6644e95afdf90c0636",
     "examples/review-index.json": "a0e7b47ae38d8534aada753fda98bb4035da5f3479886c6d99175e37dce06935",
     "scripts/offline_python.py": "7ca69e47fd8a508cb5e6491b039dbaf45cfb4c52283ad1f46ed44b745781549f",
     "scripts/verify_minimal.py": "0245eca411d8971bd47686f0facdff9e5f86e405098bc32e15dc2a40bc7b64a3",
@@ -506,7 +506,8 @@
     "data/evidence-variants/D_C.json": "129a7ac5eeb9d0f3137c0e746b01e30006c2cf6a53526ce70f8489174c1125f3",
     "data/variants/documents_d01_only.json": "7b3d11037b3c323c4c686d2e7e709f4bcb67faa55999394d6bca6545079e9cbe",
     ".gitattributes": "b4cc58264b909482109b1282b26ac8cfc557b27632e1a1dd5d51093bc1a603fd",
-    "SUBMISSION.md": "5076be03253cfaa01253cae14c31ae4d4895a6893511114e5e3918bcd0b7facd"
+    "SUBMISSION.md": "0b93b2960dcf98cd5ec19c16e691759f843e2ad1b7f927744e8213adad256a3c"
   },
-  "publication_repository": "https://github.com/jing151/-Agent"
+  "publication_repository": "https://github.com/jing151/-Agent",
+  "assignment_number": 3
 }
