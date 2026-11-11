@@ -1,0 +1,258 @@
+[
+  {
+    "run_id": "521c7a4e-00b3-4958-9121-bdae966dd107",
+    "model_mode": "mock",
+    "model_name": "scripted-offline-contract",
+    "step": 1,
+    "action": "SEARCH",
+    "arguments": {
+      "query": "火星基地不存在的制度",
+      "top_k": 3
+    },
+    "tool_name": "search_documents",
+    "tool_arguments": {
+      "query": "火星基地不存在的制度",
+      "top_k": 3
+    },
+    "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"火星基地不存在的制度\", \"results\": []}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 0, \"decisions_remaining\": 3, \"tool_calls_remaining\": 5, \"no_new_search_count\": 1}}",
+    "observation": {
+      "ok": true,
+      "result": {
+        "query": "火星基地不存在的制度",
+        "results": []
+      },
+      "progress": {
+        "new_candidate_fragments": 0,
+        "new_read_fragments": 0,
+        "decisions_remaining": 3,
+        "tool_calls_remaining": 5,
+        "no_new_search_count": 1
+      }
+    },
+    "decision_summary": "离线脚本化测试动作，不是真实模型新决策。",
+    "next_action": "SEARCH",
+    "timestamp": "2026-11-11T06:26:56.654719+00:00",
+    "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"火星基地不存在的制度\",\"top_k\":3},\"decision_summary\":\"离线脚本化测试动作，不是真实模型新决策。\"}",
+    "model_metadata": {},
+    "final_status": "completed"
+  },
+  {
+    "run_id": "521c7a4e-00b3-4958-9121-bdae966dd107",
+    "model_mode": "mock",
+    "model_name": "scripted-offline-contract",
+    "step": 2,
+    "action": "SEARCH",
+    "arguments": {
+      "query": "设备故障报修",
+      "top_k": 3
+    },
+    "tool_name": "search_documents",
+    "tool_arguments": {
+      "query": "设备故障报修",
+      "top_k": 3
+    },
+    "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"设备故障报修\", \"results\": [{\"doc_id\": \"D03\", \"title\": \"办公设备故障报修 FAQ\", \"version_date\": \"2025-02-10\", \"scope\": \"全体员工的公司办公设备\", \"priority\": null, \"supersedes\": [], \"section_id\": \"ticket\", \"snippet\": \"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\", \"score\": 1.0, \"channel_scores\": {\"bm25\": 10.3134, \"expanded_bm25\": 10.3134, \"ngram_dice\": 0.2286, \"relative_support\": 1.0, \"route_support\": {\"original\": 0.35, \"concept_0\": 0.65}}}]}, \"progress\": {\"new_candidate_fragments\": 1, \"new_read_fragments\": 0, \"decisions_remaining\": 2, \"tool_calls_remaining\": 4, \"no_new_search_count\": 0, \"notice\": \"候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。\"}}",
+    "observation": {
+      "ok": true,
+      "result": {
+        "query": "设备故障报修",
+        "results": [
+          {
+            "doc_id": "D03",
+            "title": "办公设备故障报修 FAQ",
+            "version_date": "2025-02-10",
+            "scope": "全体员工的公司办公设备",
+            "priority": null,
+            "supersedes": [],
+            "section_id": "ticket",
+            "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+            "score": 1.0,
+            "channel_scores": {
+              "bm25": 10.3134,
+              "expanded_bm25": 10.3134,
+              "ngram_dice": 0.2286,
+              "relative_support": 1.0,
+              "route_support": {
+                "original": 0.35,
+                "concept_0": 0.65
+              }
+            }
+          }
+        ]
+      },
+      "progress": {
+        "new_candidate_fragments": 1,
+        "new_read_fragments": 0,
+        "decisions_remaining": 2,
+        "tool_calls_remaining": 4,
+        "no_new_search_count": 0,
+        "notice": "候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。"
+      }
+    },
+    "decision_summary": "离线脚本化测试动作，不是真实模型新决策。",
+    "next_action": "READ",
+    "timestamp": "2026-11-11T06:26:56.656011+00:00",
+    "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"设备故障报修\",\"top_k\":3},\"decision_summary\":\"离线脚本化测试动作，不是真实模型新决策。\"}",
+    "model_metadata": {},
+    "final_status": "completed"
+  },
+  {
+    "run_id": "521c7a4e-00b3-4958-9121-bdae966dd107",
+    "model_mode": "mock",
+    "model_name": "scripted-offline-contract",
+    "step": 3,
+    "action": "READ",
+    "arguments": {
+      "doc_id": "D03",
+      "section_id": null
+    },
+    "tool_name": "read_document",
+    "tool_arguments": {
+      "doc_id": "D03",
+      "section_id": null
+    },
+    "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D03\", \"title\": \"办公设备故障报修 FAQ\", \"doc_type\": \"FAQ\", \"version_date\": \"2025-02-10\", \"scope\": \"全体员工的公司办公设备\", \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"ticket\", \"title\": \"报修入口\", \"content\": \"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\"}], \"content\": \"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 1, \"tool_calls_remaining\": 3, \"no_new_search_count\": 0, \"notice\": \"候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。\"}}",
+    "observation": {
+      "ok": true,
+      "result": {
+        "document": {
+          "doc_id": "D03",
+          "title": "办公设备故障报修 FAQ",
+          "doc_type": "FAQ",
+          "version_date": "2025-02-10",
+          "scope": "全体员工的公司办公设备",
+          "priority": null,
+          "supersedes": [],
+          "sections": [
+            {
+              "section_id": "ticket",
+              "title": "报修入口",
+              "content": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。"
+            }
+          ],
+          "content": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+          "section_id": null
+        }
+      },
+      "progress": {
+        "new_candidate_fragments": 0,
+        "new_read_fragments": 1,
+        "decisions_remaining": 1,
+        "tool_calls_remaining": 3,
+        "no_new_search_count": 0,
+        "notice": "候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。"
+      }
+    },
+    "decision_summary": "离线脚本化测试动作，不是真实模型新决策。",
+    "next_action": "ANSWER",
+    "timestamp": "2026-11-11T06:26:56.656265+00:00",
+    "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D03\",\"section_id\":null},\"decision_summary\":\"离线脚本化测试动作，不是真实模型新决策。\"}",
+    "model_metadata": {},
+    "final_status": "completed"
+  },
+  {
+    "run_id": "521c7a4e-00b3-4958-9121-bdae966dd107",
+    "model_mode": "mock",
+    "model_name": "scripted-offline-contract",
+    "step": 4,
+    "action": "ANSWER",
+    "arguments": {
+      "answer": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+      "citations": [
+        {
+          "doc_id": "D03",
+          "version_date": "2025-02-10",
+          "quote": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。"
+        }
+      ],
+      "gaps": [],
+      "status": "completed",
+      "claims": [
+        {
+          "text": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+          "kind": "DIRECT",
+          "citation_indices": [
+            0
+          ],
+          "rationale": ""
+        }
+      ]
+    },
+    "tool_name": null,
+    "tool_arguments": {},
+    "observation_summary": "{\"ok\": true, \"result\": {\"status\": \"completed\", \"evidence_review\": {\"coverage\": \"declared_claims_checked\", \"errors\": [], \"warnings\": [], \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [], \"bindings\": [{\"claim_id\": \"legacy_0\", \"claim_index\": 0, \"claim_text\": \"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 48]]}], \"unmapped_fragments\": [], \"control_bindings\": []}, \"evidence_support\": {\"errors\": [], \"bindings\": []}}, \"mechanism\": \"checked IDs/segments, bounded normalized alignment, independent claim support\",",
+    "observation": {
+      "ok": true,
+      "result": {
+        "status": "completed",
+        "evidence_review": {
+          "coverage": "declared_claims_checked",
+          "errors": [],
+          "warnings": [],
+          "layers": {
+            "schema": "passed_before_review",
+            "citation_integrity": "passed_before_review",
+            "answer_claim_coverage": {
+              "errors": [],
+              "bindings": [
+                {
+                  "claim_id": "legacy_0",
+                  "claim_index": 0,
+                  "claim_text": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+                  "alignment": "bounded_normalized",
+                  "public_relation_texts": [],
+                  "answer_spans_normalized": [
+                    [
+                      0,
+                      48
+                    ]
+                  ]
+                }
+              ],
+              "unmapped_fragments": [],
+              "control_bindings": []
+            },
+            "evidence_support": {
+              "errors": [],
+              "bindings": []
+            }
+          },
+          "mechanism": "checked IDs/segments, bounded normalized alignment, independent claim support",
+          "limitation": "Not general entailment; unsupported/unrecognized relations require repair or review.",
+          "answer_quality": {
+            "mode": "enforce",
+            "gate": "enforced",
+            "findings": [],
+            "error_codes": [],
+            "human_review_required": false,
+            "task_coverage": {
+              "targets": [
+                {
+                  "topic": "hardware",
+                  "attribute": null,
+                  "request_text": "设备如何报修",
+                  "matching_claim_indices": [
+                    0
+                  ],
+                  "resolution": "supported_fact",
+                  "covered": true
+                }
+              ],
+              "findings": [],
+              "coverage": "bounded_topic_attribute_checks",
+              "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+            },
+            "contextualized_background": [],
+            "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+          }
+        }
+      }
+    },
+    "decision_summary": "离线脚本化测试动作，不是真实模型新决策。",
+    "next_action": "END",
+    "timestamp": "2026-11-11T06:26:56.657187+00:00",
+    "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\",\"citations\":[{\"doc_id\":\"D03\",\"version_date\":\"2025-02-10\",\"quote\":\"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\"}],\"gaps\":[],\"status\":\"completed\",\"claims\":[{\"text\":\"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"\"}]},\"decision_summary\":\"离线脚本化测试动作，不是真实模型新决策。\"}",
+    "model_metadata": {},
+    "final_status": "completed"
+  }
+]

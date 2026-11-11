@@ -1,0 +1,59 @@
+{
+  "case_id": "R01",
+  "technical_pass": true,
+  "reviewer": "AI_assisted_technical_review",
+  "human_approval": false,
+  "semantic_review": "实际READ并逐字引用D03，最终明确门户→IT服务→设备报修及所需填写信息，无额外政策。两次声明映射失败均保留，模型自行修正后通过；正常单次合格，尚不计完成稳定性。",
+  "independent_audit": {
+    "case_id": "R01",
+    "execution_id": "R01-d269371307a848e0b9161fad4bed9ac4",
+    "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+    "output_sha256": "eee4be25c5294015660ddedf94d75b16ac821910a350de3bd6db5e56500f8085",
+    "integrity_pass": true,
+    "not_a_semantic_approval": true,
+    "http_attempts": 5,
+    "usage_total_tokens": 15157,
+    "http_elapsed_seconds": 14.035377200005314,
+    "read_doc_ids": [
+      "D03"
+    ],
+    "citations_verified": [
+      {
+        "citation_index": 0,
+        "doc_id": "D03",
+        "quote_sha256": "f6ccd6080e9a78386490185ece581828fb3eb7e5ff42ab3c5cf112c7f9e60334"
+      }
+    ],
+    "rejected_proposals": [
+      {
+        "step": 3,
+        "action": "ANSWER",
+        "stage": "answer_claim_coverage",
+        "details": [
+          "claim_0:not_in_answer",
+          "unmapped_answer_text",
+          "segment_s1:claim_text_mismatch",
+          "claim_0:direct_not_in_cited_quote"
+        ]
+      },
+      {
+        "step": 4,
+        "action": "ANSWER",
+        "stage": "answer_claim_coverage",
+        "details": [
+          "unmapped_answer_text",
+          "segment_s1:claim_text_mismatch"
+        ]
+      }
+    ],
+    "final_status": "completed",
+    "response_ids": [
+      "84895665-d7d9-4162-abdd-ad050c7c3dd6",
+      "a3007d20-01de-4028-8594-97b46e8f509f",
+      "21d813ff-c385-4a08-9df4-4f627fc92397",
+      "ad5c540c-568f-4697-9524-a6296e57444b",
+      "f926f31e-1dc4-4af1-a0ef-ca3903136986"
+    ]
+  },
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33"
+}

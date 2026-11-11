@@ -1,0 +1,28 @@
+{
+  "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+  "decision_index": 5,
+  "budget_request_number": 24,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "9c42ecd1-c4be-4d99-9c01-4e61d590a361",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 3263,
+    "completion_tokens": 3863,
+    "total_tokens": 7126,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3194
+    },
+    "prompt_cache_hit_tokens": 2944,
+    "prompt_cache_miss_tokens": 319
+  },
+  "raw_action_json": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"依据《企业邮箱密码重置 FAQ》，若原绑定手机号已失效，应通过 IT 服务工单申请人工身份核验。该 FAQ 的网页端自助重置要求通过“绑定的工作手机号”验证身份；移动端 FAQ 也要求完成“绑定手机号验证”。因此，原绑定号停用后应按上述人工核验路径处理，不能仅凭备用手机号能收到验证码就认定可完成自助重置。备用号是否属于系统认可的绑定工作手机号、未绑定邮箱是否影响人工核验或可作为替代验证方式，资料均未说明。\",\"citations\":[{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"},{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\"},{\"doc_id\":\"D05\",\"version_date\":\"2025-04-01\",\"quote\":\"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\"}],\"gaps\":[\"备用手机号是否属于系统认可的绑定工作手机号\",\"未绑定邮箱是否影响人工核验或可否作为替代验证方式\",\"IT 服务工单的具体提交入口和所需材料\"],\"status\":\"completed\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"若原绑定手机号已失效，应通过 IT 服务工单申请人工身份核验。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"D04“验证失败”原文直接规定。\"},{\"claim_id\":\"c2\",\"text\":\"网页端和移动端自助重置均以绑定的工作手机号验证为前提。\",\"kind\":\"DIRECT\",\"citation_indices\":[1,2],\"rationale\":\"D04网页端与D05移动端原文均要求绑定手机号验证。\"},{\"claim_id\":\"c3\",\"text\":\"据此只能推断：原绑定号停用后应按人工核验路径处理，不能仅凭备用号能收码认定自助重置可用。\",\"kind\":\"INFERENCE\",\"citation_indices\":[0,1,2],\"rationale\":\"D04对失效绑定号指向人工核验；D05自助流程要求已完成绑定手机号验证。\"},{\"claim_id\":\"c4\",\"text\":\"备用号是否为系统认可的绑定工作手机号、未绑定邮箱是否影响人工核验或可否替代验证，资料未说明。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1,2],\"rationale\":\"已读资料只提绑定手机号验证和绑定号失效转工单，未提备用号及未绑定邮箱。\"}]},\"decision_summary\":\"已读取企业邮箱密码重置FAQ：原绑定手机号失效应转IT工单人工核验；网页/移动端自助均以绑定手机号验证为前提。备用号是否可作为绑定号、未绑定邮箱的影响未有资料，需列缺口。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 23.84460119999858
+}

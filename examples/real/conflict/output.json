@@ -1,0 +1,1445 @@
+{
+  "execution_id": "R02-32f9a74ef8c64edfa767d0b789393976",
+  "case_id": "R02",
+  "input": {
+    "question": "员工费用报销期限是多少？",
+    "history": []
+  },
+  "previous_agent_run_id": null,
+  "evaluation_mode": "real",
+  "config": {
+    "max_steps": 8,
+    "max_tool_calls": 6,
+    "require_claims": true,
+    "answer_quality_mode": "enforce"
+  },
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "http_attempts": 7,
+  "result": {
+    "answer": "员工应在费用发生之日起 30 个自然日内提交报销申请。员工应在费用发生之日起 15 个自然日内提交报销申请。无法确认应适用哪一份制度。\n无法确认两份制度各自的适用范围、优先级或替代关系。\n请确认贵司应适用哪一份费用报销制度？",
+    "citations": [
+      {
+        "doc_id": "D01",
+        "version_date": "2025-01-01",
+        "quote": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+      },
+      {
+        "doc_id": "D02",
+        "version_date": "2025-03-01",
+        "quote": "员工应在费用发生之日起 15 个自然日内提交报销申请。"
+      }
+    ],
+    "gaps": [
+      "《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）",
+      "两份制度之间是否存在优先级或替代关系",
+      "当前对员工实际适用的报销制度"
+    ],
+    "status": "needs_clarification",
+    "trace": [
+      {
+        "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 1,
+        "action": "SEARCH",
+        "arguments": {
+          "query": "员工费用报销期限 报销时限 规定",
+          "top_k": 3
+        },
+        "tool_name": "search_documents",
+        "tool_arguments": {
+          "query": "员工费用报销期限 报销时限 规定",
+          "top_k": 3
+        },
+        "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"员工费用报销期限 报销时限 规定\", \"results\": [{\"doc_id\": \"D01\", \"title\": \"费用报销制度 A\", \"version_date\": \"2025-01-01\", \"scope\": null, \"priority\": null, \"supersedes\": [], \"section_id\": \"deadline\", \"snippet\": \"员工应在费用发生之日起 30 个自然日内提交报销申请。\", \"score\": 1.0, \"channel_scores\": {\"bm25\": 5.814, \"expanded_bm25\": 5.814, \"ngram_dice\": 0.1593, \"relative_support\": 1.0, \"route_support\": {\"original\": 0.35, \"concept_0\": 0.65}}}, {\"doc_id\": \"D02\", \"title\": \"费用报销制度 B\", \"version_date\": \"2025-03-01\", \"scope\": null, \"priority\": null, \"supersedes\": [], \"section_id\": \"deadline\", \"snippet\": \"员工应在费用发生之日起 15 个自然日内提交报销申请。\", \"score\": 1.0, \"channel_scores\": {\"bm25\": 5.814, \"expanded_bm25\": 5.814, \"ngram_dic",
+        "observation": {
+          "ok": true,
+          "result": {
+            "query": "员工费用报销期限 报销时限 规定",
+            "results": [
+              {
+                "doc_id": "D01",
+                "title": "费用报销制度 A",
+                "version_date": "2025-01-01",
+                "scope": null,
+                "priority": null,
+                "supersedes": [],
+                "section_id": "deadline",
+                "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+                "score": 1.0,
+                "channel_scores": {
+                  "bm25": 5.814,
+                  "expanded_bm25": 5.814,
+                  "ngram_dice": 0.1593,
+                  "relative_support": 1.0,
+                  "route_support": {
+                    "original": 0.35,
+                    "concept_0": 0.65
+                  }
+                }
+              },
+              {
+                "doc_id": "D02",
+                "title": "费用报销制度 B",
+                "version_date": "2025-03-01",
+                "scope": null,
+                "priority": null,
+                "supersedes": [],
+                "section_id": "deadline",
+                "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+                "score": 1.0,
+                "channel_scores": {
+                  "bm25": 5.814,
+                  "expanded_bm25": 5.814,
+                  "ngram_dice": 0.1593,
+                  "relative_support": 1.0,
+                  "route_support": {
+                    "original": 0.35,
+                    "concept_0": 0.65
+                  }
+                }
+              }
+            ]
+          },
+          "progress": {
+            "new_candidate_fragments": 2,
+            "new_read_fragments": 0,
+            "decisions_remaining": 7,
+            "tool_calls_remaining": 5,
+            "no_new_search_count": 0
+          }
+        },
+        "decision_summary": "问题询问员工费用报销期限，需先检索知识库中的报销管理制度或费用报销时限条款。",
+        "next_action": "READ",
+        "timestamp": "2026-11-11T05:36:22.711100+00:00",
+        "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"员工费用报销期限 报销时限 规定\",\"top_k\":3},\"decision_summary\":\"问题询问员工费用报销期限，需先检索知识库中的报销管理制度或费用报销时限条款。\"}",
+        "model_metadata": {
+          "input_context_sha256": "0a17ba171c63f925a04b6d248991341fc7a420b1f8ee83d90080e339941b0c74",
+          "observation_count": 0,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 6,
+          "decision_index": 1,
+          "response_id": "c970de21-fae3-49ce-921d-7a5624627a3b",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1864,
+            "completion_tokens": 95,
+            "total_tokens": 1959,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 42
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 200
+          },
+          "http_status": 200,
+          "elapsed_seconds": 1.3759489000003668,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "needs_clarification"
+      },
+      {
+        "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 2,
+        "action": "READ",
+        "arguments": {
+          "doc_id": "D01",
+          "section_id": null
+        },
+        "tool_name": "read_document",
+        "tool_arguments": {
+          "doc_id": "D01",
+          "section_id": null
+        },
+        "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D01\", \"title\": \"费用报销制度 A\", \"doc_type\": \"POLICY\", \"version_date\": \"2025-01-01\", \"scope\": null, \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"deadline\", \"title\": \"报销提交期限\", \"content\": \"员工应在费用发生之日起 30 个自然日内提交报销申请。\"}], \"content\": \"员工应在费用发生之日起 30 个自然日内提交报销申请。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 6, \"tool_calls_remaining\": 4, \"no_new_search_count\": 0}}",
+        "observation": {
+          "ok": true,
+          "result": {
+            "document": {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "doc_type": "POLICY",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "sections": [
+                {
+                  "section_id": "deadline",
+                  "title": "报销提交期限",
+                  "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+                }
+              ],
+              "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "section_id": null
+            }
+          },
+          "progress": {
+            "new_candidate_fragments": 0,
+            "new_read_fragments": 1,
+            "decisions_remaining": 6,
+            "tool_calls_remaining": 4,
+            "no_new_search_count": 0
+          }
+        },
+        "decision_summary": "检索发现两份费用报销制度分别规定30日和15日，适用范围与优先级未明；需先读取原文核实全文及适用关系。",
+        "next_action": "READ",
+        "timestamp": "2026-11-11T05:36:24.914071+00:00",
+        "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D01\",\"section_id\":null},\"decision_summary\":\"检索发现两份费用报销制度分别规定30日和15日，适用范围与优先级未明；需先读取原文核实全文及适用关系。\"}",
+        "model_metadata": {
+          "input_context_sha256": "be6da5a3bd2e83ed92c2bcb1ed18afd549830a8b01899940e4aa58fbd40049cc",
+          "observation_count": 1,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 7,
+          "decision_index": 2,
+          "response_id": "2fa7d610-a686-44ac-aab4-68c675c31702",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2291,
+            "completion_tokens": 159,
+            "total_tokens": 2450,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 105
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 499
+          },
+          "http_status": 200,
+          "elapsed_seconds": 2.121296399996936,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "needs_clarification"
+      },
+      {
+        "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 3,
+        "action": "READ",
+        "arguments": {
+          "doc_id": "D02",
+          "section_id": null
+        },
+        "tool_name": "read_document",
+        "tool_arguments": {
+          "doc_id": "D02",
+          "section_id": null
+        },
+        "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D02\", \"title\": \"费用报销制度 B\", \"doc_type\": \"POLICY\", \"version_date\": \"2025-03-01\", \"scope\": null, \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"deadline\", \"title\": \"报销提交期限\", \"content\": \"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}], \"content\": \"员工应在费用发生之日起 15 个自然日内提交报销申请。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 5, \"tool_calls_remaining\": 3, \"no_new_search_count\": 0}}",
+        "observation": {
+          "ok": true,
+          "result": {
+            "document": {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "doc_type": "POLICY",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "sections": [
+                {
+                  "section_id": "deadline",
+                  "title": "报销提交期限",
+                  "content": "员工应在费用发生之日起 15 个自然日内提交报销申请。"
+                }
+              ],
+              "content": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "section_id": null
+            }
+          },
+          "progress": {
+            "new_candidate_fragments": 0,
+            "new_read_fragments": 1,
+            "decisions_remaining": 5,
+            "tool_calls_remaining": 3,
+            "no_new_search_count": 0
+          }
+        },
+        "decision_summary": "检索发现 D01 与 D02 对报销期限规定不一致（30 天与 15 天），需读取 D02 原文核实后再判断是否存在适用范围或优先级说明。",
+        "next_action": "ASK_CLARIFICATION",
+        "timestamp": "2026-11-11T05:36:26.375047+00:00",
+        "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D02\",\"section_id\":null},\"decision_summary\":\"检索发现 D01 与 D02 对报销期限规定不一致（30 天与 15 天），需读取 D02 原文核实后再判断是否存在适用范围或优先级说明。\"}",
+        "model_metadata": {
+          "input_context_sha256": "b3fa303505b2698e3932c90a957761654fe1d6b48feb055a4aa8f9d2200d63b4",
+          "observation_count": 2,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 8,
+          "decision_index": 3,
+          "response_id": "d65607bf-f5e2-4145-a835-248244330cfd",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2504,
+            "completion_tokens": 119,
+            "total_tokens": 2623,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 55
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 328
+          },
+          "http_status": 200,
+          "elapsed_seconds": 1.3721445000010135,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "needs_clarification"
+      },
+      {
+        "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 4,
+        "action": "ASK_CLARIFICATION",
+        "arguments": {
+          "question": "《费用报销制度 A》规定报销期限为30个自然日，《费用报销制度 B》规定为15个自然日。请确认贵司适用哪一份制度，这两份制度分别适用于哪些部门、费用类型或人员？",
+          "reason": "本次成功读取的两份制度对同一事项规定冲突，且文件未提供适用范围、优先级或替代关系信息，现有证据无法确定适用规则。",
+          "answer": "目前查到两份制度对报销期限的规定不一致：《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请；《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。两份文件均未标注适用范围、优先级或替代关系，无法判断应适用哪一份，请确认贵司适用哪份制度。",
+          "citations": [
+            {
+              "doc_id": "D01",
+              "version_date": "2025-01-01",
+              "quote": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2025-03-01",
+              "quote": "员工应在费用发生之日起 15 个自然日内提交报销申请。"
+            }
+          ],
+          "gaps": [
+            "两份制度各自的适用范围（部门、费用类型、人员等）",
+            "两份制度之间是否存在优先级或替代关系",
+            "当前对员工实际适用的报销制度"
+          ],
+          "claims": [
+            {
+              "text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "《费用报销制度 A》原文",
+              "claim_id": "c1"
+            },
+            {
+              "text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                1
+              ],
+              "rationale": "《费用报销制度 B》原文",
+              "claim_id": "c2"
+            },
+            {
+              "text": "两份文件均未标注适用范围、优先级或替代关系，无法据此判断应适用哪一份制度",
+              "kind": "UNKNOWN",
+              "citation_indices": [],
+              "rationale": "已读取的两份文件均无 scope、priority、supersedes 信息",
+              "claim_id": "c3"
+            }
+          ],
+          "answer_segments": [
+            {
+              "segment_id": "s1",
+              "part": "answer",
+              "text": "目前查到两份制度对报销期限的规定不一致：",
+              "claim_ids": [
+                "c1",
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s2",
+              "part": "answer",
+              "text": "《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请；",
+              "claim_ids": [
+                "c1"
+              ]
+            },
+            {
+              "segment_id": "s3",
+              "part": "answer",
+              "text": "《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "claim_ids": [
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s4",
+              "part": "answer",
+              "text": "两份文件均未标注适用范围、优先级或替代关系，无法判断应适用哪一份，请确认贵司适用哪份制度。",
+              "claim_ids": [
+                "c3"
+              ]
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"evidence_support_failed\", \"validation_stage\": \"answer_claim_coverage\", \"details\": [\"claim_2:not_in_answer\", \"unmapped_answer_text\", \"segments_do_not_cover_reason\", \"segment_s1:claim_text_mismatch\", \"segment_s2:claim_text_mismatch\", \"segment_s3:claim_text_mismatch\", \"segment_s4:claim_text_mismatch\", \"claim_2:unknown_requires_explicit_uncertainty\"], \"submitted_to_user\": false, \"repair_hint\": \"核对unmapped_fragments及claim绑定，覆盖answer和reason中全部事实；保留真实问题，不要用资料不足替代映射修复。\", \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [\"claim_2:not_in_answer\", \"unmapped_answer_text\", \"segments_do_not_cover",
+        "observation": {
+          "ok": false,
+          "error": {
+            "code": "evidence_support_failed",
+            "validation_stage": "answer_claim_coverage",
+            "details": [
+              "claim_2:not_in_answer",
+              "unmapped_answer_text",
+              "segments_do_not_cover_reason",
+              "segment_s1:claim_text_mismatch",
+              "segment_s2:claim_text_mismatch",
+              "segment_s3:claim_text_mismatch",
+              "segment_s4:claim_text_mismatch",
+              "claim_2:unknown_requires_explicit_uncertainty"
+            ],
+            "submitted_to_user": false,
+            "repair_hint": "核对unmapped_fragments及claim绑定，覆盖answer和reason中全部事实；保留真实问题，不要用资料不足替代映射修复。",
+            "layers": {
+              "schema": "passed_before_review",
+              "citation_integrity": "passed_before_review",
+              "answer_claim_coverage": {
+                "errors": [
+                  "claim_2:not_in_answer",
+                  "unmapped_answer_text",
+                  "segments_do_not_cover_reason",
+                  "segment_s1:claim_text_mismatch",
+                  "segment_s2:claim_text_mismatch",
+                  "segment_s3:claim_text_mismatch",
+                  "segment_s4:claim_text_mismatch"
+                ],
+                "bindings": [
+                  {
+                    "claim_id": "c1",
+                    "claim_index": 0,
+                    "claim_text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        25,
+                        49
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s1",
+                      "s2"
+                    ]
+                  },
+                  {
+                    "claim_id": "c2",
+                    "claim_index": 1,
+                    "claim_text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        55,
+                        79
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s1",
+                      "s3"
+                    ]
+                  },
+                  {
+                    "claim_id": "c3",
+                    "claim_index": 2,
+                    "claim_text": "两份文件均未标注适用范围、优先级或替代关系，无法据此判断应适用哪一份制度",
+                    "alignment": "unmapped",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [],
+                    "answer_segment_ids": [
+                      "s4"
+                    ]
+                  }
+                ],
+                "unmapped_fragments": [
+                  {
+                    "start_normalized": 0,
+                    "end_normalized": 25,
+                    "text_normalized": "目前查到两份制度对报销期限的规定不一致费用报销规定",
+                    "draft_units": [
+                      "目前查到两份制度对报销期限的规定不一致：《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请"
+                    ]
+                  },
+                  {
+                    "start_normalized": 49,
+                    "end_normalized": 55,
+                    "text_normalized": "费用报销规定",
+                    "draft_units": [
+                      "《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请"
+                    ]
+                  },
+                  {
+                    "start_normalized": 79,
+                    "end_normalized": 109,
+                    "text_normalized": "两份文件均未标注适用范围优先级或替代关系无法判断应适用哪一份",
+                    "draft_units": [
+                      "两份文件均未标注适用范围、优先级或替代关系",
+                      "无法判断应适用哪一份"
+                    ]
+                  },
+                  {
+                    "start_normalized": 120,
+                    "end_normalized": 202,
+                    "text_normalized": "本次成功读取的两份制度对同一事项规定冲突且文件未提供适用范围优先级或替代关系信息现有证据无法确定适用规则费用报销规定报销期限为30个自然日费用报销规定为15个自然日",
+                    "draft_units": [
+                      "本次成功读取的两份制度对同一事项规定冲突",
+                      "且文件未提供适用范围、优先级或替代关系信息",
+                      "现有证据无法确定适用规则",
+                      "《费用报销制度 A》规定报销期限为30个自然日"
+                    ]
+                  },
+                  {
+                    "start_normalized": 214,
+                    "end_normalized": 235,
+                    "text_normalized": "这两份制度分别适用于哪些部门费用类型或人员",
+                    "draft_units": [
+                      "这两份制度分别适用于哪些部门、费用类型或人员"
+                    ]
+                  }
+                ],
+                "control_bindings": []
+              },
+              "evidence_support": {
+                "errors": [
+                  "claim_2:unknown_requires_explicit_uncertainty"
+                ],
+                "bindings": []
+              }
+            }
+          }
+        },
+        "decision_summary": "已读取两份制度原文，报销期限分别为30个自然日和15个自然日；两者均无适用范围、优先级或替代关系说明，规则冲突无法自动判定，需向用户确认适用制度。",
+        "next_action": "ASK_CLARIFICATION",
+        "timestamp": "2026-11-11T05:36:34.444337+00:00",
+        "model_response": "{\"action\":\"ASK_CLARIFICATION\",\"arguments\":{\"question\":\"《费用报销制度 A》规定报销期限为30个自然日，《费用报销制度 B》规定为15个自然日。请确认贵司适用哪一份制度，这两份制度分别适用于哪些部门、费用类型或人员？\",\"reason\":\"本次成功读取的两份制度对同一事项规定冲突，且文件未提供适用范围、优先级或替代关系信息，现有证据无法确定适用规则。\",\"answer\":\"目前查到两份制度对报销期限的规定不一致：《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请；《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。两份文件均未标注适用范围、优先级或替代关系，无法判断应适用哪一份，请确认贵司适用哪份制度。\",\"citations\":[{\"doc_id\":\"D01\",\"version_date\":\"2025-01-01\",\"quote\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\"},{\"doc_id\":\"D02\",\"version_date\":\"2025-03-01\",\"quote\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}],\"gaps\":[\"两份制度各自的适用范围（部门、费用类型、人员等）\",\"两份制度之间是否存在优先级或替代关系\",\"当前对员工实际适用的报销制度\"],\"claims\":[{\"claim_id\":\"c1\",\"text\":\"员工应在费用发生之日起 30 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"《费用报销制度 A》原文\"},{\"claim_id\":\"c2\",\"text\":\"员工应在费用发生之日起 15 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"《费用报销制度 B》原文\"},{\"claim_id\":\"c3\",\"text\":\"两份文件均未标注适用范围、优先级或替代关系，无法据此判断应适用哪一份制度\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"已读取的两份文件均无 scope、priority、supersedes 信息\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"目前查到两份制度对报销期限的规定不一致：\",\"claim_ids\":[\"c1\",\"c2\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请；\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s4\",\"part\":\"answer\",\"text\":\"两份文件均未标注适用范围、优先级或替代关系，无法判断应适用哪一份，请确认贵司适用哪份制度。\",\"claim_ids\":[\"c3\"]}]},\"decision_summary\":\"已读取两份制度原文，报销期限分别为30个自然日和15个自然日；两者均无适用范围、优先级或替代关系说明，规则冲突无法自动判定，需向用户确认适用制度。\"}",
+        "model_metadata": {
+          "input_context_sha256": "b72b7092adaf8e171a36a28330cd69203e6bfcc1001ace6b07e0ecce9d85e694",
+          "observation_count": 3,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 9,
+          "decision_index": 4,
+          "response_id": "9e3723a6-03de-4467-9d10-73524203bfed",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2717,
+            "completion_tokens": 1470,
+            "total_tokens": 4187,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 801
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 285
+          },
+          "http_status": 200,
+          "elapsed_seconds": 7.926706800000829,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "needs_clarification"
+      },
+      {
+        "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 5,
+        "action": "ASK_CLARIFICATION",
+        "arguments": {
+          "question": "请确认贵司适用《费用报销制度 A》还是《费用报销制度 B》，以及各自适用的部门、费用类型或人员范围？",
+          "reason": "根据已读取的两份制度，无法确认应适用哪一份制度。",
+          "answer": "《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请。《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。根据已读取的两份制度，无法确认应适用哪一份制度。",
+          "citations": [
+            {
+              "doc_id": "D01",
+              "version_date": "2025-01-01",
+              "quote": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2025-03-01",
+              "quote": "员工应在费用发生之日起 15 个自然日内提交报销申请。"
+            }
+          ],
+          "gaps": [
+            "《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）",
+            "两份制度之间是否存在优先级或替代关系",
+            "当前对员工实际适用的报销制度"
+          ],
+          "claims": [
+            {
+              "text": "《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "《费用报销制度 A》原文",
+              "claim_id": "c1"
+            },
+            {
+              "text": "《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                1
+              ],
+              "rationale": "《费用报销制度 B》原文",
+              "claim_id": "c2"
+            },
+            {
+              "text": "根据已读取的两份制度，无法确认应适用哪一份制度",
+              "kind": "UNKNOWN",
+              "citation_indices": [],
+              "rationale": "两份文件均无 scope、priority、supersedes 信息，适用关系无法确认",
+              "claim_id": "c3"
+            }
+          ],
+          "answer_segments": [
+            {
+              "segment_id": "s1",
+              "part": "answer",
+              "text": "《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "claim_ids": [
+                "c1"
+              ]
+            },
+            {
+              "segment_id": "s2",
+              "part": "answer",
+              "text": "《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "claim_ids": [
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s3",
+              "part": "answer",
+              "text": "根据已读取的两份制度，无法确认应适用哪一份制度。",
+              "claim_ids": [
+                "c3"
+              ]
+            },
+            {
+              "segment_id": "r1",
+              "part": "reason",
+              "text": "根据已读取的两份制度，无法确认应适用哪一份制度。",
+              "claim_ids": [
+                "c3"
+              ]
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"evidence_support_failed\", \"validation_stage\": \"evidence_support\", \"details\": [\"claim_0:direct_not_in_cited_quote\", \"claim_1:direct_not_in_cited_quote\"], \"submitted_to_user\": false, \"repair_hint\": \"映射成功不代表引文支持。限定结论、公开标明推论或承认未知；需要时由你决定补读。\", \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [], \"bindings\": [{\"claim_id\": \"c1\", \"claim_index\": 0, \"claim_text\": \"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 30]], \"answer_segment_ids\": [\"s1\"]}, {\"claim_id\": \"c2\", \"claim_index\": 1, \"claim_text\": \"《费用报销制",
+        "observation": {
+          "ok": false,
+          "error": {
+            "code": "evidence_support_failed",
+            "validation_stage": "evidence_support",
+            "details": [
+              "claim_0:direct_not_in_cited_quote",
+              "claim_1:direct_not_in_cited_quote"
+            ],
+            "submitted_to_user": false,
+            "repair_hint": "映射成功不代表引文支持。限定结论、公开标明推论或承认未知；需要时由你决定补读。",
+            "layers": {
+              "schema": "passed_before_review",
+              "citation_integrity": "passed_before_review",
+              "answer_claim_coverage": {
+                "errors": [],
+                "bindings": [
+                  {
+                    "claim_id": "c1",
+                    "claim_index": 0,
+                    "claim_text": "《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        0,
+                        30
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s1"
+                    ]
+                  },
+                  {
+                    "claim_id": "c2",
+                    "claim_index": 1,
+                    "claim_text": "《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        30,
+                        60
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s2"
+                    ]
+                  },
+                  {
+                    "claim_id": "c3",
+                    "claim_index": 2,
+                    "claim_text": "根据已读取的两份制度，无法确认应适用哪一份制度",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        60,
+                        82
+                      ],
+                      [
+                        82,
+                        104
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s3",
+                      "r1"
+                    ]
+                  }
+                ],
+                "unmapped_fragments": [],
+                "control_bindings": []
+              },
+              "evidence_support": {
+                "errors": [
+                  "claim_0:direct_not_in_cited_quote",
+                  "claim_1:direct_not_in_cited_quote"
+                ],
+                "bindings": []
+              }
+            }
+          }
+        },
+        "decision_summary": "两份制度对报销期限规定不同，且文件未提供适用范围、优先级或替代关系，需请用户确认适用制度。",
+        "next_action": "ASK_CLARIFICATION",
+        "timestamp": "2026-11-11T05:36:54.031194+00:00",
+        "model_response": "{\"action\":\"ASK_CLARIFICATION\",\"arguments\":{\"question\":\"请确认贵司适用《费用报销制度 A》还是《费用报销制度 B》，以及各自适用的部门、费用类型或人员范围？\",\"reason\":\"根据已读取的两份制度，无法确认应适用哪一份制度。\",\"answer\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请。《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。根据已读取的两份制度，无法确认应适用哪一份制度。\",\"citations\":[{\"doc_id\":\"D01\",\"version_date\":\"2025-01-01\",\"quote\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\"},{\"doc_id\":\"D02\",\"version_date\":\"2025-03-01\",\"quote\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}],\"gaps\":[\"《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）\",\"两份制度之间是否存在优先级或替代关系\",\"当前对员工实际适用的报销制度\"],\"claims\":[{\"claim_id\":\"c1\",\"text\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"《费用报销制度 A》原文\"},{\"claim_id\":\"c2\",\"text\":\"《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"《费用报销制度 B》原文\"},{\"claim_id\":\"c3\",\"text\":\"根据已读取的两份制度，无法确认应适用哪一份制度\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"两份文件均无 scope、priority、supersedes 信息，适用关系无法确认\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"根据已读取的两份制度，无法确认应适用哪一份制度。\",\"claim_ids\":[\"c3\"]},{\"segment_id\":\"r1\",\"part\":\"reason\",\"text\":\"根据已读取的两份制度，无法确认应适用哪一份制度。\",\"claim_ids\":[\"c3\"]}]},\"decision_summary\":\"两份制度对报销期限规定不同，且文件未提供适用范围、优先级或替代关系，需请用户确认适用制度。\"}",
+        "model_metadata": {
+          "input_context_sha256": "bb21b143912ab860ccd4075843348078e78e641709dafbdbb34beb0b478b14ba",
+          "observation_count": 4,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 10,
+          "decision_index": 5,
+          "response_id": "c2cee1ba-da81-4ecf-a024-8ee82936f392",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4364,
+            "completion_tokens": 3245,
+            "total_tokens": 7609,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2641
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 1676
+          },
+          "http_status": 200,
+          "elapsed_seconds": 19.45695540000088,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "needs_clarification"
+      },
+      {
+        "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 6,
+        "action": "ASK_CLARIFICATION",
+        "arguments": {
+          "question": "请确认贵司适用《费用报销制度 A》（30 个自然日）还是《费用报销制度 B》（15 个自然日），以及两者分别适用的部门、费用类型或人员范围？",
+          "reason": "无法确认应适用哪一份制度。",
+          "answer": "员工应在费用发生之日起 30 个自然日内提交报销申请。员工应在费用发生之日起 15 个自然日内提交报销申请。无法确认两份制度各自的适用范围、优先级或替代关系。无法确认应适用哪一份制度。",
+          "citations": [
+            {
+              "doc_id": "D01",
+              "version_date": "2025-01-01",
+              "quote": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2025-03-01",
+              "quote": "员工应在费用发生之日起 15 个自然日内提交报销申请。"
+            }
+          ],
+          "gaps": [
+            "《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）",
+            "两份制度之间是否存在优先级或替代关系",
+            "当前对员工实际适用的报销制度"
+          ],
+          "claims": [
+            {
+              "text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "《费用报销制度 A》原文逐字摘引",
+              "claim_id": "c1"
+            },
+            {
+              "text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                1
+              ],
+              "rationale": "《费用报销制度 B》原文逐字摘引",
+              "claim_id": "c2"
+            },
+            {
+              "text": "无法确认两份制度各自的适用范围、优先级或替代关系",
+              "kind": "UNKNOWN",
+              "citation_indices": [],
+              "rationale": "已读取的两份文件均无 scope、priority、supersedes 字段",
+              "claim_id": "c3"
+            },
+            {
+              "text": "无法确认应适用哪一份制度",
+              "kind": "UNKNOWN",
+              "citation_indices": [],
+              "rationale": "两份制度对同一事项规定不同且无适用关系说明",
+              "claim_id": "c4"
+            }
+          ],
+          "answer_segments": [
+            {
+              "segment_id": "s1",
+              "part": "answer",
+              "text": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "claim_ids": [
+                "c1"
+              ]
+            },
+            {
+              "segment_id": "s2",
+              "part": "answer",
+              "text": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "claim_ids": [
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s3",
+              "part": "answer",
+              "text": "无法确认两份制度各自的适用范围、优先级或替代关系。无法确认应适用哪一份制度。",
+              "claim_ids": [
+                "c3",
+                "c4"
+              ]
+            },
+            {
+              "segment_id": "r1",
+              "part": "reason",
+              "text": "无法确认应适用哪一份制度。",
+              "claim_ids": [
+                "c4"
+              ]
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"evidence_support_failed\", \"validation_stage\": \"answer_claim_coverage\", \"details\": [\"unmapped_answer_text\"], \"submitted_to_user\": false, \"repair_hint\": \"核对unmapped_fragments及claim绑定，覆盖answer和reason中全部事实；保留真实问题，不要用资料不足替代映射修复。\", \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [\"unmapped_answer_text\"], \"bindings\": [{\"claim_id\": \"c1\", \"claim_index\": 0, \"claim_text\": \"员工应在费用发生之日起 30 个自然日内提交报销申请\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 24]], \"answer_segment_ids\": [\"s1\"]}, {\"claim_id\": \"c2\", \"claim_index\": 1, \"claim_text\": \"员工应在费用发生之",
+        "observation": {
+          "ok": false,
+          "error": {
+            "code": "evidence_support_failed",
+            "validation_stage": "answer_claim_coverage",
+            "details": [
+              "unmapped_answer_text"
+            ],
+            "submitted_to_user": false,
+            "repair_hint": "核对unmapped_fragments及claim绑定，覆盖answer和reason中全部事实；保留真实问题，不要用资料不足替代映射修复。",
+            "layers": {
+              "schema": "passed_before_review",
+              "citation_integrity": "passed_before_review",
+              "answer_claim_coverage": {
+                "errors": [
+                  "unmapped_answer_text"
+                ],
+                "bindings": [
+                  {
+                    "claim_id": "c1",
+                    "claim_index": 0,
+                    "claim_text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        0,
+                        24
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s1"
+                    ]
+                  },
+                  {
+                    "claim_id": "c2",
+                    "claim_index": 1,
+                    "claim_text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        24,
+                        48
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s2"
+                    ]
+                  },
+                  {
+                    "claim_id": "c3",
+                    "claim_index": 2,
+                    "claim_text": "无法确认两份制度各自的适用范围、优先级或替代关系",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        48,
+                        71
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s3"
+                    ]
+                  },
+                  {
+                    "claim_id": "c4",
+                    "claim_index": 3,
+                    "claim_text": "无法确认应适用哪一份制度",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        71,
+                        83
+                      ],
+                      [
+                        83,
+                        95
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s3",
+                      "r1"
+                    ]
+                  }
+                ],
+                "unmapped_fragments": [
+                  {
+                    "start_normalized": 95,
+                    "end_normalized": 144,
+                    "text_normalized": "请确认贵司适用费用报销30个自然日还是费用报销15个自然日以及两者分别适用的部门费用类型或人员范围",
+                    "draft_units": [
+                      "请确认贵司适用《费用报销制度 A》（30 个自然日）还是《费用报销制度 B》（15 个自然日）",
+                      "以及两者分别适用的部门、费用类型或人员范围"
+                    ]
+                  }
+                ],
+                "control_bindings": []
+              },
+              "evidence_support": {
+                "errors": [],
+                "bindings": []
+              }
+            }
+          }
+        },
+        "decision_summary": "已读取 D01、D02，两份制度分别规定 30 日与 15 日，且均无 scope、priority、supersedes，规则冲突无法判定适用。前次草稿因 DIRECT 声明含标题前缀、UNKNOWN 未显式表述不确定、reason 未映射而失败，本次改为逐字摘引原文、显式写“无法确认”，并补 reason 段落映射。",
+        "next_action": "ASK_CLARIFICATION",
+        "timestamp": "2026-11-11T05:37:13.746149+00:00",
+        "model_response": "{\"action\":\"ASK_CLARIFICATION\",\"arguments\":{\"question\":\"请确认贵司适用《费用报销制度 A》（30 个自然日）还是《费用报销制度 B》（15 个自然日），以及两者分别适用的部门、费用类型或人员范围？\",\"reason\":\"无法确认应适用哪一份制度。\",\"answer\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。员工应在费用发生之日起 15 个自然日内提交报销申请。无法确认两份制度各自的适用范围、优先级或替代关系。无法确认应适用哪一份制度。\",\"citations\":[{\"doc_id\":\"D01\",\"version_date\":\"2025-01-01\",\"quote\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\"},{\"doc_id\":\"D02\",\"version_date\":\"2025-03-01\",\"quote\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}],\"gaps\":[\"《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）\",\"两份制度之间是否存在优先级或替代关系\",\"当前对员工实际适用的报销制度\"],\"claims\":[{\"claim_id\":\"c1\",\"text\":\"员工应在费用发生之日起 30 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"《费用报销制度 A》原文逐字摘引\"},{\"claim_id\":\"c2\",\"text\":\"员工应在费用发生之日起 15 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"《费用报销制度 B》原文逐字摘引\"},{\"claim_id\":\"c3\",\"text\":\"无法确认两份制度各自的适用范围、优先级或替代关系\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"已读取的两份文件均无 scope、priority、supersedes 字段\"},{\"claim_id\":\"c4\",\"text\":\"无法确认应适用哪一份制度\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"两份制度对同一事项规定不同且无适用关系说明\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"无法确认两份制度各自的适用范围、优先级或替代关系。无法确认应适用哪一份制度。\",\"claim_ids\":[\"c3\",\"c4\"]},{\"segment_id\":\"r1\",\"part\":\"reason\",\"text\":\"无法确认应适用哪一份制度。\",\"claim_ids\":[\"c4\"]}]},\"decision_summary\":\"已读取 D01、D02，两份制度分别规定 30 日与 15 日，且均无 scope、priority、supersedes，规则冲突无法判定适用。前次草稿因 DIRECT 声明含标题前缀、UNKNOWN 未显式表述不确定、reason 未映射而失败，本次改为逐字摘引原文、显式写“无法确认”，并补 reason 段落映射。\"}",
+        "model_metadata": {
+          "input_context_sha256": "4c4c076423efe67f6893ffc201d2ddd0c0553f8523e6980eed387f5222f26d8a",
+          "observation_count": 5,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 11,
+          "decision_index": 6,
+          "response_id": "a298b3f7-b8bd-451a-b9f1-1fb1c5dc446c",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5473,
+            "completion_tokens": 3470,
+            "total_tokens": 8943,
+            "prompt_tokens_details": {
+              "cached_tokens": 4096
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2785
+            },
+            "prompt_cache_hit_tokens": 4096,
+            "prompt_cache_miss_tokens": 1377
+          },
+          "http_status": 200,
+          "elapsed_seconds": 19.612548299999617,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "needs_clarification"
+      },
+      {
+        "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 7,
+        "action": "ASK_CLARIFICATION",
+        "arguments": {
+          "question": "请确认贵司应适用哪一份费用报销制度？",
+          "reason": "无法确认两份制度各自的适用范围、优先级或替代关系。",
+          "answer": "员工应在费用发生之日起 30 个自然日内提交报销申请。员工应在费用发生之日起 15 个自然日内提交报销申请。无法确认应适用哪一份制度。",
+          "citations": [
+            {
+              "doc_id": "D01",
+              "version_date": "2025-01-01",
+              "quote": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+            },
+            {
+              "doc_id": "D02",
+              "version_date": "2025-03-01",
+              "quote": "员工应在费用发生之日起 15 个自然日内提交报销申请。"
+            }
+          ],
+          "gaps": [
+            "《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）",
+            "两份制度之间是否存在优先级或替代关系",
+            "当前对员工实际适用的报销制度"
+          ],
+          "claims": [
+            {
+              "text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "《费用报销制度 A》原文逐字摘引",
+              "claim_id": "c1"
+            },
+            {
+              "text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+              "kind": "DIRECT",
+              "citation_indices": [
+                1
+              ],
+              "rationale": "《费用报销制度 B》原文逐字摘引",
+              "claim_id": "c2"
+            },
+            {
+              "text": "无法确认两份制度各自的适用范围、优先级或替代关系",
+              "kind": "UNKNOWN",
+              "citation_indices": [],
+              "rationale": "已读取的两份文件均无适用范围、优先级或替代关系说明",
+              "claim_id": "c3"
+            },
+            {
+              "text": "无法确认应适用哪一份制度",
+              "kind": "UNKNOWN",
+              "citation_indices": [],
+              "rationale": "两份制度对同一事项规定不同且无适用关系说明",
+              "claim_id": "c4"
+            }
+          ],
+          "answer_segments": [
+            {
+              "segment_id": "s1",
+              "part": "answer",
+              "text": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "claim_ids": [
+                "c1"
+              ]
+            },
+            {
+              "segment_id": "s2",
+              "part": "answer",
+              "text": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "claim_ids": [
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s3",
+              "part": "answer",
+              "text": "无法确认应适用哪一份制度。",
+              "claim_ids": [
+                "c4"
+              ]
+            },
+            {
+              "segment_id": "r1",
+              "part": "reason",
+              "text": "无法确认两份制度各自的适用范围、优先级或替代关系。",
+              "claim_ids": [
+                "c3"
+              ]
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": true, \"result\": {\"status\": \"needs_clarification\", \"evidence_review\": {\"coverage\": \"declared_claims_checked\", \"errors\": [], \"warnings\": [], \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [], \"bindings\": [{\"claim_id\": \"c1\", \"claim_index\": 0, \"claim_text\": \"员工应在费用发生之日起 30 个自然日内提交报销申请\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 24]], \"answer_segment_ids\": [\"s1\"]}, {\"claim_id\": \"c2\", \"claim_index\": 1, \"claim_text\": \"员工应在费用发生之日起 15 个自然日内提交报销申请\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[24, 48]], \"answer_segm",
+        "observation": {
+          "ok": true,
+          "result": {
+            "status": "needs_clarification",
+            "evidence_review": {
+              "coverage": "declared_claims_checked",
+              "errors": [],
+              "warnings": [],
+              "layers": {
+                "schema": "passed_before_review",
+                "citation_integrity": "passed_before_review",
+                "answer_claim_coverage": {
+                  "errors": [],
+                  "bindings": [
+                    {
+                      "claim_id": "c1",
+                      "claim_index": 0,
+                      "claim_text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          0,
+                          24
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "s1"
+                      ]
+                    },
+                    {
+                      "claim_id": "c2",
+                      "claim_index": 1,
+                      "claim_text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          24,
+                          48
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "s2"
+                      ]
+                    },
+                    {
+                      "claim_id": "c3",
+                      "claim_index": 2,
+                      "claim_text": "无法确认两份制度各自的适用范围、优先级或替代关系",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          60,
+                          83
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "r1"
+                      ]
+                    },
+                    {
+                      "claim_id": "c4",
+                      "claim_index": 3,
+                      "claim_text": "无法确认应适用哪一份制度",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          48,
+                          60
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "s3"
+                      ]
+                    }
+                  ],
+                  "unmapped_fragments": [],
+                  "control_bindings": []
+                },
+                "evidence_support": {
+                  "errors": [],
+                  "bindings": []
+                }
+              },
+              "mechanism": "checked IDs/segments, bounded normalized alignment, independent claim support",
+              "limitation": "Not general entailment; unsupported/unrecognized relations require repair or review.",
+              "answer_quality": {
+                "mode": "enforce",
+                "gate": "enforced",
+                "findings": [],
+                "error_codes": [],
+                "human_review_required": false,
+                "task_coverage": {
+                  "targets": [
+                    {
+                      "topic": "expense",
+                      "attribute": "deadline",
+                      "request_text": "员工费用报销期限是多少",
+                      "matching_claim_indices": [
+                        0,
+                        1
+                      ],
+                      "resolution": "supported_fact",
+                      "covered": true
+                    }
+                  ],
+                  "findings": [],
+                  "coverage": "bounded_topic_attribute_checks",
+                  "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+                },
+                "contextualized_background": [],
+                "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+              }
+            }
+          }
+        },
+        "decision_summary": "两份制度分别规定30日和15日，且均无适用范围、优先级或替代关系说明；将追问改为最小化表述，避免追问中夹带事实，并逐段绑定声明。",
+        "next_action": "END",
+        "timestamp": "2026-11-11T05:37:31.076937+00:00",
+        "model_response": "{\"action\":\"ASK_CLARIFICATION\",\"arguments\":{\"question\":\"请确认贵司应适用哪一份费用报销制度？\",\"reason\":\"无法确认两份制度各自的适用范围、优先级或替代关系。\",\"answer\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。员工应在费用发生之日起 15 个自然日内提交报销申请。无法确认应适用哪一份制度。\",\"citations\":[{\"doc_id\":\"D01\",\"version_date\":\"2025-01-01\",\"quote\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\"},{\"doc_id\":\"D02\",\"version_date\":\"2025-03-01\",\"quote\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}],\"gaps\":[\"《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）\",\"两份制度之间是否存在优先级或替代关系\",\"当前对员工实际适用的报销制度\"],\"claims\":[{\"claim_id\":\"c1\",\"text\":\"员工应在费用发生之日起 30 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"《费用报销制度 A》原文逐字摘引\"},{\"claim_id\":\"c2\",\"text\":\"员工应在费用发生之日起 15 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"《费用报销制度 B》原文逐字摘引\"},{\"claim_id\":\"c3\",\"text\":\"无法确认两份制度各自的适用范围、优先级或替代关系\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"已读取的两份文件均无适用范围、优先级或替代关系说明\"},{\"claim_id\":\"c4\",\"text\":\"无法确认应适用哪一份制度\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"两份制度对同一事项规定不同且无适用关系说明\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"无法确认应适用哪一份制度。\",\"claim_ids\":[\"c4\"]},{\"segment_id\":\"r1\",\"part\":\"reason\",\"text\":\"无法确认两份制度各自的适用范围、优先级或替代关系。\",\"claim_ids\":[\"c3\"]}]},\"decision_summary\":\"两份制度分别规定30日和15日，且均无适用范围、优先级或替代关系说明；将追问改为最小化表述，避免追问中夹带事实，并逐段绑定声明。\"}",
+        "model_metadata": {
+          "input_context_sha256": "2fbfd38596b7f12e5855f55364d3a39edab617c789c6612aa1d576c65222ac9a",
+          "observation_count": 6,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 12,
+          "decision_index": 7,
+          "response_id": "b4a4ba84-8361-41a0-af59-fdbf28bdbe4a",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 6734,
+            "completion_tokens": 2764,
+            "total_tokens": 9498,
+            "prompt_tokens_details": {
+              "cached_tokens": 5376
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2179
+            },
+            "prompt_cache_hit_tokens": 5376,
+            "prompt_cache_miss_tokens": 1358
+          },
+          "http_status": 200,
+          "elapsed_seconds": 17.12031399999978,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "needs_clarification"
+      }
+    ],
+    "run_id": "f9e36e95-5450-4dc3-a481-dd82e2ffd08e",
+    "model_mode": "real",
+    "model_name": "deepseek-flash",
+    "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+    "claims": [
+      {
+        "text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+        "kind": "DIRECT",
+        "citation_indices": [
+          0
+        ],
+        "rationale": "《费用报销制度 A》原文逐字摘引",
+        "claim_id": "c1"
+      },
+      {
+        "text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+        "kind": "DIRECT",
+        "citation_indices": [
+          1
+        ],
+        "rationale": "《费用报销制度 B》原文逐字摘引",
+        "claim_id": "c2"
+      },
+      {
+        "text": "无法确认两份制度各自的适用范围、优先级或替代关系",
+        "kind": "UNKNOWN",
+        "citation_indices": [],
+        "rationale": "已读取的两份文件均无适用范围、优先级或替代关系说明",
+        "claim_id": "c3"
+      },
+      {
+        "text": "无法确认应适用哪一份制度",
+        "kind": "UNKNOWN",
+        "citation_indices": [],
+        "rationale": "两份制度对同一事项规定不同且无适用关系说明",
+        "claim_id": "c4"
+      }
+    ],
+    "evidence_review": {
+      "coverage": "declared_claims_checked",
+      "errors": [],
+      "warnings": [],
+      "layers": {
+        "schema": "passed_before_review",
+        "citation_integrity": "passed_before_review",
+        "answer_claim_coverage": {
+          "errors": [],
+          "bindings": [
+            {
+              "claim_id": "c1",
+              "claim_index": 0,
+              "claim_text": "员工应在费用发生之日起 30 个自然日内提交报销申请",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  0,
+                  24
+                ]
+              ],
+              "answer_segment_ids": [
+                "s1"
+              ]
+            },
+            {
+              "claim_id": "c2",
+              "claim_index": 1,
+              "claim_text": "员工应在费用发生之日起 15 个自然日内提交报销申请",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  24,
+                  48
+                ]
+              ],
+              "answer_segment_ids": [
+                "s2"
+              ]
+            },
+            {
+              "claim_id": "c3",
+              "claim_index": 2,
+              "claim_text": "无法确认两份制度各自的适用范围、优先级或替代关系",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  60,
+                  83
+                ]
+              ],
+              "answer_segment_ids": [
+                "r1"
+              ]
+            },
+            {
+              "claim_id": "c4",
+              "claim_index": 3,
+              "claim_text": "无法确认应适用哪一份制度",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  48,
+                  60
+                ]
+              ],
+              "answer_segment_ids": [
+                "s3"
+              ]
+            }
+          ],
+          "unmapped_fragments": [],
+          "control_bindings": []
+        },
+        "evidence_support": {
+          "errors": [],
+          "bindings": []
+        }
+      },
+      "mechanism": "checked IDs/segments, bounded normalized alignment, independent claim support",
+      "limitation": "Not general entailment; unsupported/unrecognized relations require repair or review.",
+      "answer_quality": {
+        "mode": "enforce",
+        "gate": "enforced",
+        "findings": [],
+        "error_codes": [],
+        "human_review_required": false,
+        "task_coverage": {
+          "targets": [
+            {
+              "topic": "expense",
+              "attribute": "deadline",
+              "request_text": "员工费用报销期限是多少",
+              "matching_claim_indices": [
+                0,
+                1
+              ],
+              "resolution": "supported_fact",
+              "covered": true
+            }
+          ],
+          "findings": [],
+          "coverage": "bounded_topic_attribute_checks",
+          "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+        },
+        "contextualized_background": [],
+        "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+      }
+    }
+  },
+  "recovery": {
+    "read_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "citation_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "evidence_repair_observed": true,
+    "fault_exercised": false,
+    "label": "proactive_rewrite",
+    "successful_dynamic_recovery": false,
+    "recovery_after_observation": false,
+    "original_first_search": false,
+    "first_search_failed_or_unrelated": false,
+    "first_search_empty": false,
+    "first_search_unrelated": false,
+    "search_queries": [
+      "员工费用报销期限 报销时限 规定"
+    ],
+    "second_query_changed": false,
+    "new_relevant_doc_ids": [],
+    "failure_observation_delivered": false,
+    "same_query_tool_retry": false,
+    "final_retrieved_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "full_target_recall": true,
+    "business_evidence_gate": true
+  },
+  "usage_total_tokens": 37269,
+  "http_elapsed_seconds": 68.98591429999942
+}

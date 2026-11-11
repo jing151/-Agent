@@ -1,0 +1,28 @@
+{
+  "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+  "decision_index": 4,
+  "budget_request_number": 23,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "fbc4cae8-6917-48a8-a4be-1eb7de57918c",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 3004,
+    "completion_tokens": 256,
+    "total_tokens": 3260,
+    "prompt_tokens_details": {
+      "cached_tokens": 2432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 185
+    },
+    "prompt_cache_hit_tokens": 2432,
+    "prompt_cache_miss_tokens": 572
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D05\",\"section_id\":null},\"decision_summary\":\"D04 已明确原绑定手机号失效需走 IT 服务工单人工核验；D05 是移动端密码重置另一路径，需读取全文确认其验证前提是否也依赖绑定手机号。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 2.746739100002742
+}

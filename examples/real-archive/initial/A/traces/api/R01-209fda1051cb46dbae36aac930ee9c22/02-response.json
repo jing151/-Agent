@@ -1,0 +1,28 @@
+{
+  "execution_id": "R01-209fda1051cb46dbae36aac930ee9c22",
+  "decision_index": 2,
+  "budget_request_number": 2,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "1e4afb85-7f81-4f49-bec6-dc9edb18aa51",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2175,
+    "completion_tokens": 69,
+    "total_tokens": 2244,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 383
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D03\",\"section_id\":null},\"decision_summary\":\"检索到唯一直接相关的《办公设备故障报修 FAQ》，需读取全文确认报修入口及适用范围后作答。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 0.9873967999992601
+}

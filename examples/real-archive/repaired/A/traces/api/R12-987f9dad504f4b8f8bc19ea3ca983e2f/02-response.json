@@ -1,0 +1,28 @@
+{
+  "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+  "decision_index": 2,
+  "budget_request_number": 21,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "4c0bbf8d-147f-441b-ab8b-5fe0d57d882a",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2204,
+    "completion_tokens": 113,
+    "total_tokens": 2317,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 45
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 412
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D04\",\"section_id\":null},\"decision_summary\":\"检索到《企业邮箱密码重置 FAQ》，其片段提到绑定手机失效需通过 IT 服务工单人工核验；读取全文以确认备用手机号、未绑定邮箱时的适用流程和限制。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.3388219000007666
+}

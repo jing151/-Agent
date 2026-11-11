@@ -1,0 +1,28 @@
+{
+  "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+  "decision_index": 2,
+  "budget_request_number": 2,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "1fb7727c-3759-494f-b92b-ebb6b3467876",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1985,
+    "completion_tokens": 91,
+    "total_tokens": 2076,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 29
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 193
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"年终奖 奖金 发放 办法 薪酬\",\"top_k\":3},\"decision_summary\":\"首次检索“年终奖 2026”无结果，改用奖金、薪酬相关关键词扩大检索范围，查找年终奖发放制度原文。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.5132616000009875
+}

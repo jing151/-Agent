@@ -1,0 +1,21 @@
+{
+  "authorized_by": "user",
+  "user_instruction": "授权这次修复版复验，总额仍不超过200次",
+  "originating_question": "是否授权用原200次总额中剩余最多190次，执行这次唯一修复版的24场景复验？旧版已用10次保留计数；每批仍最多40次，关键失败立即停止，不追加总额度，也不再开启第二轮循环修复。",
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "authorized_batches": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "max_total_http_attempts": 190,
+  "max_batch_http_attempts": 40,
+  "cross_version_retests_authorized": true,
+  "original_attempts_spent": 10,
+  "combined_max_http_attempts": 200,
+  "repair_cycles_authorized": 1,
+  "further_repair_cycles_authorized": false,
+  "failed_attempts_count": true
+}

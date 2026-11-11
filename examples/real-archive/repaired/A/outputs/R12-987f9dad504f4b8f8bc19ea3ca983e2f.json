@@ -1,0 +1,1604 @@
+{
+  "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+  "case_id": "R12",
+  "input": {
+    "question": "原绑定手机号已停用，备用手机号能收到验证码，但还没有绑定邮箱。我怎么找回公司邮箱密码？",
+    "history": []
+  },
+  "previous_agent_run_id": null,
+  "evaluation_mode": "real",
+  "config": {
+    "max_steps": 8,
+    "max_tool_calls": 6,
+    "require_claims": true,
+    "answer_quality_mode": "enforce"
+  },
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "http_attempts": 8,
+  "result": {
+    "answer": "依据《企业邮箱密码重置 FAQ》，若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；IT 服务工单的具体提交入口和所需材料，资料未说明。",
+    "citations": [
+      {
+        "doc_id": "D04",
+        "version_date": "2025-02-15",
+        "quote": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+      }
+    ],
+    "gaps": [
+      "备用手机号能否作为系统认可的绑定手机号用于验证",
+      "未绑定邮箱是否影响人工核验或能否作为替代验证方式",
+      "IT 服务工单的具体提交入口和所需材料"
+    ],
+    "status": "completed",
+    "trace": [
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 1,
+        "action": "SEARCH",
+        "arguments": {
+          "query": "公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程",
+          "top_k": 5
+        },
+        "tool_name": "search_documents",
+        "tool_arguments": {
+          "query": "公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程",
+          "top_k": 5
+        },
+        "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程\", \"results\": [{\"doc_id\": \"D04\", \"title\": \"企业邮箱密码重置 FAQ\", \"version_date\": \"2025-02-15\", \"scope\": \"企业邮箱账户\", \"priority\": null, \"supersedes\": [], \"section_id\": \"support\", \"snippet\": \"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\", \"score\": 0.896474, \"channel_scores\": {\"bm25\": 11.466, \"expanded_bm25\": 11.466, \"ngram_dice\": 0.3291, \"relative_support\": 1.0, \"route_support\": {\"original\": 0.24647415, \"concept_0\": 0.65}}}]}, \"progress\": {\"new_candidate_fragments\": 1, \"new_read_fragments\": 0, \"decisions_remaining\": 7, \"tool_calls_remaining\": 5, \"no_new_search_count\": 0}}",
+        "observation": {
+          "ok": true,
+          "result": {
+            "query": "公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程",
+            "results": [
+              {
+                "doc_id": "D04",
+                "title": "企业邮箱密码重置 FAQ",
+                "version_date": "2025-02-15",
+                "scope": "企业邮箱账户",
+                "priority": null,
+                "supersedes": [],
+                "section_id": "support",
+                "snippet": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+                "score": 0.896474,
+                "channel_scores": {
+                  "bm25": 11.466,
+                  "expanded_bm25": 11.466,
+                  "ngram_dice": 0.3291,
+                  "relative_support": 1.0,
+                  "route_support": {
+                    "original": 0.24647415,
+                    "concept_0": 0.65
+                  }
+                }
+              }
+            ]
+          },
+          "progress": {
+            "new_candidate_fragments": 1,
+            "new_read_fragments": 0,
+            "decisions_remaining": 7,
+            "tool_calls_remaining": 5,
+            "no_new_search_count": 0
+          }
+        },
+        "decision_summary": "先检索公司邮箱密码找回及手机/邮箱验证方式的制度，确认备用手机号能否作为验证途径。",
+        "next_action": "READ",
+        "timestamp": "2026-11-11T05:40:01.715569+00:00",
+        "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程\",\"top_k\":5},\"decision_summary\":\"先检索公司邮箱密码找回及手机/邮箱验证方式的制度，确认备用手机号能否作为验证途径。\"}",
+        "model_metadata": {
+          "input_context_sha256": "28d28c605a3ae666e61de41664b384fc28154764505b4f03a47b2d7121bad399",
+          "observation_count": 0,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 20,
+          "decision_index": 1,
+          "response_id": "ef001a72-e6c8-41b7-9241-c887d8b2380d",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1885,
+            "completion_tokens": 146,
+            "total_tokens": 2031,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 73
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 221
+          },
+          "http_status": 200,
+          "elapsed_seconds": 1.9423199000011664,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      },
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 2,
+        "action": "READ",
+        "arguments": {
+          "doc_id": "D04",
+          "section_id": null
+        },
+        "tool_name": "read_document",
+        "tool_arguments": {
+          "doc_id": "D04",
+          "section_id": null
+        },
+        "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D04\", \"title\": \"企业邮箱密码重置 FAQ\", \"doc_type\": \"FAQ\", \"version_date\": \"2025-02-15\", \"scope\": \"企业邮箱账户\", \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"web\", \"title\": \"网页端密码重置\", \"content\": \"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\"}, {\"section_id\": \"support\", \"title\": \"验证失败\", \"content\": \"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"}], \"content\": \"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 6, \"tool_calls_remaining\": 4, \"no_new_search_count\": 0}}",
+        "observation": {
+          "ok": true,
+          "result": {
+            "document": {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "doc_type": "FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "sections": [
+                {
+                  "section_id": "web",
+                  "title": "网页端密码重置",
+                  "content": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。"
+                },
+                {
+                  "section_id": "support",
+                  "title": "验证失败",
+                  "content": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+                }
+              ],
+              "content": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "section_id": null
+            }
+          },
+          "progress": {
+            "new_candidate_fragments": 0,
+            "new_read_fragments": 1,
+            "decisions_remaining": 6,
+            "tool_calls_remaining": 4,
+            "no_new_search_count": 0
+          }
+        },
+        "decision_summary": "检索到《企业邮箱密码重置 FAQ》，其片段提到绑定手机失效需通过 IT 服务工单人工核验；读取全文以确认备用手机号、未绑定邮箱时的适用流程和限制。",
+        "next_action": "SEARCH",
+        "timestamp": "2026-11-11T05:40:03.172291+00:00",
+        "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D04\",\"section_id\":null},\"decision_summary\":\"检索到《企业邮箱密码重置 FAQ》，其片段提到绑定手机失效需通过 IT 服务工单人工核验；读取全文以确认备用手机号、未绑定邮箱时的适用流程和限制。\"}",
+        "model_metadata": {
+          "input_context_sha256": "b4f6b47701bd14e87280a972ec46d2fb0af5e78b7c215b000bb968b833f27f54",
+          "observation_count": 1,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 21,
+          "decision_index": 2,
+          "response_id": "4c0bbf8d-147f-441b-ab8b-5fe0d57d882a",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2204,
+            "completion_tokens": 113,
+            "total_tokens": 2317,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 45
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 412
+          },
+          "http_status": 200,
+          "elapsed_seconds": 1.3388219000007666,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      },
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 3,
+        "action": "SEARCH",
+        "arguments": {
+          "query": "IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定",
+          "top_k": 5
+        },
+        "tool_name": "search_documents",
+        "tool_arguments": {
+          "query": "IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定",
+          "top_k": 5
+        },
+        "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定\", \"results\": [{\"doc_id\": \"D04\", \"title\": \"企业邮箱密码重置 FAQ\", \"version_date\": \"2025-02-15\", \"scope\": \"企业邮箱账户\", \"priority\": null, \"supersedes\": [], \"section_id\": \"web\", \"snippet\": \"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\", \"score\": 0.777699, \"channel_scores\": {\"bm25\": 5.6445, \"expanded_bm25\": 7.2551, \"ngram_dice\": 0.184, \"relative_support\": 0.658, \"route_support\": {\"original\": 0.35, \"concept_0\": 0.42769923}}}, {\"doc_id\": \"D05\", \"title\": \"企业邮箱密码重置移动端 FAQ\", \"version_date\": \"2025-04-01\", \"scope\": \"企业邮箱移动端密码重置\", \"priority\": null, \"supersedes\": [], \"section_id\": \"mobile\", \"snippet\": \"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置",
+        "observation": {
+          "ok": true,
+          "result": {
+            "query": "IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定",
+            "results": [
+              {
+                "doc_id": "D04",
+                "title": "企业邮箱密码重置 FAQ",
+                "version_date": "2025-02-15",
+                "scope": "企业邮箱账户",
+                "priority": null,
+                "supersedes": [],
+                "section_id": "web",
+                "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+                "score": 0.777699,
+                "channel_scores": {
+                  "bm25": 5.6445,
+                  "expanded_bm25": 7.2551,
+                  "ngram_dice": 0.184,
+                  "relative_support": 0.658,
+                  "route_support": {
+                    "original": 0.35,
+                    "concept_0": 0.42769923
+                  }
+                }
+              },
+              {
+                "doc_id": "D05",
+                "title": "企业邮箱密码重置移动端 FAQ",
+                "version_date": "2025-04-01",
+                "scope": "企业邮箱移动端密码重置",
+                "priority": null,
+                "supersedes": [],
+                "section_id": "mobile",
+                "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+                "score": 0.65,
+                "channel_scores": {
+                  "bm25": 8.3547,
+                  "expanded_bm25": 10.0332,
+                  "ngram_dice": 0.2208,
+                  "relative_support": 1.0,
+                  "route_support": {
+                    "concept_0": 0.65
+                  }
+                }
+              }
+            ]
+          },
+          "progress": {
+            "new_candidate_fragments": 2,
+            "new_read_fragments": 0,
+            "decisions_remaining": 5,
+            "tool_calls_remaining": 3,
+            "no_new_search_count": 0
+          }
+        },
+        "decision_summary": "已读取《企业邮箱密码重置 FAQ》，明确原绑定手机号失效应走 IT 服务工单人工核验；再检索是否有备用手机号或未绑定邮箱的具体处理说明。",
+        "next_action": "READ",
+        "timestamp": "2026-11-11T05:40:08.032280+00:00",
+        "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定\",\"top_k\":5},\"decision_summary\":\"已读取《企业邮箱密码重置 FAQ》，明确原绑定手机号失效应走 IT 服务工单人工核验；再检索是否有备用手机号或未绑定邮箱的具体处理说明。\"}",
+        "model_metadata": {
+          "input_context_sha256": "263dd384445266586b8fd06be165340029cf3156026a476c6aa5fdff645a49c7",
+          "observation_count": 2,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 22,
+          "decision_index": 3,
+          "response_id": "155091b0-a1aa-42b7-a5a3-3034ecc35658",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2509,
+            "completion_tokens": 540,
+            "total_tokens": 3049,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 455
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 333
+          },
+          "http_status": 200,
+          "elapsed_seconds": 4.749547999999777,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      },
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 4,
+        "action": "READ",
+        "arguments": {
+          "doc_id": "D05",
+          "section_id": null
+        },
+        "tool_name": "read_document",
+        "tool_arguments": {
+          "doc_id": "D05",
+          "section_id": null
+        },
+        "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D05\", \"title\": \"企业邮箱密码重置移动端 FAQ\", \"doc_type\": \"FAQ\", \"version_date\": \"2025-04-01\", \"scope\": \"企业邮箱移动端密码重置\", \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"mobile\", \"title\": \"手机操作\", \"content\": \"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\"}], \"content\": \"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 4, \"tool_calls_remaining\": 2, \"no_new_search_count\": 0}}",
+        "observation": {
+          "ok": true,
+          "result": {
+            "document": {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "doc_type": "FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "sections": [
+                {
+                  "section_id": "mobile",
+                  "title": "手机操作",
+                  "content": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+                }
+              ],
+              "content": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "section_id": null
+            }
+          },
+          "progress": {
+            "new_candidate_fragments": 0,
+            "new_read_fragments": 1,
+            "decisions_remaining": 4,
+            "tool_calls_remaining": 2,
+            "no_new_search_count": 0
+          }
+        },
+        "decision_summary": "D04 已明确原绑定手机号失效需走 IT 服务工单人工核验；D05 是移动端密码重置另一路径，需读取全文确认其验证前提是否也依赖绑定手机号。",
+        "next_action": "ANSWER",
+        "timestamp": "2026-11-11T05:40:10.889985+00:00",
+        "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D05\",\"section_id\":null},\"decision_summary\":\"D04 已明确原绑定手机号失效需走 IT 服务工单人工核验；D05 是移动端密码重置另一路径，需读取全文确认其验证前提是否也依赖绑定手机号。\"}",
+        "model_metadata": {
+          "input_context_sha256": "4b54b26bd0ad87dec44b52a1d41fbc82757b5c3d564c51bf92748732239d3c6e",
+          "observation_count": 3,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 23,
+          "decision_index": 4,
+          "response_id": "fbc4cae8-6917-48a8-a4be-1eb7de57918c",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3004,
+            "completion_tokens": 256,
+            "total_tokens": 3260,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 185
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 572
+          },
+          "http_status": 200,
+          "elapsed_seconds": 2.746739100002742,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      },
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 5,
+        "action": "ANSWER",
+        "arguments": {
+          "answer": "依据《企业邮箱密码重置 FAQ》，若原绑定手机号已失效，应通过 IT 服务工单申请人工身份核验。该 FAQ 的网页端自助重置要求通过“绑定的工作手机号”验证身份；移动端 FAQ 也要求完成“绑定手机号验证”。因此，原绑定号停用后应按上述人工核验路径处理，不能仅凭备用手机号能收到验证码就认定可完成自助重置。备用号是否属于系统认可的绑定工作手机号、未绑定邮箱是否影响人工核验或可作为替代验证方式，资料均未说明。",
+          "citations": [
+            {
+              "doc_id": "D04",
+              "version_date": "2025-02-15",
+              "quote": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2025-02-15",
+              "quote": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。"
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2025-04-01",
+              "quote": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+            }
+          ],
+          "gaps": [
+            "备用手机号是否属于系统认可的绑定工作手机号",
+            "未绑定邮箱是否影响人工核验或可否作为替代验证方式",
+            "IT 服务工单的具体提交入口和所需材料"
+          ],
+          "status": "completed",
+          "claims": [
+            {
+              "text": "若原绑定手机号已失效，应通过 IT 服务工单申请人工身份核验。",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "D04“验证失败”原文直接规定。",
+              "claim_id": "c1"
+            },
+            {
+              "text": "网页端和移动端自助重置均以绑定的工作手机号验证为前提。",
+              "kind": "DIRECT",
+              "citation_indices": [
+                1,
+                2
+              ],
+              "rationale": "D04网页端与D05移动端原文均要求绑定手机号验证。",
+              "claim_id": "c2"
+            },
+            {
+              "text": "据此只能推断：原绑定号停用后应按人工核验路径处理，不能仅凭备用号能收码认定自助重置可用。",
+              "kind": "INFERENCE",
+              "citation_indices": [
+                0,
+                1,
+                2
+              ],
+              "rationale": "D04对失效绑定号指向人工核验；D05自助流程要求已完成绑定手机号验证。",
+              "claim_id": "c3"
+            },
+            {
+              "text": "备用号是否为系统认可的绑定工作手机号、未绑定邮箱是否影响人工核验或可否替代验证，资料未说明。",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0,
+                1,
+                2
+              ],
+              "rationale": "已读资料只提绑定手机号验证和绑定号失效转工单，未提备用号及未绑定邮箱。",
+              "claim_id": "c4"
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"evidence_support_failed\", \"validation_stage\": \"answer_claim_coverage\", \"details\": [\"claim_1:not_in_answer\", \"claim_2:not_in_answer\", \"claim_3:not_in_answer\", \"unmapped_answer_text\", \"claim_0:direct_not_in_cited_quote\", \"claim_1:direct_not_in_cited_quote\", \"claim_2:necessary_condition_direction_not_supported\"], \"submitted_to_user\": false, \"repair_hint\": \"核对unmapped_fragments及claim绑定，覆盖answer和reason中全部事实；保留真实问题，不要用资料不足替代映射修复。\", \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [\"claim_1:not_in_answer\", \"claim_2:not_in_answer\", \"claim_3:not_in_answer\", \"unmapped_answer_text\"], \"bindings",
+        "observation": {
+          "ok": false,
+          "error": {
+            "code": "evidence_support_failed",
+            "validation_stage": "answer_claim_coverage",
+            "details": [
+              "claim_1:not_in_answer",
+              "claim_2:not_in_answer",
+              "claim_3:not_in_answer",
+              "unmapped_answer_text",
+              "claim_0:direct_not_in_cited_quote",
+              "claim_1:direct_not_in_cited_quote",
+              "claim_2:necessary_condition_direction_not_supported"
+            ],
+            "submitted_to_user": false,
+            "repair_hint": "核对unmapped_fragments及claim绑定，覆盖answer和reason中全部事实；保留真实问题，不要用资料不足替代映射修复。",
+            "layers": {
+              "schema": "passed_before_review",
+              "citation_integrity": "passed_before_review",
+              "answer_claim_coverage": {
+                "errors": [
+                  "claim_1:not_in_answer",
+                  "claim_2:not_in_answer",
+                  "claim_3:not_in_answer",
+                  "unmapped_answer_text"
+                ],
+                "bindings": [
+                  {
+                    "claim_id": "c1",
+                    "claim_index": 0,
+                    "claim_text": "若原绑定手机号已失效，应通过 IT 服务工单申请人工身份核验。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        0,
+                        27
+                      ]
+                    ]
+                  },
+                  {
+                    "claim_id": "c2",
+                    "claim_index": 1,
+                    "claim_text": "网页端和移动端自助重置均以绑定的工作手机号验证为前提。",
+                    "alignment": "unmapped",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": []
+                  },
+                  {
+                    "claim_id": "c3",
+                    "claim_index": 2,
+                    "claim_text": "据此只能推断：原绑定号停用后应按人工核验路径处理，不能仅凭备用号能收码认定自助重置可用。",
+                    "alignment": "unmapped",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": []
+                  },
+                  {
+                    "claim_id": "c4",
+                    "claim_index": 3,
+                    "claim_text": "备用号是否为系统认可的绑定工作手机号、未绑定邮箱是否影响人工核验或可否替代验证，资料未说明。",
+                    "alignment": "unmapped",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": []
+                  }
+                ],
+                "unmapped_fragments": [
+                  {
+                    "start_normalized": 27,
+                    "end_normalized": 167,
+                    "text_normalized": "该faq的网页端自助重置要求通过绑定的工作手机号验证身份移动端faq也要求完成绑定手机号验证因此原绑定号停用后应按上述人工核验路径处理不能仅凭备用手机号能收到验证码就认定可完成自助重置备用号是否属于系统认可的绑定工作手机号未绑定邮箱是否影响人工核验或可作为替代验证方式资料均未明确",
+                    "draft_units": [
+                      "依据《企业邮箱密码重置 FAQ》",
+                      "该 FAQ 的网页端自助重置要求通过“绑定的工作手机号”验证身份",
+                      "移动端 FAQ 也要求完成“绑定手机号验证”",
+                      "因此"
+                    ]
+                  }
+                ],
+                "control_bindings": []
+              },
+              "evidence_support": {
+                "errors": [
+                  "claim_0:direct_not_in_cited_quote",
+                  "claim_1:direct_not_in_cited_quote",
+                  "claim_2:necessary_condition_direction_not_supported"
+                ],
+                "bindings": []
+              }
+            }
+          }
+        },
+        "decision_summary": "已读取企业邮箱密码重置FAQ：原绑定手机号失效应转IT工单人工核验；网页/移动端自助均以绑定手机号验证为前提。备用号是否可作为绑定号、未绑定邮箱的影响未有资料，需列缺口。",
+        "next_action": "ANSWER",
+        "timestamp": "2026-11-11T05:40:34.860864+00:00",
+        "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"依据《企业邮箱密码重置 FAQ》，若原绑定手机号已失效，应通过 IT 服务工单申请人工身份核验。该 FAQ 的网页端自助重置要求通过“绑定的工作手机号”验证身份；移动端 FAQ 也要求完成“绑定手机号验证”。因此，原绑定号停用后应按上述人工核验路径处理，不能仅凭备用手机号能收到验证码就认定可完成自助重置。备用号是否属于系统认可的绑定工作手机号、未绑定邮箱是否影响人工核验或可作为替代验证方式，资料均未说明。\",\"citations\":[{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"},{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\"},{\"doc_id\":\"D05\",\"version_date\":\"2025-04-01\",\"quote\":\"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\"}],\"gaps\":[\"备用手机号是否属于系统认可的绑定工作手机号\",\"未绑定邮箱是否影响人工核验或可否作为替代验证方式\",\"IT 服务工单的具体提交入口和所需材料\"],\"status\":\"completed\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"若原绑定手机号已失效，应通过 IT 服务工单申请人工身份核验。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"D04“验证失败”原文直接规定。\"},{\"claim_id\":\"c2\",\"text\":\"网页端和移动端自助重置均以绑定的工作手机号验证为前提。\",\"kind\":\"DIRECT\",\"citation_indices\":[1,2],\"rationale\":\"D04网页端与D05移动端原文均要求绑定手机号验证。\"},{\"claim_id\":\"c3\",\"text\":\"据此只能推断：原绑定号停用后应按人工核验路径处理，不能仅凭备用号能收码认定自助重置可用。\",\"kind\":\"INFERENCE\",\"citation_indices\":[0,1,2],\"rationale\":\"D04对失效绑定号指向人工核验；D05自助流程要求已完成绑定手机号验证。\"},{\"claim_id\":\"c4\",\"text\":\"备用号是否为系统认可的绑定工作手机号、未绑定邮箱是否影响人工核验或可否替代验证，资料未说明。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1,2],\"rationale\":\"已读资料只提绑定手机号验证和绑定号失效转工单，未提备用号及未绑定邮箱。\"}]},\"decision_summary\":\"已读取企业邮箱密码重置FAQ：原绑定手机号失效应转IT工单人工核验；网页/移动端自助均以绑定手机号验证为前提。备用号是否可作为绑定号、未绑定邮箱的影响未有资料，需列缺口。\"}",
+        "model_metadata": {
+          "input_context_sha256": "9ab3b857d5fea3ddc9c25c87ebde86a61d0495185869eb1d23c65f8b14ff4ee1",
+          "observation_count": 4,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 24,
+          "decision_index": 5,
+          "response_id": "9c42ecd1-c4be-4d99-9c01-4e61d590a361",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3263,
+            "completion_tokens": 3863,
+            "total_tokens": 7126,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3194
+            },
+            "prompt_cache_hit_tokens": 2944,
+            "prompt_cache_miss_tokens": 319
+          },
+          "http_status": 200,
+          "elapsed_seconds": 23.84460119999858,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      },
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 6,
+        "action": "ANSWER",
+        "arguments": {
+          "answer": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。通过绑定的工作手机号验证身份后设置新密码。完成绑定手机号验证后设置新密码。备用手机号是否属于系统认可的绑定工作手机号，资料未明确；未绑定邮箱是否影响人工核验或可作为替代验证方式，资料也未明确。",
+          "citations": [
+            {
+              "doc_id": "D04",
+              "version_date": "2025-02-15",
+              "quote": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2025-02-15",
+              "quote": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。"
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2025-04-01",
+              "quote": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+            }
+          ],
+          "gaps": [
+            "备用手机号是否属于系统认可的绑定工作手机号",
+            "未绑定邮箱是否影响人工核验或可否作为替代验证方式",
+            "IT 服务工单的具体提交入口和所需材料"
+          ],
+          "status": "completed",
+          "claims": [
+            {
+              "text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "D04“验证失败”原文直接规定。",
+              "claim_id": "c1"
+            },
+            {
+              "text": "通过绑定的工作手机号验证身份后设置新密码。",
+              "kind": "DIRECT",
+              "citation_indices": [
+                1
+              ],
+              "rationale": "D04网页端原文直接说明。",
+              "claim_id": "c2"
+            },
+            {
+              "text": "完成绑定手机号验证后设置新密码。",
+              "kind": "DIRECT",
+              "citation_indices": [
+                2
+              ],
+              "rationale": "D05移动端原文直接说明。",
+              "claim_id": "c3"
+            },
+            {
+              "text": "备用手机号是否属于系统认可的绑定工作手机号，资料未明确；",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0,
+                1,
+                2
+              ],
+              "rationale": "已读资料未说明备用手机号的验证效力。",
+              "claim_id": "c4"
+            },
+            {
+              "text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料也未明确。",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0,
+                1,
+                2
+              ],
+              "rationale": "已读资料未提及未绑定邮箱的处理。",
+              "claim_id": "c5"
+            }
+          ],
+          "answer_segments": [
+            {
+              "segment_id": "s1",
+              "part": "answer",
+              "text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "claim_ids": [
+                "c1"
+              ]
+            },
+            {
+              "segment_id": "s2",
+              "part": "answer",
+              "text": "通过绑定的工作手机号验证身份后设置新密码。",
+              "claim_ids": [
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s3",
+              "part": "answer",
+              "text": "完成绑定手机号验证后设置新密码。",
+              "claim_ids": [
+                "c3"
+              ]
+            },
+            {
+              "segment_id": "s4",
+              "part": "answer",
+              "text": "备用手机号是否属于系统认可的绑定工作手机号，资料未明确；",
+              "claim_ids": [
+                "c4"
+              ]
+            },
+            {
+              "segment_id": "s5",
+              "part": "answer",
+              "text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料也未明确。",
+              "claim_ids": [
+                "c5"
+              ]
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"answer_quality_failed\", \"validation_stage\": \"answer_applicability\", \"details\": [\"unavailable_verification_channel\"], \"submitted_to_user\": false, \"repair_hint\": \"引文真实不等于适用于当前用户。核对用户明确条件与操作前提，自主修正表述、补读或澄清；不要编造可用路径。\", \"layers\": {\"task_applicability\": {\"mode\": \"enforce\", \"gate\": \"enforced\", \"findings\": [{\"code\": \"unavailable_verification_channel\", \"severity\": \"error\", \"answer_span\": [30, 50], \"input_evidence\": {\"state\": \"unavailable\", \"message_index\": 0, \"role\": \"user\", \"entity_role\": \"bound_contact\", \"contact_reference\": \"手机号\", \"quote\": \"手机号已停用\", \"binding_basis\": \"primary_user_contact\", \"state_scope\": \"actual_user_statement\"}, \"message\": \"用户已明确该验证联系方式不可用，不能把依赖它的",
+        "observation": {
+          "ok": false,
+          "error": {
+            "code": "answer_quality_failed",
+            "validation_stage": "answer_applicability",
+            "details": [
+              "unavailable_verification_channel"
+            ],
+            "submitted_to_user": false,
+            "repair_hint": "引文真实不等于适用于当前用户。核对用户明确条件与操作前提，自主修正表述、补读或澄清；不要编造可用路径。",
+            "layers": {
+              "task_applicability": {
+                "mode": "enforce",
+                "gate": "enforced",
+                "findings": [
+                  {
+                    "code": "unavailable_verification_channel",
+                    "severity": "error",
+                    "answer_span": [
+                      30,
+                      50
+                    ],
+                    "input_evidence": {
+                      "state": "unavailable",
+                      "message_index": 0,
+                      "role": "user",
+                      "entity_role": "bound_contact",
+                      "contact_reference": "手机号",
+                      "quote": "手机号已停用",
+                      "binding_basis": "primary_user_contact",
+                      "state_scope": "actual_user_statement"
+                    },
+                    "message": "用户已明确该验证联系方式不可用，不能把依赖它的通用流程直接作为当前操作建议。",
+                    "repair_hint": "保留引文的适用前提；区分通用事实与当前可执行建议，或仅回答已有支持的可行路径。不要补造绕过核验的方法。"
+                  },
+                  {
+                    "code": "unavailable_verification_channel",
+                    "severity": "error",
+                    "answer_span": [
+                      51,
+                      66
+                    ],
+                    "input_evidence": {
+                      "state": "unavailable",
+                      "message_index": 0,
+                      "role": "user",
+                      "entity_role": "bound_contact",
+                      "contact_reference": "手机号",
+                      "quote": "手机号已停用",
+                      "binding_basis": "primary_user_contact",
+                      "state_scope": "actual_user_statement"
+                    },
+                    "message": "用户已明确该验证联系方式不可用，不能把依赖它的通用流程直接作为当前操作建议。",
+                    "repair_hint": "保留引文的适用前提；区分通用事实与当前可执行建议，或仅回答已有支持的可行路径。不要补造绕过核验的方法。"
+                  }
+                ],
+                "error_codes": [
+                  "unavailable_verification_channel"
+                ],
+                "human_review_required": true,
+                "task_coverage": {
+                  "targets": [
+                    {
+                      "topic": null,
+                      "attribute": null,
+                      "request_text": "原绑定手机号已停用",
+                      "matching_claim_indices": [
+                        0,
+                        1,
+                        2
+                      ],
+                      "resolution": "supported_fact",
+                      "covered": true
+                    },
+                    {
+                      "topic": null,
+                      "attribute": null,
+                      "request_text": "备用手机号能收到验证码",
+                      "matching_claim_indices": [
+                        0,
+                        1,
+                        2
+                      ],
+                      "resolution": "supported_fact",
+                      "covered": true
+                    },
+                    {
+                      "topic": "mail",
+                      "attribute": null,
+                      "request_text": "但还没有绑定邮箱。我怎么找回公司邮箱密码",
+                      "matching_claim_indices": [
+                        0,
+                        1,
+                        2
+                      ],
+                      "resolution": "supported_fact",
+                      "covered": true
+                    }
+                  ],
+                  "findings": [],
+                  "coverage": "bounded_topic_attribute_checks",
+                  "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+                },
+                "contextualized_background": [],
+                "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+              }
+            }
+          }
+        },
+        "decision_summary": "已读取D04与D05：D04明确绑定手机号失效走IT工单人工核验，D05移动端要求完成绑定手机号验证。备用号效力及未绑定邮箱影响未规定，列为未知缺口。",
+        "next_action": "ANSWER",
+        "timestamp": "2026-11-11T05:40:58.072215+00:00",
+        "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。通过绑定的工作手机号验证身份后设置新密码。完成绑定手机号验证后设置新密码。备用手机号是否属于系统认可的绑定工作手机号，资料未明确；未绑定邮箱是否影响人工核验或可作为替代验证方式，资料也未明确。\",\"citations\":[{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"},{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\"},{\"doc_id\":\"D05\",\"version_date\":\"2025-04-01\",\"quote\":\"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\"}],\"gaps\":[\"备用手机号是否属于系统认可的绑定工作手机号\",\"未绑定邮箱是否影响人工核验或可否作为替代验证方式\",\"IT 服务工单的具体提交入口和所需材料\"],\"status\":\"completed\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"D04“验证失败”原文直接规定。\"},{\"claim_id\":\"c2\",\"text\":\"通过绑定的工作手机号验证身份后设置新密码。\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"D04网页端原文直接说明。\"},{\"claim_id\":\"c3\",\"text\":\"完成绑定手机号验证后设置新密码。\",\"kind\":\"DIRECT\",\"citation_indices\":[2],\"rationale\":\"D05移动端原文直接说明。\"},{\"claim_id\":\"c4\",\"text\":\"备用手机号是否属于系统认可的绑定工作手机号，资料未明确；\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1,2],\"rationale\":\"已读资料未说明备用手机号的验证效力。\"},{\"claim_id\":\"c5\",\"text\":\"未绑定邮箱是否影响人工核验或可作为替代验证方式，资料也未明确。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1,2],\"rationale\":\"已读资料未提及未绑定邮箱的处理。\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"通过绑定的工作手机号验证身份后设置新密码。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"完成绑定手机号验证后设置新密码。\",\"claim_ids\":[\"c3\"]},{\"segment_id\":\"s4\",\"part\":\"answer\",\"text\":\"备用手机号是否属于系统认可的绑定工作手机号，资料未明确；\",\"claim_ids\":[\"c4\"]},{\"segment_id\":\"s5\",\"part\":\"answer\",\"text\":\"未绑定邮箱是否影响人工核验或可作为替代验证方式，资料也未明确。\",\"claim_ids\":[\"c5\"]}]},\"decision_summary\":\"已读取D04与D05：D04明确绑定手机号失效走IT工单人工核验，D05移动端要求完成绑定手机号验证。备用号效力及未绑定邮箱影响未规定，列为未知缺口。\"}",
+        "model_metadata": {
+          "input_context_sha256": "009cc32d3e3519a698e17573e41c314615b58ad79678057bb0ac0ea204eab684",
+          "observation_count": 5,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 25,
+          "decision_index": 6,
+          "response_id": "16bebc45-b300-4ed6-90c6-44f75218337f",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4705,
+            "completion_tokens": 4043,
+            "total_tokens": 8748,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3262
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 1505
+          },
+          "http_status": 200,
+          "elapsed_seconds": 23.05608840000059,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      },
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 7,
+        "action": "ANSWER",
+        "arguments": {
+          "answer": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。已读资料中的自助重置流程以绑定手机号验证为前提；但不能据此认定你的备用手机号可用于该流程，也不能把依赖原绑定手机号的自助步骤作为当前可执行方案。备用手机号是否属于系统认可的绑定工作手机号、能否用于替代验证，资料未明确。未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确。IT 服务工单的具体提交入口和所需材料，资料未说明。",
+          "citations": [
+            {
+              "doc_id": "D04",
+              "version_date": "2025-02-15",
+              "quote": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+            },
+            {
+              "doc_id": "D04",
+              "version_date": "2025-02-15",
+              "quote": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。"
+            },
+            {
+              "doc_id": "D05",
+              "version_date": "2025-04-01",
+              "quote": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+            }
+          ],
+          "gaps": [
+            "备用手机号是否属于系统认可的绑定工作手机号",
+            "未绑定邮箱是否影响人工核验或可否作为替代验证方式",
+            "IT 服务工单的具体提交入口和所需材料"
+          ],
+          "status": "completed",
+          "claims": [
+            {
+              "text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "D04“验证失败”原文直接规定。",
+              "claim_id": "c1"
+            },
+            {
+              "text": "已读资料中的自助重置流程以绑定手机号验证为前提；但不能据此认定你的备用手机号可用于该流程，也不能把依赖原绑定手机号的自助步骤作为当前可执行方案。",
+              "kind": "INFERENCE",
+              "citation_indices": [
+                0,
+                1,
+                2
+              ],
+              "rationale": "D04网页端和D05移动端均要求绑定手机号验证，且D04对失效绑定号指向人工核验，故只能作有限推断。",
+              "claim_id": "c2"
+            },
+            {
+              "text": "备用手机号是否属于系统认可的绑定工作手机号、能否用于替代验证，资料未明确。",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0,
+                1,
+                2
+              ],
+              "rationale": "已读资料未说明备用手机号的验证效力。",
+              "claim_id": "c3"
+            },
+            {
+              "text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确。",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0,
+                1,
+                2
+              ],
+              "rationale": "已读资料未提及未绑定邮箱的处理。",
+              "claim_id": "c4"
+            },
+            {
+              "text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "D04只要求提交IT服务工单，未列入口和材料。",
+              "claim_id": "c5"
+            }
+          ],
+          "answer_segments": [
+            {
+              "segment_id": "s1",
+              "part": "answer",
+              "text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "claim_ids": [
+                "c1"
+              ]
+            },
+            {
+              "segment_id": "s2",
+              "part": "answer",
+              "text": "已读资料中的自助重置流程以绑定手机号验证为前提；但不能据此认定你的备用手机号可用于该流程，也不能把依赖原绑定手机号的自助步骤作为当前可执行方案。",
+              "claim_ids": [
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s3",
+              "part": "answer",
+              "text": "备用手机号是否属于系统认可的绑定工作手机号、能否用于替代验证，资料未明确。",
+              "claim_ids": [
+                "c3"
+              ]
+            },
+            {
+              "segment_id": "s4",
+              "part": "answer",
+              "text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确。",
+              "claim_ids": [
+                "c4"
+              ]
+            },
+            {
+              "segment_id": "s5",
+              "part": "answer",
+              "text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+              "claim_ids": [
+                "c5"
+              ]
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"evidence_support_failed\", \"validation_stage\": \"evidence_support\", \"details\": [\"claim_1:inference_requires_basis_and_explicit_marker\", \"claim_1:necessary_condition_direction_not_supported\"], \"submitted_to_user\": false, \"repair_hint\": \"映射成功不代表引文支持。限定结论、公开标明推论或承认未知；需要时由你决定补读。\", \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [], \"bindings\": [{\"claim_id\": \"c1\", \"claim_index\": 0, \"claim_text\": \"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 26]], \"answer_segment_ids\": [\"s1\"]}, {\"claim_id\": \"c2\", \"claim_ind",
+        "observation": {
+          "ok": false,
+          "error": {
+            "code": "evidence_support_failed",
+            "validation_stage": "evidence_support",
+            "details": [
+              "claim_1:inference_requires_basis_and_explicit_marker",
+              "claim_1:necessary_condition_direction_not_supported"
+            ],
+            "submitted_to_user": false,
+            "repair_hint": "映射成功不代表引文支持。限定结论、公开标明推论或承认未知；需要时由你决定补读。",
+            "layers": {
+              "schema": "passed_before_review",
+              "citation_integrity": "passed_before_review",
+              "answer_claim_coverage": {
+                "errors": [],
+                "bindings": [
+                  {
+                    "claim_id": "c1",
+                    "claim_index": 0,
+                    "claim_text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        0,
+                        26
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s1"
+                    ]
+                  },
+                  {
+                    "claim_id": "c2",
+                    "claim_index": 1,
+                    "claim_text": "已读资料中的自助重置流程以绑定手机号验证为前提；但不能据此认定你的备用手机号可用于该流程，也不能把依赖原绑定手机号的自助步骤作为当前可执行方案。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        26,
+                        94
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s2"
+                    ]
+                  },
+                  {
+                    "claim_id": "c3",
+                    "claim_index": 2,
+                    "claim_text": "备用手机号是否属于系统认可的绑定工作手机号、能否用于替代验证，资料未明确。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        94,
+                        128
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s3"
+                    ]
+                  },
+                  {
+                    "claim_id": "c4",
+                    "claim_index": 3,
+                    "claim_text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        128,
+                        156
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s4"
+                    ]
+                  },
+                  {
+                    "claim_id": "c5",
+                    "claim_index": 4,
+                    "claim_text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        156,
+                        179
+                      ]
+                    ],
+                    "answer_segment_ids": [
+                      "s5"
+                    ]
+                  }
+                ],
+                "unmapped_fragments": [],
+                "control_bindings": []
+              },
+              "evidence_support": {
+                "errors": [
+                  "claim_1:inference_requires_basis_and_explicit_marker",
+                  "claim_1:necessary_condition_direction_not_supported"
+                ],
+                "bindings": []
+              }
+            }
+          }
+        },
+        "decision_summary": "已读取D04、D05：D04明确绑定手机号失效应走IT工单人工核验，且自助流程以绑定手机号验证为前提。回答仅将人工核验作为当前路径，并列明备用号、未绑定邮箱及工单入口材料未明确。",
+        "next_action": "ANSWER",
+        "timestamp": "2026-11-11T05:41:18.243671+00:00",
+        "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。已读资料中的自助重置流程以绑定手机号验证为前提；但不能据此认定你的备用手机号可用于该流程，也不能把依赖原绑定手机号的自助步骤作为当前可执行方案。备用手机号是否属于系统认可的绑定工作手机号、能否用于替代验证，资料未明确。未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确。IT 服务工单的具体提交入口和所需材料，资料未说明。\",\"citations\":[{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"},{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\"},{\"doc_id\":\"D05\",\"version_date\":\"2025-04-01\",\"quote\":\"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\"}],\"gaps\":[\"备用手机号是否属于系统认可的绑定工作手机号\",\"未绑定邮箱是否影响人工核验或可否作为替代验证方式\",\"IT 服务工单的具体提交入口和所需材料\"],\"status\":\"completed\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"D04“验证失败”原文直接规定。\"},{\"claim_id\":\"c2\",\"text\":\"已读资料中的自助重置流程以绑定手机号验证为前提；但不能据此认定你的备用手机号可用于该流程，也不能把依赖原绑定手机号的自助步骤作为当前可执行方案。\",\"kind\":\"INFERENCE\",\"citation_indices\":[0,1,2],\"rationale\":\"D04网页端和D05移动端均要求绑定手机号验证，且D04对失效绑定号指向人工核验，故只能作有限推断。\"},{\"claim_id\":\"c3\",\"text\":\"备用手机号是否属于系统认可的绑定工作手机号、能否用于替代验证，资料未明确。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1,2],\"rationale\":\"已读资料未说明备用手机号的验证效力。\"},{\"claim_id\":\"c4\",\"text\":\"未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1,2],\"rationale\":\"已读资料未提及未绑定邮箱的处理。\"},{\"claim_id\":\"c5\",\"text\":\"IT 服务工单的具体提交入口和所需材料，资料未说明。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0],\"rationale\":\"D04只要求提交IT服务工单，未列入口和材料。\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"已读资料中的自助重置流程以绑定手机号验证为前提；但不能据此认定你的备用手机号可用于该流程，也不能把依赖原绑定手机号的自助步骤作为当前可执行方案。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"备用手机号是否属于系统认可的绑定工作手机号、能否用于替代验证，资料未明确。\",\"claim_ids\":[\"c3\"]},{\"segment_id\":\"s4\",\"part\":\"answer\",\"text\":\"未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确。\",\"claim_ids\":[\"c4\"]},{\"segment_id\":\"s5\",\"part\":\"answer\",\"text\":\"IT 服务工单的具体提交入口和所需材料，资料未说明。\",\"claim_ids\":[\"c5\"]}]},\"decision_summary\":\"已读取D04、D05：D04明确绑定手机号失效应走IT工单人工核验，且自助流程以绑定手机号验证为前提。回答仅将人工核验作为当前路径，并列明备用号、未绑定邮箱及工单入口材料未明确。\"}",
+        "model_metadata": {
+          "input_context_sha256": "2ebd6909313705f70df67938ca83571b262341316b8857a8e0b9efcd4686c0e0",
+          "observation_count": 6,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 26,
+          "decision_index": 7,
+          "response_id": "7b4ae393-aa16-4726-9350-fb8bf576adcb",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 6283,
+            "completion_tokens": 3586,
+            "total_tokens": 9869,
+            "prompt_tokens_details": {
+              "cached_tokens": 4608
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2639
+            },
+            "prompt_cache_hit_tokens": 4608,
+            "prompt_cache_miss_tokens": 1675
+          },
+          "http_status": 200,
+          "elapsed_seconds": 20.045796999998856,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      },
+      {
+        "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+        "model_mode": "real",
+        "model_name": "deepseek-flash",
+        "step": 8,
+        "action": "ANSWER",
+        "arguments": {
+          "answer": "依据《企业邮箱密码重置 FAQ》，若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；IT 服务工单的具体提交入口和所需材料，资料未说明。",
+          "citations": [
+            {
+              "doc_id": "D04",
+              "version_date": "2025-02-15",
+              "quote": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+            }
+          ],
+          "gaps": [
+            "备用手机号能否作为系统认可的绑定手机号用于验证",
+            "未绑定邮箱是否影响人工核验或能否作为替代验证方式",
+            "IT 服务工单的具体提交入口和所需材料"
+          ],
+          "status": "completed",
+          "claims": [
+            {
+              "text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "kind": "DIRECT",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "D04“验证失败”原文直接规定。",
+              "claim_id": "c1"
+            },
+            {
+              "text": "备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "已读资料只说明绑定手机号失效转人工核验，未说明备用手机号的验证效力。",
+              "claim_id": "c2"
+            },
+            {
+              "text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "已读资料未提及未绑定邮箱的处理。",
+              "claim_id": "c3"
+            },
+            {
+              "text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+              "kind": "UNKNOWN",
+              "citation_indices": [
+                0
+              ],
+              "rationale": "D04只要求提交 IT 服务工单，未列入口和材料。",
+              "claim_id": "c4"
+            }
+          ],
+          "answer_segments": [
+            {
+              "segment_id": "s1",
+              "part": "answer",
+              "text": "依据《企业邮箱密码重置 FAQ》，若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "claim_ids": [
+                "c1"
+              ]
+            },
+            {
+              "segment_id": "s2",
+              "part": "answer",
+              "text": "备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；",
+              "claim_ids": [
+                "c2"
+              ]
+            },
+            {
+              "segment_id": "s3",
+              "part": "answer",
+              "text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；",
+              "claim_ids": [
+                "c3"
+              ]
+            },
+            {
+              "segment_id": "s4",
+              "part": "answer",
+              "text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+              "claim_ids": [
+                "c4"
+              ]
+            }
+          ]
+        },
+        "tool_name": null,
+        "tool_arguments": {},
+        "observation_summary": "{\"ok\": true, \"result\": {\"status\": \"completed\", \"evidence_review\": {\"coverage\": \"declared_claims_checked\", \"errors\": [], \"warnings\": [], \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [], \"bindings\": [{\"claim_id\": \"c1\", \"claim_index\": 0, \"claim_text\": \"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 26]], \"answer_segment_ids\": [\"s1\"]}, {\"claim_id\": \"c2\", \"claim_index\": 1, \"claim_text\": \"备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[26, 54]], \"answer_segmen",
+        "observation": {
+          "ok": true,
+          "result": {
+            "status": "completed",
+            "evidence_review": {
+              "coverage": "declared_claims_checked",
+              "errors": [],
+              "warnings": [],
+              "layers": {
+                "schema": "passed_before_review",
+                "citation_integrity": "passed_before_review",
+                "answer_claim_coverage": {
+                  "errors": [],
+                  "bindings": [
+                    {
+                      "claim_id": "c1",
+                      "claim_index": 0,
+                      "claim_text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          0,
+                          26
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "s1"
+                      ]
+                    },
+                    {
+                      "claim_id": "c2",
+                      "claim_index": 1,
+                      "claim_text": "备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          26,
+                          54
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "s2"
+                      ]
+                    },
+                    {
+                      "claim_id": "c3",
+                      "claim_index": 2,
+                      "claim_text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          54,
+                          82
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "s3"
+                      ]
+                    },
+                    {
+                      "claim_id": "c4",
+                      "claim_index": 3,
+                      "claim_text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+                      "alignment": "bounded_normalized",
+                      "public_relation_texts": [],
+                      "answer_spans_normalized": [
+                        [
+                          82,
+                          105
+                        ]
+                      ],
+                      "answer_segment_ids": [
+                        "s4"
+                      ]
+                    }
+                  ],
+                  "unmapped_fragments": [],
+                  "control_bindings": []
+                },
+                "evidence_support": {
+                  "errors": [],
+                  "bindings": []
+                }
+              },
+              "mechanism": "checked IDs/segments, bounded normalized alignment, independent claim support",
+              "limitation": "Not general entailment; unsupported/unrecognized relations require repair or review.",
+              "answer_quality": {
+                "mode": "enforce",
+                "gate": "enforced",
+                "findings": [],
+                "error_codes": [],
+                "human_review_required": false,
+                "task_coverage": {
+                  "targets": [
+                    {
+                      "topic": null,
+                      "attribute": null,
+                      "request_text": "原绑定手机号已停用",
+                      "matching_claim_indices": [
+                        0
+                      ],
+                      "resolution": "supported_fact",
+                      "covered": true
+                    },
+                    {
+                      "topic": null,
+                      "attribute": null,
+                      "request_text": "备用手机号能收到验证码",
+                      "matching_claim_indices": [
+                        0
+                      ],
+                      "resolution": "supported_fact",
+                      "covered": true
+                    },
+                    {
+                      "topic": "mail",
+                      "attribute": null,
+                      "request_text": "但还没有绑定邮箱。我怎么找回公司邮箱密码",
+                      "matching_claim_indices": [
+                        0
+                      ],
+                      "resolution": "supported_fact",
+                      "covered": true
+                    }
+                  ],
+                  "findings": [],
+                  "coverage": "bounded_topic_attribute_checks",
+                  "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+                },
+                "contextualized_background": [],
+                "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+              }
+            }
+          }
+        },
+        "decision_summary": "用户原绑定手机号已停用，D04明确该情形应走 IT 工单人工核验；不再把依赖绑定手机号的自助步骤作为当前建议，备用号与未绑定邮箱的处理资料未载明，列入缺口。",
+        "next_action": "END",
+        "timestamp": "2026-11-11T05:41:40.223382+00:00",
+        "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"依据《企业邮箱密码重置 FAQ》，若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；IT 服务工单的具体提交入口和所需材料，资料未说明。\",\"citations\":[{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"}],\"gaps\":[\"备用手机号能否作为系统认可的绑定手机号用于验证\",\"未绑定邮箱是否影响人工核验或能否作为替代验证方式\",\"IT 服务工单的具体提交入口和所需材料\"],\"status\":\"completed\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"D04“验证失败”原文直接规定。\"},{\"claim_id\":\"c2\",\"text\":\"备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0],\"rationale\":\"已读资料只说明绑定手机号失效转人工核验，未说明备用手机号的验证效力。\"},{\"claim_id\":\"c3\",\"text\":\"未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0],\"rationale\":\"已读资料未提及未绑定邮箱的处理。\"},{\"claim_id\":\"c4\",\"text\":\"IT 服务工单的具体提交入口和所需材料，资料未说明。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0],\"rationale\":\"D04只要求提交 IT 服务工单，未列入口和材料。\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"依据《企业邮箱密码重置 FAQ》，若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；\",\"claim_ids\":[\"c3\"]},{\"segment_id\":\"s4\",\"part\":\"answer\",\"text\":\"IT 服务工单的具体提交入口和所需材料，资料未说明。\",\"claim_ids\":[\"c4\"]}]},\"decision_summary\":\"用户原绑定手机号已停用，D04明确该情形应走 IT 工单人工核验；不再把依赖绑定手机号的自助步骤作为当前建议，备用号与未绑定邮箱的处理资料未载明，列入缺口。\"}",
+        "model_metadata": {
+          "input_context_sha256": "23744a3194a04103c78b8ea91cd5c186ad3636aee16c7d469c77c2c4b694d6b9",
+          "observation_count": 7,
+          "requested_model": "deepseek-flash",
+          "budget_request_number": 27,
+          "decision_index": 8,
+          "response_id": "c8d6c6a0-93df-4f66-963e-0c60a9ea3ebd",
+          "provider_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 7926,
+            "completion_tokens": 4041,
+            "total_tokens": 11967,
+            "prompt_tokens_details": {
+              "cached_tokens": 6016
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3401
+            },
+            "prompt_cache_hit_tokens": 6016,
+            "prompt_cache_miss_tokens": 1910
+          },
+          "http_status": 200,
+          "elapsed_seconds": 21.8587277000006,
+          "outcome": "completed",
+          "error_code": null
+        },
+        "final_status": "completed"
+      }
+    ],
+    "run_id": "8d031a49-69be-472d-bd14-d74e657ff083",
+    "model_mode": "real",
+    "model_name": "deepseek-flash",
+    "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+    "claims": [
+      {
+        "text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+        "kind": "DIRECT",
+        "citation_indices": [
+          0
+        ],
+        "rationale": "D04“验证失败”原文直接规定。",
+        "claim_id": "c1"
+      },
+      {
+        "text": "备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；",
+        "kind": "UNKNOWN",
+        "citation_indices": [
+          0
+        ],
+        "rationale": "已读资料只说明绑定手机号失效转人工核验，未说明备用手机号的验证效力。",
+        "claim_id": "c2"
+      },
+      {
+        "text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；",
+        "kind": "UNKNOWN",
+        "citation_indices": [
+          0
+        ],
+        "rationale": "已读资料未提及未绑定邮箱的处理。",
+        "claim_id": "c3"
+      },
+      {
+        "text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+        "kind": "UNKNOWN",
+        "citation_indices": [
+          0
+        ],
+        "rationale": "D04只要求提交 IT 服务工单，未列入口和材料。",
+        "claim_id": "c4"
+      }
+    ],
+    "evidence_review": {
+      "coverage": "declared_claims_checked",
+      "errors": [],
+      "warnings": [],
+      "layers": {
+        "schema": "passed_before_review",
+        "citation_integrity": "passed_before_review",
+        "answer_claim_coverage": {
+          "errors": [],
+          "bindings": [
+            {
+              "claim_id": "c1",
+              "claim_index": 0,
+              "claim_text": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  0,
+                  26
+                ]
+              ],
+              "answer_segment_ids": [
+                "s1"
+              ]
+            },
+            {
+              "claim_id": "c2",
+              "claim_index": 1,
+              "claim_text": "备用手机号能否作为系统认可的绑定手机号用于验证，资料未明确；",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  26,
+                  54
+                ]
+              ],
+              "answer_segment_ids": [
+                "s2"
+              ]
+            },
+            {
+              "claim_id": "c3",
+              "claim_index": 2,
+              "claim_text": "未绑定邮箱是否影响人工核验或可作为替代验证方式，资料未明确；",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  54,
+                  82
+                ]
+              ],
+              "answer_segment_ids": [
+                "s3"
+              ]
+            },
+            {
+              "claim_id": "c4",
+              "claim_index": 3,
+              "claim_text": "IT 服务工单的具体提交入口和所需材料，资料未说明。",
+              "alignment": "bounded_normalized",
+              "public_relation_texts": [],
+              "answer_spans_normalized": [
+                [
+                  82,
+                  105
+                ]
+              ],
+              "answer_segment_ids": [
+                "s4"
+              ]
+            }
+          ],
+          "unmapped_fragments": [],
+          "control_bindings": []
+        },
+        "evidence_support": {
+          "errors": [],
+          "bindings": []
+        }
+      },
+      "mechanism": "checked IDs/segments, bounded normalized alignment, independent claim support",
+      "limitation": "Not general entailment; unsupported/unrecognized relations require repair or review.",
+      "answer_quality": {
+        "mode": "enforce",
+        "gate": "enforced",
+        "findings": [],
+        "error_codes": [],
+        "human_review_required": false,
+        "task_coverage": {
+          "targets": [
+            {
+              "topic": null,
+              "attribute": null,
+              "request_text": "原绑定手机号已停用",
+              "matching_claim_indices": [
+                0
+              ],
+              "resolution": "supported_fact",
+              "covered": true
+            },
+            {
+              "topic": null,
+              "attribute": null,
+              "request_text": "备用手机号能收到验证码",
+              "matching_claim_indices": [
+                0
+              ],
+              "resolution": "supported_fact",
+              "covered": true
+            },
+            {
+              "topic": "mail",
+              "attribute": null,
+              "request_text": "但还没有绑定邮箱。我怎么找回公司邮箱密码",
+              "matching_claim_indices": [
+                0
+              ],
+              "resolution": "supported_fact",
+              "covered": true
+            }
+          ],
+          "findings": [],
+          "coverage": "bounded_topic_attribute_checks",
+          "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+        },
+        "contextualized_background": [],
+        "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+      }
+    }
+  },
+  "recovery": {
+    "read_doc_ids": [
+      "D04",
+      "D05"
+    ],
+    "citation_doc_ids": [
+      "D04"
+    ],
+    "evidence_repair_observed": true,
+    "fault_exercised": false,
+    "label": "proactive_rewrite",
+    "successful_dynamic_recovery": false,
+    "recovery_after_observation": false,
+    "original_first_search": false,
+    "first_search_failed_or_unrelated": false,
+    "first_search_empty": false,
+    "first_search_unrelated": false,
+    "search_queries": [
+      "公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程",
+      "IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定"
+    ],
+    "second_query_changed": true,
+    "new_relevant_doc_ids": [],
+    "failure_observation_delivered": false,
+    "same_query_tool_retry": false,
+    "final_retrieved_doc_ids": [
+      "D04",
+      "D05"
+    ],
+    "full_target_recall": true,
+    "business_evidence_gate": true
+  },
+  "usage_total_tokens": 48367,
+  "http_elapsed_seconds": 99.58264320000308
+}

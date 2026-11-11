@@ -1,0 +1,28 @@
+{
+  "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+  "decision_index": 1,
+  "budget_request_number": 6,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "5f3d6583-62e9-4c5f-9b57-9e6e86b1fac6",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1872,
+    "completion_tokens": 107,
+    "total_tokens": 1979,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 208
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"出差差旅费报销 票据提交 截止时间 最晚报账期限\",\"top_k\":3},\"decision_summary\":\"用户询问出差垫款后交票报账的最晚期限，先检索差旅报销及票据提交时限相关制度。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.2195850999996765
+}

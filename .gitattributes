@@ -1,0 +1,2 @@
+# Preserve checksummed source and immutable JSON evidence byte-for-byte.
+* -text

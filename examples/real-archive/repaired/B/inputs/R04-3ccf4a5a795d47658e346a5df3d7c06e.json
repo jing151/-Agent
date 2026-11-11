@@ -1,0 +1,17 @@
+{
+  "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+  "case_id": "R04",
+  "input": {
+    "question": "出差回来垫的钱，最晚啥时候交票报账？",
+    "history": []
+  },
+  "previous_agent_run_id": null,
+  "evaluation_mode": "real",
+  "config": {
+    "max_steps": 8,
+    "max_tool_calls": 6,
+    "require_claims": true,
+    "answer_quality_mode": "enforce"
+  },
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18"
+}

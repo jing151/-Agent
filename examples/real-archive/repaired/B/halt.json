@@ -1,0 +1,5 @@
+{
+  "case_id": "R04",
+  "status": "max_steps_reached",
+  "reason": "status_or_service_failure_requires_offline_review"
+}

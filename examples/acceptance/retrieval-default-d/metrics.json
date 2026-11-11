@@ -1,0 +1,6298 @@
+{
+  "mode": "offline_public_diagnostic_replay",
+  "new_real_api_calls": 0,
+  "dataset": {
+    "dataset_sha256": "60f8960b50d8426b466550310ff747c8cc072cf2b03653cbbe7ba15fd04cac93",
+    "original_role": "historical_prefrozen_holdout_now_public",
+    "current_role": "public_diagnostic_replay_not_new_blind_test",
+    "labels_changed": false,
+    "retriever_tuned": false
+  },
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+  "systems": {
+    "A_original_bm25": {
+      "metrics": {
+        "recall_at_3": 0.5882352941176471,
+        "recall_at_5": 0.5882352941176471,
+        "precision_at_3": 0.2549019607843137,
+        "mrr": 0.5882352941176471,
+        "mrr_at_3": 0.5882352941176471,
+        "ndcg_at_3": 0.5882352941176471,
+        "returned_precision_at_3": 0.4117647058823529,
+        "conflict_complete_at_3": 0.3333333333333333,
+        "conflict_complete_at_5": 0.3333333333333333,
+        "conflict_complete_in_pool": 0.3333333333333333,
+        "micro_returned_precision_at_3": 0.43333333333333335,
+        "negative_false_positive_rate": 0.7142857142857143,
+        "positive_queries": 17,
+        "negative_queries": 7,
+        "conflict_queries": 6
+      },
+      "cases": [
+        {
+          "id": "T01",
+          "query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T02",
+          "query": "差旅垫款的凭证，可以下个月再报吗？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "差旅垫款的凭证，可以下个月再报吗？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T03",
+          "query": "费用申报截止到哪一天算逾期？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "费用申报截止到哪一天算逾期？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 2.025192,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 2.025192,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T04",
+          "query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T05",
+          "query": "我付的路费要隔几天再交凭证才不晚？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "我付的路费要隔几天再交凭证才不晚？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T06",
+          "query": "收据报销的要求是三十日还是半个月？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "收据报销的要求是三十日还是半个月？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 2.307989,
+              "channel_scores": {
+                "bm25": 2.308,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 2.307989,
+              "channel_scores": {
+                "bm25": 2.308,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T07",
+          "query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "top_3": [
+            "D04"
+          ],
+          "top_5": [
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 1.61057,
+              "channel_scores": {
+                "bm25": 1.6106,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04"
+          ],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T08",
+          "query": "台式机突然黑屏了，维修单往哪儿报？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "台式机突然黑屏了，维修单往哪儿报？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T09",
+          "query": "办公终端起不来，找IT怎么发起故障单？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "办公终端起不来，找IT怎么发起故障单？",
+          "top_3": [
+            "D03",
+            "D07",
+            "D04"
+          ],
+          "top_5": [
+            "D03",
+            "D07",
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 4.078266,
+              "channel_scores": {
+                "bm25": 4.0783,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 1.462661,
+              "channel_scores": {
+                "bm25": 1.4627,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "support",
+              "snippet": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "score": 1.40762,
+              "channel_scores": {
+                "bm25": 1.4076,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03",
+            "D07",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T10",
+          "query": "设备维修的报修号要填写什么信息？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "设备维修的报修号要填写什么信息？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 7.43512,
+              "channel_scores": {
+                "bm25": 7.4351,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T11",
+          "query": "电脑维修完以后有几个月保修？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "电脑维修完以后有几个月保修？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T12",
+          "query": "我想知道设备报修是否收费。",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "我想知道设备报修是否收费。",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 5.756657,
+              "channel_scores": {
+                "bm25": 5.7567,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T13",
+          "query": "企业邮件登不进去，之前留的号码也停用了。",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "企业邮件登不进去，之前留的号码也停用了。",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T14",
+          "query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "relevant_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 1,
+            "D05": 3
+          },
+          "effective_query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "top_3": [
+            "D05",
+            "D04"
+          ],
+          "top_5": [
+            "D05",
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.199938,
+              "channel_scores": {
+                "bm25": 1.1999,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 1.151401,
+              "channel_scores": {
+                "bm25": 1.1514,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T15",
+          "query": "网页登录重设账户密码时，身份核验用什么？",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "网页登录重设账户密码时，身份核验用什么？",
+          "top_3": [
+            "D04",
+            "D05",
+            "D03"
+          ],
+          "top_5": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 6.855159,
+              "channel_scores": {
+                "bm25": 6.8552,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.517207,
+              "channel_scores": {
+                "bm25": 1.5172,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.884742,
+              "channel_scores": {
+                "bm25": 0.8847,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.770989,
+              "channel_scores": {
+                "bm25": 0.771,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T16",
+          "query": "改密码必须至少十位并包含特殊符号吗？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "改密码必须至少十位并包含特殊符号吗？",
+          "top_3": [
+            "D04",
+            "D05",
+            "D03"
+          ],
+          "top_5": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 1.633663,
+              "channel_scores": {
+                "bm25": 1.6337,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.517207,
+              "channel_scores": {
+                "bm25": 1.5172,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 1.199938,
+              "channel_scores": {
+                "bm25": 1.1999,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 1.04566,
+              "channel_scores": {
+                "bm25": 1.0457,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T17",
+          "query": "公司邮箱的密码多久必须换一次？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司邮箱的密码多久必须换一次？",
+          "top_3": [
+            "D04",
+            "D05"
+          ],
+          "top_5": [
+            "D04",
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 2.785065,
+              "channel_scores": {
+                "bm25": 2.7851,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 2.717145,
+              "channel_scores": {
+                "bm25": 2.7171,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T18",
+          "query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "relevant_doc_ids": [
+            "D06"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D06": 3
+          },
+          "effective_query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "top_3": [
+            "D06",
+            "D07"
+          ],
+          "top_5": [
+            "D06",
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 7.411972,
+              "channel_scores": {
+                "bm25": 7.412,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 1.04566,
+              "channel_scores": {
+                "bm25": 1.0457,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06",
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.5,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T19",
+          "query": "请假要提前几天递交？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "请假要提前几天递交？",
+          "top_3": [
+            "D06"
+          ],
+          "top_5": [
+            "D06"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 2.018884,
+              "channel_scores": {
+                "bm25": 2.0189,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T20",
+          "query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "top_3": [
+            "D07",
+            "D06"
+          ],
+          "top_5": [
+            "D07",
+            "D06"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 3.970982,
+              "channel_scores": {
+                "bm25": 3.971,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 1.443306,
+              "channel_scores": {
+                "bm25": 1.4433,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07",
+            "D06"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.5,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T21",
+          "query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 7.81518,
+              "channel_scores": {
+                "bm25": 7.8152,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T22",
+          "query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "top_3": [
+            "D07",
+            "D04",
+            "D05"
+          ],
+          "top_5": [
+            "D07",
+            "D04",
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 4.233738,
+              "channel_scores": {
+                "bm25": 4.2337,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "support",
+              "snippet": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "score": 0.7617,
+              "channel_scores": {
+                "bm25": 0.7617,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.649318,
+              "channel_scores": {
+                "bm25": 0.6493,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07",
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T23",
+          "query": "能不能给外包人员按月报手机通讯费？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "能不能给外包人员按月报手机通讯费？",
+          "top_3": [
+            "D05"
+          ],
+          "top_5": [
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.678463,
+              "channel_scores": {
+                "bm25": 1.6785,
+                "expanded_bm25": 0.0,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T24",
+          "query": "公司食堂餐标和生日福利额度各是多少？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司食堂餐标和生日福利额度各是多少？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        }
+      ],
+      "definitions": {
+        "positive_macro": "Recall/P@3/MRR/NDCG/returned precision averaged over positive queries",
+        "precision_at_3": "relevant in first 3 / 3; unfilled slots remain in denominator",
+        "mrr": "first relevant rank within top5; mrr_at_3 reported separately",
+        "ndcg_at_3": "gain=2^grade-1; log2 rank discount",
+        "micro_returned_precision_at_3": "all relevant top3 hits / all returned top3 hits, including negative queries",
+        "negative_false_positive_rate": "negative queries with any top3 result / all negative queries",
+        "conflict": "all labeled conflict documents must be present; no first-hit success",
+        "candidate_pool": "All positive eligible scores after filters, before top-k; route union is recorded separately by explain()",
+        "history": "Evaluator joins prior USER query for retrieval only; no model conversation claim"
+      }
+    },
+    "B_original_hybrid": {
+      "metrics": {
+        "recall_at_3": 0.7647058823529411,
+        "recall_at_5": 0.7647058823529411,
+        "precision_at_3": 0.35294117647058826,
+        "mrr": 0.7647058823529411,
+        "mrr_at_3": 0.7647058823529411,
+        "ndcg_at_3": 0.7647058823529411,
+        "returned_precision_at_3": 0.5588235294117647,
+        "conflict_complete_at_3": 0.6666666666666666,
+        "conflict_complete_at_5": 0.6666666666666666,
+        "conflict_complete_in_pool": 0.6666666666666666,
+        "micro_returned_precision_at_3": 0.46153846153846156,
+        "negative_false_positive_rate": 0.8571428571428571,
+        "positive_queries": 17,
+        "negative_queries": 7,
+        "conflict_queries": 6
+      },
+      "cases": [
+        {
+          "id": "T01",
+          "query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.009016,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.008871,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T02",
+          "query": "差旅垫款的凭证，可以下个月再报吗？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "差旅垫款的凭证，可以下个月再报吗？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T03",
+          "query": "费用申报截止到哪一天算逾期？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "费用申报截止到哪一天算逾期？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 2.0252,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 2.0252,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T04",
+          "query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.009016,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.008871,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T05",
+          "query": "我付的路费要隔几天再交凭证才不晚？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "我付的路费要隔几天再交凭证才不晚？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T06",
+          "query": "收据报销的要求是三十日还是半个月？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "收据报销的要求是三十日还是半个月？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.016393,
+              "channel_scores": {
+                "bm25": 2.308,
+                "expanded_bm25": 4.3332,
+                "ngram_dice": 0.0926
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.016129,
+              "channel_scores": {
+                "bm25": 2.308,
+                "expanded_bm25": 4.3332,
+                "ngram_dice": 0.0926
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T07",
+          "query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "top_3": [
+            "D04"
+          ],
+          "top_5": [
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 1.6106,
+                "expanded_bm25": 1.6106,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04"
+          ],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T08",
+          "query": "台式机突然黑屏了，维修单往哪儿报？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "台式机突然黑屏了，维修单往哪儿报？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.009016,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 5.7567,
+                "ngram_dice": 0.0292
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T09",
+          "query": "办公终端起不来，找IT怎么发起故障单？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "办公终端起不来，找IT怎么发起故障单？",
+          "top_3": [
+            "D03",
+            "D07",
+            "D04"
+          ],
+          "top_5": [
+            "D03",
+            "D07",
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 4.0783,
+                "expanded_bm25": 6.9566,
+                "ngram_dice": 0.0576
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 1.4627,
+                "expanded_bm25": 1.4627,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "support",
+              "snippet": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "score": 0.011905,
+              "channel_scores": {
+                "bm25": 1.4076,
+                "expanded_bm25": 1.4076,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03",
+            "D07",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T10",
+          "query": "设备维修的报修号要填写什么信息？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "设备维修的报修号要填写什么信息？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.016393,
+              "channel_scores": {
+                "bm25": 7.4351,
+                "expanded_bm25": 11.9919,
+                "ngram_dice": 0.1429
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T11",
+          "query": "电脑维修完以后有几个月保修？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "电脑维修完以后有几个月保修？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.013115,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.1548
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T12",
+          "query": "我想知道设备报修是否收费。",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "我想知道设备报修是否收费。",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.016393,
+              "channel_scores": {
+                "bm25": 5.7567,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.137
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T13",
+          "query": "企业邮件登不进去，之前留的号码也停用了。",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "企业邮件登不进去，之前留的号码也停用了。",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T14",
+          "query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "relevant_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 1,
+            "D05": 3
+          },
+          "effective_query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "top_3": [
+            "D05",
+            "D04"
+          ],
+          "top_5": [
+            "D05",
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.016393,
+              "channel_scores": {
+                "bm25": 1.1999,
+                "expanded_bm25": 8.7445,
+                "ngram_dice": 0.0902
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 1.1514,
+                "expanded_bm25": 2.3028,
+                "ngram_dice": 0.0282
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T15",
+          "query": "网页登录重设账户密码时，身份核验用什么？",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "网页登录重设账户密码时，身份核验用什么？",
+          "top_3": [
+            "D04",
+            "D05",
+            "D03"
+          ],
+          "top_5": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.016327,
+              "channel_scores": {
+                "bm25": 6.8552,
+                "expanded_bm25": 6.8552,
+                "ngram_dice": 0.1017
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.011905,
+              "channel_scores": {
+                "bm25": 1.5172,
+                "expanded_bm25": 1.5172,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.011719,
+              "channel_scores": {
+                "bm25": 0.8847,
+                "expanded_bm25": 0.8847,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.011538,
+              "channel_scores": {
+                "bm25": 0.771,
+                "expanded_bm25": 0.771,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T16",
+          "query": "改密码必须至少十位并包含特殊符号吗？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "改密码必须至少十位并包含特殊符号吗？",
+          "top_3": [
+            "D04",
+            "D05",
+            "D03"
+          ],
+          "top_5": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 1.6337,
+                "expanded_bm25": 1.6337,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 1.5172,
+                "expanded_bm25": 1.5172,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.011905,
+              "channel_scores": {
+                "bm25": 1.1999,
+                "expanded_bm25": 1.1999,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.011719,
+              "channel_scores": {
+                "bm25": 1.0457,
+                "expanded_bm25": 1.0457,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05",
+            "D03",
+            "D07"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T17",
+          "query": "公司邮箱的密码多久必须换一次？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司邮箱的密码多久必须换一次？",
+          "top_3": [
+            "D04",
+            "D05",
+            "D01"
+          ],
+          "top_5": [
+            "D04",
+            "D05",
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 2.7851,
+                "expanded_bm25": 2.7851,
+                "ngram_dice": 0.0288
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 2.7171,
+                "expanded_bm25": 2.7171,
+                "ngram_dice": 0.0308
+              }
+            },
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.00873,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.008594,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05",
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T18",
+          "query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "relevant_doc_ids": [
+            "D06"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D06": 3
+          },
+          "effective_query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "top_3": [
+            "D06",
+            "D07"
+          ],
+          "top_5": [
+            "D06",
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 7.412,
+                "expanded_bm25": 9.4309,
+                "ngram_dice": 0.069
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 1.0457,
+                "expanded_bm25": 1.0457,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06",
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.5,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T19",
+          "query": "请假要提前几天递交？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "请假要提前几天递交？",
+          "top_3": [
+            "D06"
+          ],
+          "top_5": [
+            "D06"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 2.0189,
+                "expanded_bm25": 2.0189,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T20",
+          "query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "top_3": [
+            "D07",
+            "D06"
+          ],
+          "top_5": [
+            "D07",
+            "D06"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 3.971,
+                "expanded_bm25": 3.971,
+                "ngram_dice": 0.042
+              }
+            },
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 1.4433,
+                "expanded_bm25": 1.4433,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07",
+            "D06"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.5,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T21",
+          "query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "top_3": [
+            "D07",
+            "D03"
+          ],
+          "top_5": [
+            "D07",
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.016393,
+              "channel_scores": {
+                "bm25": 7.8152,
+                "expanded_bm25": 7.8152,
+                "ngram_dice": 0.0879
+              }
+            },
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.008871,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 5.7567,
+                "ngram_dice": 0.0252
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07",
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.5,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T22",
+          "query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "top_3": [
+            "D07",
+            "D04",
+            "D05"
+          ],
+          "top_5": [
+            "D07",
+            "D04",
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.016393,
+              "channel_scores": {
+                "bm25": 4.2337,
+                "expanded_bm25": 4.2337,
+                "ngram_dice": 0.094
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "support",
+              "snippet": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+              "score": 0.012097,
+              "channel_scores": {
+                "bm25": 0.7617,
+                "expanded_bm25": 0.7617,
+                "ngram_dice": 0.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.011905,
+              "channel_scores": {
+                "bm25": 0.6493,
+                "expanded_bm25": 0.6493,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07",
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.3333333333333333,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T23",
+          "query": "能不能给外包人员按月报手机通讯费？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "能不能给外包人员按月报手机通讯费？",
+          "top_3": [
+            "D05",
+            "D04"
+          ],
+          "top_5": [
+            "D05",
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.012295,
+              "channel_scores": {
+                "bm25": 1.6785,
+                "expanded_bm25": 7.5446,
+                "ngram_dice": 0.0763
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.008871,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.1514,
+                "ngram_dice": 0.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05",
+            "D04"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T24",
+          "query": "公司食堂餐标和生日福利额度各是多少？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司食堂餐标和生日福利额度各是多少？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        }
+      ],
+      "definitions": {
+        "positive_macro": "Recall/P@3/MRR/NDCG/returned precision averaged over positive queries",
+        "precision_at_3": "relevant in first 3 / 3; unfilled slots remain in denominator",
+        "mrr": "first relevant rank within top5; mrr_at_3 reported separately",
+        "ndcg_at_3": "gain=2^grade-1; log2 rank discount",
+        "micro_returned_precision_at_3": "all relevant top3 hits / all returned top3 hits, including negative queries",
+        "negative_false_positive_rate": "negative queries with any top3 result / all negative queries",
+        "conflict": "all labeled conflict documents must be present; no first-hit success",
+        "candidate_pool": "All positive eligible scores after filters, before top-k; route union is recorded separately by explain()",
+        "history": "Evaluator joins prior USER query for retrieval only; no model conversation claim"
+      }
+    },
+    "C_previous_optimized": {
+      "metrics": {
+        "recall_at_3": 0.7058823529411765,
+        "recall_at_5": 0.7058823529411765,
+        "precision_at_3": 0.3333333333333333,
+        "mrr": 0.7058823529411765,
+        "mrr_at_3": 0.7058823529411765,
+        "ndcg_at_3": 0.7058823529411765,
+        "returned_precision_at_3": 0.6764705882352942,
+        "conflict_complete_at_3": 0.6666666666666666,
+        "conflict_complete_at_5": 0.6666666666666666,
+        "conflict_complete_in_pool": 0.6666666666666666,
+        "micro_returned_precision_at_3": 0.6071428571428571,
+        "negative_false_positive_rate": 0.8571428571428571,
+        "positive_queries": 17,
+        "negative_queries": 7,
+        "conflict_queries": 6
+      },
+      "cases": [
+        {
+          "id": "T01",
+          "query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T02",
+          "query": "差旅垫款的凭证，可以下个月再报吗？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "差旅垫款的凭证，可以下个月再报吗？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T03",
+          "query": "费用申报截止到哪一天算逾期？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "费用申报截止到哪一天算逾期？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.9,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 2.0252,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.9,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 2.0252,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T04",
+          "query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 1.4808,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T05",
+          "query": "我付的路费要隔几天再交凭证才不晚？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "我付的路费要隔几天再交凭证才不晚？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T06",
+          "query": "收据报销的要求是三十日还是半个月？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "收据报销的要求是三十日还是半个月？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 1.009259,
+              "channel_scores": {
+                "bm25": 2.308,
+                "expanded_bm25": 4.3332,
+                "ngram_dice": 0.0926,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 1.009259,
+              "channel_scores": {
+                "bm25": 2.308,
+                "expanded_bm25": 4.3332,
+                "ngram_dice": 0.0926,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T07",
+          "query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "top_3": [
+            "D04"
+          ],
+          "top_5": [
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.9,
+              "channel_scores": {
+                "bm25": 1.6106,
+                "expanded_bm25": 1.6106,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04"
+          ],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T08",
+          "query": "台式机突然黑屏了，维修单往哪儿报？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "台式机突然黑屏了，维修单往哪儿报？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.35292,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 5.7567,
+                "ngram_dice": 0.0292,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T09",
+          "query": "办公终端起不来，找IT怎么发起故障单？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "办公终端起不来，找IT怎么发起故障单？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.393827,
+              "channel_scores": {
+                "bm25": 1.4627,
+                "expanded_bm25": 1.4627,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T10",
+          "query": "设备维修的报修号要填写什么信息？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "设备维修的报修号要填写什么信息？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 1.114286,
+              "channel_scores": {
+                "bm25": 7.4351,
+                "expanded_bm25": 11.9919,
+                "ngram_dice": 0.1429,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T11",
+          "query": "电脑维修完以后有几个月保修？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "电脑维修完以后有几个月保修？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.465484,
+              "channel_scores": {
+                "bm25": 0.0,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.1548,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T12",
+          "query": "我想知道设备报修是否收费。",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "我想知道设备报修是否收费。",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 1.113699,
+              "channel_scores": {
+                "bm25": 5.7567,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.137,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T13",
+          "query": "企业邮件登不进去，之前留的号码也停用了。",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "企业邮件登不进去，之前留的号码也停用了。",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T14",
+          "query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "relevant_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 1,
+            "D05": 3
+          },
+          "effective_query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "top_3": [
+            "D05",
+            "D04"
+          ],
+          "top_5": [
+            "D05",
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.009023,
+              "channel_scores": {
+                "bm25": 1.1999,
+                "expanded_bm25": 6.9988,
+                "ngram_dice": 0.0902,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.667653,
+              "channel_scores": {
+                "bm25": 1.1514,
+                "expanded_bm25": 1.1514,
+                "ngram_dice": 0.0282,
+                "relative_support": 0.6617
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T15",
+          "query": "网页登录重设账户密码时，身份核验用什么？",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "网页登录重设账户密码时，身份核验用什么？",
+          "top_3": [
+            "D04"
+          ],
+          "top_5": [
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.910169,
+              "channel_scores": {
+                "bm25": 6.0062,
+                "expanded_bm25": 6.0062,
+                "ngram_dice": 0.1017,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T16",
+          "query": "改密码必须至少十位并包含特殊符号吗？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "改密码必须至少十位并包含特殊符号吗？",
+          "top_3": [
+            "D04",
+            "D05"
+          ],
+          "top_5": [
+            "D04",
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.9,
+              "channel_scores": {
+                "bm25": 1.6337,
+                "expanded_bm25": 1.6337,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.835843,
+              "channel_scores": {
+                "bm25": 1.5172,
+                "expanded_bm25": 1.5172,
+                "ngram_dice": 0.0,
+                "relative_support": 0.9287
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T17",
+          "query": "公司邮箱的密码多久必须换一次？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司邮箱的密码多久必须换一次？",
+          "top_3": [
+            "D04",
+            "D05"
+          ],
+          "top_5": [
+            "D04",
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.902878,
+              "channel_scores": {
+                "bm25": 2.7851,
+                "expanded_bm25": 2.7851,
+                "ngram_dice": 0.0288,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.881129,
+              "channel_scores": {
+                "bm25": 2.7171,
+                "expanded_bm25": 2.7171,
+                "ngram_dice": 0.0308,
+                "relative_support": 0.9759
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T18",
+          "query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "relevant_doc_ids": [
+            "D06"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D06": 3
+          },
+          "effective_query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "top_3": [
+            "D06",
+            "D07"
+          ],
+          "top_5": [
+            "D06",
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 1.006897,
+              "channel_scores": {
+                "bm25": 1.4433,
+                "expanded_bm25": 3.4622,
+                "ngram_dice": 0.069,
+                "relative_support": 1.0
+              }
+            },
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.546424,
+              "channel_scores": {
+                "bm25": 1.0457,
+                "expanded_bm25": 1.0457,
+                "ngram_dice": 0.0,
+                "relative_support": 0.5427
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06",
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 0.5,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T19",
+          "query": "请假要提前几天递交？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "请假要提前几天递交？",
+          "top_3": [
+            "D06"
+          ],
+          "top_5": [
+            "D06"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 0.9,
+              "channel_scores": {
+                "bm25": 2.0189,
+                "expanded_bm25": 2.0189,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T20",
+          "query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.904196,
+              "channel_scores": {
+                "bm25": 3.971,
+                "expanded_bm25": 3.971,
+                "ngram_dice": 0.042,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T21",
+          "query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.908791,
+              "channel_scores": {
+                "bm25": 7.8152,
+                "expanded_bm25": 7.8152,
+                "ngram_dice": 0.0879,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T22",
+          "query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.909396,
+              "channel_scores": {
+                "bm25": 4.2337,
+                "expanded_bm25": 4.2337,
+                "ngram_dice": 0.094,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T23",
+          "query": "能不能给外包人员按月报手机通讯费？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "能不能给外包人员按月报手机通讯费？",
+          "top_3": [
+            "D05"
+          ],
+          "top_5": [
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.007634,
+              "channel_scores": {
+                "bm25": 1.6785,
+                "expanded_bm25": 5.7988,
+                "ngram_dice": 0.0763,
+                "relative_support": 1.0
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T24",
+          "query": "公司食堂餐标和生日福利额度各是多少？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司食堂餐标和生日福利额度各是多少？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        }
+      ],
+      "definitions": {
+        "positive_macro": "Recall/P@3/MRR/NDCG/returned precision averaged over positive queries",
+        "precision_at_3": "relevant in first 3 / 3; unfilled slots remain in denominator",
+        "mrr": "first relevant rank within top5; mrr_at_3 reported separately",
+        "ndcg_at_3": "gain=2^grade-1; log2 rank discount",
+        "micro_returned_precision_at_3": "all relevant top3 hits / all returned top3 hits, including negative queries",
+        "negative_false_positive_rate": "negative queries with any top3 result / all negative queries",
+        "conflict": "all labeled conflict documents must be present; no first-hit success",
+        "candidate_pool": "All positive eligible scores after filters, before top-k; route union is recorded separately by explain()",
+        "history": "Evaluator joins prior USER query for retrieval only; no model conversation claim"
+      }
+    },
+    "D_current_default": {
+      "metrics": {
+        "recall_at_3": 0.7647058823529411,
+        "recall_at_5": 0.7647058823529411,
+        "precision_at_3": 0.35294117647058826,
+        "mrr": 0.7647058823529411,
+        "mrr_at_3": 0.7647058823529411,
+        "ndcg_at_3": 0.7647058823529411,
+        "returned_precision_at_3": 0.7647058823529411,
+        "conflict_complete_at_3": 0.6666666666666666,
+        "conflict_complete_at_5": 0.6666666666666666,
+        "conflict_complete_in_pool": 0.6666666666666666,
+        "micro_returned_precision_at_3": 0.6923076923076923,
+        "negative_false_positive_rate": 0.7142857142857143,
+        "positive_queries": 17,
+        "negative_queries": 7,
+        "conflict_queries": 6
+      },
+      "cases": [
+        {
+          "id": "T01",
+          "query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "外出办事的钱我先掏了，回来多久内要把报账资料交上去？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1593,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1593,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T02",
+          "query": "差旅垫款的凭证，可以下个月再报吗？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "差旅垫款的凭证，可以下个月再报吗？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T03",
+          "query": "费用申报截止到哪一天算逾期？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "费用申报截止到哪一天算逾期？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 2.0252,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35
+                }
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 2.0252,
+                "expanded_bm25": 2.0252,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T04",
+          "query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "替单位买东西的款自己先出了，票据最晚啥时候递上去？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1579,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1579,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T05",
+          "query": "我付的路费要隔几天再交凭证才不晚？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "我付的路费要隔几天再交凭证才不晚？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": false,
+          "conflict_complete_at_5": false,
+          "conflict_complete_in_pool": false
+        },
+        {
+          "id": "T06",
+          "query": "收据报销的要求是三十日还是半个月？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "irrelevant_doc_ids": [
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "relevance_grade": {
+            "D01": 3,
+            "D02": 3
+          },
+          "effective_query": "收据报销的要求是三十日还是半个月？",
+          "top_3": [
+            "D01",
+            "D02"
+          ],
+          "top_5": [
+            "D01",
+            "D02"
+          ],
+          "hits": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1593,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1593,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": true,
+          "conflict_complete_at_5": true,
+          "conflict_complete_in_pool": true
+        },
+        {
+          "id": "T07",
+          "query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "工作用的笔电按电源键没反应，去哪个入口登记？",
+          "top_3": [
+            "D04"
+          ],
+          "top_5": [
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 1.6106,
+                "expanded_bm25": 1.6106,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04"
+          ],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T08",
+          "query": "台式机突然黑屏了，维修单往哪儿报？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "台式机突然黑屏了，维修单往哪儿报？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 10.3134,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.2286,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T09",
+          "query": "办公终端起不来，找IT怎么发起故障单？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "办公终端起不来，找IT怎么发起故障单？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 0.65,
+              "channel_scores": {
+                "bm25": 10.3134,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.2286,
+                "relative_support": 1.0,
+                "route_support": {
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T10",
+          "query": "设备维修的报修号要填写什么信息？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D03": 3
+          },
+          "effective_query": "设备维修的报修号要填写什么信息？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 10.3134,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.2286,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T11",
+          "query": "电脑维修完以后有几个月保修？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "电脑维修完以后有几个月保修？",
+          "top_3": [
+            "D03"
+          ],
+          "top_5": [
+            "D03"
+          ],
+          "hits": [
+            {
+              "doc_id": "D03",
+              "title": "办公设备故障报修 FAQ",
+              "version_date": "2025-02-10",
+              "scope": "全体员工的公司办公设备",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "ticket",
+              "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 10.3134,
+                "expanded_bm25": 10.3134,
+                "ngram_dice": 0.1806,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T12",
+          "query": "我想知道设备报修是否收费。",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "我想知道设备报修是否收费。",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T13",
+          "query": "企业邮件登不进去，之前留的号码也停用了。",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "企业邮件登不进去，之前留的号码也停用了。",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": 0.0,
+          "recall_at_5": 0.0,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": 0.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T14",
+          "query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "relevant_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 1,
+            "D05": 3
+          },
+          "effective_query": "在企业微信里能不能把邮箱的口令重新设置一下？",
+          "top_3": [
+            "D05",
+            "D04"
+          ],
+          "top_5": [
+            "D05",
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 8.3547,
+                "expanded_bm25": 10.0332,
+                "ngram_dice": 0.2152,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.659246,
+              "channel_scores": {
+                "bm25": 5.6445,
+                "expanded_bm25": 7.2551,
+                "ngram_dice": 0.1796,
+                "relative_support": 0.6579,
+                "route_support": {
+                  "original": 0.23158892,
+                  "concept_0": 0.42765682
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.6666666666666666,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T15",
+          "query": "网页登录重设账户密码时，身份核验用什么？",
+          "relevant_doc_ids": [
+            "D04"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D04": 3
+          },
+          "effective_query": "网页登录重设账户密码时，身份核验用什么？",
+          "top_3": [
+            "D04"
+          ],
+          "top_5": [
+            "D04"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 6.0062,
+                "expanded_bm25": 6.0062,
+                "ngram_dice": 0.1017,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T16",
+          "query": "改密码必须至少十位并包含特殊符号吗？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "改密码必须至少十位并包含特殊符号吗？",
+          "top_3": [
+            "D04",
+            "D05"
+          ],
+          "top_5": [
+            "D04",
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 1.6337,
+                "expanded_bm25": 1.6337,
+                "ngram_dice": 0.0,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35
+                }
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.32505,
+              "channel_scores": {
+                "bm25": 1.5172,
+                "expanded_bm25": 1.5172,
+                "ngram_dice": 0.0,
+                "relative_support": 0.9287,
+                "route_support": {
+                  "original": 0.32505006
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T17",
+          "query": "公司邮箱的密码多久必须换一次？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司邮箱的密码多久必须换一次？",
+          "top_3": [
+            "D04",
+            "D05"
+          ],
+          "top_5": [
+            "D04",
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.6445,
+                "expanded_bm25": 7.2551,
+                "ngram_dice": 0.2105,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            },
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.820849,
+              "channel_scores": {
+                "bm25": 4.2344,
+                "expanded_bm25": 4.2344,
+                "ngram_dice": 0.1935,
+                "relative_support": 0.7374,
+                "route_support": {
+                  "original": 0.34156902,
+                  "concept_0": 0.47927977
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T18",
+          "query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "relevant_doc_ids": [
+            "D06"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D06": 3
+          },
+          "effective_query": "年假不是要直属上级点同意吗，在哪里提交？",
+          "top_3": [
+            "D06"
+          ],
+          "top_5": [
+            "D06"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 6.9244,
+                "expanded_bm25": 8.9433,
+                "ngram_dice": 0.3038,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T19",
+          "query": "请假要提前几天递交？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "请假要提前几天递交？",
+          "top_3": [
+            "D06"
+          ],
+          "top_5": [
+            "D06"
+          ],
+          "hits": [
+            {
+              "doc_id": "D06",
+              "title": "带薪年假申请制度",
+              "version_date": "2025-01-20",
+              "scope": "全体正式员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "apply",
+              "snippet": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 6.9244,
+                "expanded_bm25": 8.9433,
+                "ngram_dice": 0.3038,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D06"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T20",
+          "query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "用外网接入办公网络之前，是不是先找主管开权限？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 3.971,
+                "expanded_bm25": 3.971,
+                "ngram_dice": 0.042,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T21",
+          "query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "VPN在本机打不开，不是机器坏了，我该查远程访问说明吗？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 9.2778,
+                "expanded_bm25": 9.2778,
+                "ngram_dice": 0.2047,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T22",
+          "query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "relevant_doc_ids": [
+            "D07"
+          ],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {
+            "D07": 3
+          },
+          "effective_query": "办公终端的VPN连不上，能省略双重验证直接进吗？",
+          "top_3": [
+            "D07"
+          ],
+          "top_5": [
+            "D07"
+          ],
+          "hits": [
+            {
+              "doc_id": "D07",
+              "title": "远程 VPN 连接 FAQ",
+              "version_date": "2025-03-12",
+              "scope": "已开通远程访问权限的员工",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "connect",
+              "snippet": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 9.2778,
+                "expanded_bm25": 9.2778,
+                "ngram_dice": 0.2047,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D07"
+          ],
+          "recall_at_3": 1.0,
+          "recall_at_5": 1.0,
+          "precision_at_3": 0.3333333333333333,
+          "returned_precision_at_3": 1.0,
+          "mrr": 1.0,
+          "mrr_at_3": 1.0,
+          "ndcg_at_3": 1.0,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T23",
+          "query": "能不能给外包人员按月报手机通讯费？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "能不能给外包人员按月报手机通讯费？",
+          "top_3": [
+            "D05"
+          ],
+          "top_5": [
+            "D05"
+          ],
+          "hits": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 0.35,
+              "channel_scores": {
+                "bm25": 1.6785,
+                "expanded_bm25": 5.7988,
+                "ngram_dice": 0.0763,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35
+                }
+              }
+            }
+          ],
+          "candidate_doc_ids": [
+            "D05"
+          ],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0.0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        },
+        {
+          "id": "T24",
+          "query": "公司食堂餐标和生日福利额度各是多少？",
+          "relevant_doc_ids": [],
+          "irrelevant_doc_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "expected_conflict_doc_ids": [],
+          "relevance_grade": {},
+          "effective_query": "公司食堂餐标和生日福利额度各是多少？",
+          "top_3": [],
+          "top_5": [],
+          "hits": [],
+          "candidate_doc_ids": [],
+          "recall_at_3": null,
+          "recall_at_5": null,
+          "precision_at_3": 0.0,
+          "returned_precision_at_3": 0,
+          "mrr": 0,
+          "mrr_at_3": 0,
+          "ndcg_at_3": null,
+          "conflict_complete_at_3": null,
+          "conflict_complete_at_5": null,
+          "conflict_complete_in_pool": null
+        }
+      ],
+      "definitions": {
+        "positive_macro": "Recall/P@3/MRR/NDCG/returned precision averaged over positive queries",
+        "precision_at_3": "relevant in first 3 / 3; unfilled slots remain in denominator",
+        "mrr": "first relevant rank within top5; mrr_at_3 reported separately",
+        "ndcg_at_3": "gain=2^grade-1; log2 rank discount",
+        "micro_returned_precision_at_3": "all relevant top3 hits / all returned top3 hits, including negative queries",
+        "negative_false_positive_rate": "negative queries with any top3 result / all negative queries",
+        "conflict": "all labeled conflict documents must be present; no first-hit success",
+        "candidate_pool": "All positive eligible scores after filters, before top-k; route union is recorded separately by explain()",
+        "history": "Evaluator joins prior USER query for retrieval only; no model conversation claim"
+      }
+    }
+  }
+}

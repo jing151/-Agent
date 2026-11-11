@@ -1,0 +1,28 @@
+{
+  "execution_id": "R11-2a0e4e9c49a14eeab14ff980746e4566",
+  "decision_index": 1,
+  "budget_request_number": 17,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "95270613-51fd-4fdc-ba6f-c96b9d558185",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1865,
+    "completion_tokens": 126,
+    "total_tokens": 1991,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 201
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"申请提交后是否立即生效\",\"top_k\":3},\"decision_summary\":\"问题未指明申请类型，但包含“提交后立即生效”的业务线索，先检索知识库确认是否存在相关制度及适用对象。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.7094374999978754
+}

@@ -1,0 +1,5 @@
+ERROR: usage: python -m pytest [options] [file_or_dir] [file_or_dir] [...]
+python -m pytest: error: unrecognized arguments: --artifacts-dir
+  inifile: D:\Agent\deliverables\enterprise-knowledge-agent-submission-20261111\pyproject.toml
+  rootdir: D:\Agent\deliverables\enterprise-knowledge-agent-submission-20261111
+

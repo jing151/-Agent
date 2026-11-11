@@ -1,0 +1,17 @@
+{
+  "execution_id": "R11-2a0e4e9c49a14eeab14ff980746e4566",
+  "case_id": "R11",
+  "input": {
+    "question": "申请提交后是否立即生效？",
+    "history": []
+  },
+  "previous_agent_run_id": null,
+  "evaluation_mode": "real",
+  "config": {
+    "max_steps": 8,
+    "max_tool_calls": 6,
+    "require_claims": true,
+    "answer_quality_mode": "enforce"
+  },
+  "knowledge_base_sha256": "129a7ac5eeb9d0f3137c0e746b01e30006c2cf6a53526ce70f8489174c1125f3"
+}

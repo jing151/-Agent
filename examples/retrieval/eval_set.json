@@ -1,0 +1,14 @@
+[
+  {"query": "报销期限是多少？", "relevant_doc_ids": ["D01", "D02"]},
+  {"query": "报销需要几天内完成？", "relevant_doc_ids": ["D01", "D02"]},
+  {"query": "员工垫付费用后最晚什么时候交票？", "relevant_doc_ids": ["D01", "D02"]},
+  {"query": "费用报销的提交时限是什么？", "relevant_doc_ids": ["D01", "D02"]},
+  {"query": "交票最迟是什么时候？", "relevant_doc_ids": ["D01", "D02"]},
+  {"query": "电脑坏了找谁修理？", "relevant_doc_ids": ["D03"]},
+  {"query": "笔记本不能开机去哪里处理？", "relevant_doc_ids": ["D03"]},
+  {"query": "公司设备故障如何报修？", "relevant_doc_ids": ["D03"]},
+  {"query": "邮箱密码忘了如何找回？", "relevant_doc_ids": ["D04", "D05"]},
+  {"query": "手机端修改密码的入口在哪？", "relevant_doc_ids": ["D05"]},
+  {"query": "掌上能找回密码吗？", "relevant_doc_ids": ["D05"]},
+  {"query": "带薪假在哪里申请？", "relevant_doc_ids": ["D06"]}
+]

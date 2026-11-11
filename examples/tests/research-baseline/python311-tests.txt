@@ -1,0 +1,29 @@
+........................................................................ [ 14%]
+........................................................................ [ 28%]
+........................................................................ [ 42%]
+...............F........................................................ [ 57%]
+........................................................................ [ 71%]
+........................................................................ [ 85%]
+.......................................................................  [100%]
+================================== FAILURES ===================================
+_________ test_holdout_result_recomputes_without_changing_retrievers __________
+
+store = <knowledge_agent.tools.document_reader.DocumentStore object at 0x000001F564C3A650>
+
+    def test_holdout_result_recomputes_without_changing_retrievers(store):
+        directory = ROOT / "examples/evaluation_v3/retrieval"
+        cases = load(directory / "holdout.json")
+        report = load(directory / "holdout-results.json")
+        for name, cls in [("original_hybrid", OriginalHybridRetriever), ("optimized_hybrid", HybridRetriever)]:
+>           assert benchmark(store, cases, cls(store)) == report["systems"][name]
+E           AssertionError: assert {'recall_at_3...rr': 0.7, ...} == {'recall_at_3...rr': 0.7, ...}
+E             
+E             Omitting 11 identical items, use -vv to show
+E             Differing items:
+E             {'returned_precision_at_3': 0.6666666666666666} != {'returned_precision_at_3': 0.6666666666666667}
+E             Use -v to get more diff
+
+tests\test_final_holdout_and_materials.py:32: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_final_holdout_and_materials.py::test_holdout_result_recomputes_without_changing_retrievers
+1 failed, 502 passed in 29.07s

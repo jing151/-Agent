@@ -1,0 +1,28 @@
+{
+  "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+  "decision_index": 8,
+  "budget_request_number": 13,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "32d9de9b-ddb6-4bdd-bd92-94b7237b86de",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 7192,
+    "completion_tokens": 3730,
+    "total_tokens": 10922,
+    "prompt_tokens_details": {
+      "cached_tokens": 6016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2918
+    },
+    "prompt_cache_hit_tokens": 6016,
+    "prompt_cache_miss_tokens": 1176
+  },
+  "raw_action_json": "{\"action\":\"ASK_CLARIFICATION\",\"arguments\":{\"question\":\"请问您适用的是制度A还是制度B？\",\"reason\":\"据此只能推断两份制度规定的提交期限不一致。资料未说明适用范围、优先级或替代关系。无法确认您应适用的唯一截止期限。\",\"answer\":\"制度A规定：“员工应在费用发生之日起 30 个自然日内提交报销申请。”制度B规定：“员工应在费用发生之日起 15 个自然日内提交报销申请。”据此只能推断两份制度规定的提交期限不一致。资料未说明适用范围、优先级或替代关系。无法确认您应适用的唯一截止期限。\",\"citations\":[{\"doc_id\":\"D01\",\"version_date\":\"2025-01-01\",\"quote\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\"},{\"doc_id\":\"D02\",\"version_date\":\"2025-03-01\",\"quote\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}],\"gaps\":[\"两份制度各自的适用范围未说明\",\"两份制度之间是否存在优先级或替代关系未说明\",\"您所属单位或员工类别适用哪份制度未知\"],\"claims\":[{\"claim_id\":\"c1\",\"text\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"制度A原文直接规定\"},{\"claim_id\":\"c2\",\"text\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"制度B原文直接规定\"},{\"claim_id\":\"c3\",\"text\":\"据此只能推断两份制度规定的提交期限不一致。\",\"kind\":\"INFERENCE\",\"citation_indices\":[0,1],\"rationale\":\"两份已读原文分别规定的期限不同，只能据此做有限比较，不能确定适用关系\"},{\"claim_id\":\"c4\",\"text\":\"资料未说明适用范围、优先级或替代关系。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1],\"rationale\":\"两份已读制度的scope、priority均为空，supersedes为空\"},{\"claim_id\":\"c5\",\"text\":\"无法确认您应适用的唯一截止期限。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1],\"rationale\":\"缺少适用对象与优先级信息，不能认定某一期限适用于您\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"制度A规定：“员工应在费用发生之日起 30 个自然日内提交报销申请。”\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"制度B规定：“员工应在费用发生之日起 15 个自然日内提交报销申请。”\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"据此只能推断两份制度规定的提交期限不一致。\",\"claim_ids\":[\"c3\"]},{\"segment_id\":\"s4\",\"part\":\"answer\",\"text\":\"资料未说明适用范围、优先级或替代关系。\",\"claim_ids\":[\"c4\"]},{\"segment_id\":\"s5\",\"part\":\"answer\",\"text\":\"无法确认您应适用的唯一截止期限。\",\"claim_ids\":[\"c5\"]},{\"segment_id\":\"s6\",\"part\":\"reason\",\"text\":\"据此只能推断两份制度规定的提交期限不一致。\",\"claim_ids\":[\"c3\"]},{\"segment_id\":\"s7\",\"part\":\"reason\",\"text\":\"资料未说明适用范围、优先级或替代关系。\",\"claim_ids\":[\"c4\"]},{\"segment_id\":\"s8\",\"part\":\"reason\",\"text\":\"无法确认您应适用的唯一截止期限。\",\"claim_ids\":[\"c5\"]}]},\"decision_summary\":\"检索命中两份费用报销制度，均已成功读取：A为30个自然日、B为15个自然日，两者scope、priority与supersedes均未说明，无法判断适用关系，故列出双方原文并请用户确认适用制度。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 19.5334397000006
+}

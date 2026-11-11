@@ -1,0 +1,28 @@
+{
+  "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+  "decision_index": 5,
+  "budget_request_number": 5,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "b0d27458-90f5-4efa-a5b0-2b80e008f511",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2947,
+    "completion_tokens": 494,
+    "total_tokens": 3441,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 252
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 899
+  },
+  "raw_action_json": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"本次检索未查到公司年终奖相关制度或文件，无法确认2026年年终奖的具体发放金额。\",\"citations\":[],\"gaps\":[\"公司年终奖/奖金的制度依据或发放办法\",\"2026年年终奖的具体计算标准与发放金额\",\"2026年度奖金发放的正式通知或审批文件\"],\"status\":\"insufficient_evidence\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"本次检索未查到公司年终奖相关制度或文件，无法确认2026年年终奖的具体发放金额。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"三次关键词检索均无结果，且未成功读取任何相关资料。\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"本次检索未查到公司年终奖相关制度或文件，无法确认2026年年终奖的具体发放金额。\",\"claim_ids\":[\"c1\"]}]},\"decision_summary\":\"知识库多次检索均无年终奖相关结果，且未读取到任何支持性原文；按证据边界说明无法确认具体金额，并列出缺失资料。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 3.2281246000020474
+}

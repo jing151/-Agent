@@ -1,0 +1,28 @@
+{
+  "execution_id": "R11-2a0e4e9c49a14eeab14ff980746e4566",
+  "decision_index": 3,
+  "budget_request_number": 19,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "246c9fd6-fe52-479e-bf63-866de4b4f195",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2321,
+    "completion_tokens": 389,
+    "total_tokens": 2710,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 237
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 273
+  },
+  "raw_action_json": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"依据《申请与补贴生效说明》，申请提交后立即生效。\",\"citations\":[{\"doc_id\":\"APPROVAL_POLICY\",\"version_date\":\"2026-01-01\",\"quote\":\"申请提交后立即生效。\"}],\"gaps\":[],\"status\":\"completed\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"申请提交后立即生效。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"《申请与补贴生效说明》制度原文直接规定。\"}]},\"decision_summary\":\"已成功读取《申请与补贴生效说明》制度原文，其中明确写明“申请提交后立即生效”，与问题直接对应，可据此作答。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 2.5293280000005325
+}

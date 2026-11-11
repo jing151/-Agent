@@ -1,0 +1,31 @@
+{
+  "mode": "mock",
+  "arguments": [
+    "--fail-tool",
+    "read:always"
+  ],
+  "command": [
+    "D:\\Agent\\.eka-minimal-check\\env\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\scripts\\offline_python.py",
+    "--audit-report",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\persistent_read_failure\\network.json",
+    "--module",
+    "knowledge_agent",
+    "--",
+    "--mode",
+    "mock",
+    "--answer-quality",
+    "enforce",
+    "--input",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\persistent_read_failure\\input.json",
+    "--fail-tool",
+    "read:always",
+    "--output",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\persistent_read_failure\\output.json",
+    "--trace",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\persistent_read_failure\\trace.json"
+  ],
+  "new_real_api_calls": 0
+}

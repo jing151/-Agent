@@ -1,0 +1,491 @@
+{
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "technical_matrix_complete": false,
+  "overall_goal_complete": false,
+  "original_attempts_spent": 10,
+  "repaired_attempts_spent": 40,
+  "combined_attempts_spent": 50,
+  "combined_limit": 200,
+  "repaired_total_tokens": 173838,
+  "original_total_tokens": 36362,
+  "combined_total_tokens": 210200,
+  "http_elapsed_seconds": 271.4740099000119,
+  "unique_new_response_ids": 40,
+  "cases_executed": 7,
+  "cases_passed": 6,
+  "cases": [
+    {
+      "case_id": "R01",
+      "batch": "A",
+      "execution_status": "executed",
+      "evaluation_mode": "real",
+      "status": "completed",
+      "technical_pass": true,
+      "http_attempts": 5,
+      "total_tokens": 15157,
+      "http_elapsed_seconds": 14.035377200005314,
+      "rejected_proposals": 2,
+      "citations": 1,
+      "output": "examples/completion_repair/real/A/outputs/R01-d269371307a848e0b9161fad4bed9ac4.json",
+      "review": "examples/completion_repair/real/A/reviews/R01.json",
+      "recovery": {
+        "read_doc_ids": [
+          "D03"
+        ],
+        "citation_doc_ids": [
+          "D03"
+        ],
+        "evidence_repair_observed": true,
+        "fault_exercised": false,
+        "label": "proactive_rewrite",
+        "successful_dynamic_recovery": false,
+        "recovery_after_observation": false,
+        "original_first_search": false,
+        "first_search_failed_or_unrelated": false,
+        "first_search_empty": false,
+        "first_search_unrelated": false,
+        "search_queries": [
+          "公司设备故障报修提交入口 报修流程"
+        ],
+        "second_query_changed": false,
+        "new_relevant_doc_ids": [],
+        "failure_observation_delivered": false,
+        "same_query_tool_retry": false,
+        "final_retrieved_doc_ids": [
+          "D03"
+        ],
+        "full_target_recall": true,
+        "business_evidence_gate": true
+      }
+    },
+    {
+      "case_id": "R02",
+      "batch": "A",
+      "execution_status": "executed",
+      "evaluation_mode": "real",
+      "status": "needs_clarification",
+      "technical_pass": true,
+      "http_attempts": 7,
+      "total_tokens": 37269,
+      "http_elapsed_seconds": 68.98591429999942,
+      "rejected_proposals": 3,
+      "citations": 2,
+      "output": "examples/completion_repair/real/A/outputs/R02-32f9a74ef8c64edfa767d0b789393976.json",
+      "review": "examples/completion_repair/real/A/reviews/R02.json",
+      "recovery": {
+        "read_doc_ids": [
+          "D01",
+          "D02"
+        ],
+        "citation_doc_ids": [
+          "D01",
+          "D02"
+        ],
+        "evidence_repair_observed": true,
+        "fault_exercised": false,
+        "label": "proactive_rewrite",
+        "successful_dynamic_recovery": false,
+        "recovery_after_observation": false,
+        "original_first_search": false,
+        "first_search_failed_or_unrelated": false,
+        "first_search_empty": false,
+        "first_search_unrelated": false,
+        "search_queries": [
+          "员工费用报销期限 报销时限 规定"
+        ],
+        "second_query_changed": false,
+        "new_relevant_doc_ids": [],
+        "failure_observation_delivered": false,
+        "same_query_tool_retry": false,
+        "final_retrieved_doc_ids": [
+          "D01",
+          "D02"
+        ],
+        "full_target_recall": true,
+        "business_evidence_gate": true
+      }
+    },
+    {
+      "case_id": "R03",
+      "batch": "B",
+      "execution_status": "executed",
+      "evaluation_mode": "real",
+      "status": "insufficient_evidence",
+      "technical_pass": true,
+      "http_attempts": 5,
+      "total_tokens": 12438,
+      "http_elapsed_seconds": 10.081424799998786,
+      "rejected_proposals": 1,
+      "citations": 0,
+      "output": "examples/completion_repair/real/B/outputs/R03-0e5712fb60de4a8e9b4f20b762cc9769.json",
+      "review": "examples/completion_repair/real/B/reviews/R03.json",
+      "recovery": {
+        "read_doc_ids": [],
+        "citation_doc_ids": [],
+        "evidence_repair_observed": true,
+        "fault_exercised": false,
+        "label": "proactive_rewrite",
+        "successful_dynamic_recovery": false,
+        "recovery_after_observation": false,
+        "original_first_search": false,
+        "first_search_failed_or_unrelated": true,
+        "first_search_empty": true,
+        "first_search_unrelated": false,
+        "search_queries": [
+          "年终奖 发放 标准 2026",
+          "年终奖 奖金 发放 办法 薪酬",
+          "奖金 奖励 薪酬 管理办法 员工"
+        ],
+        "second_query_changed": true,
+        "new_relevant_doc_ids": [],
+        "failure_observation_delivered": true,
+        "same_query_tool_retry": false,
+        "final_retrieved_doc_ids": [],
+        "full_target_recall": null,
+        "business_evidence_gate": true
+      }
+    },
+    {
+      "case_id": "R04",
+      "batch": "B",
+      "execution_status": "executed",
+      "evaluation_mode": "real",
+      "status": "max_steps_reached",
+      "technical_pass": false,
+      "http_attempts": 8,
+      "total_tokens": 42734,
+      "http_elapsed_seconds": 61.1885426000008,
+      "rejected_proposals": 5,
+      "citations": 0,
+      "output": "examples/completion_repair/real/B/outputs/R04-3ccf4a5a795d47658e346a5df3d7c06e.json",
+      "review": "examples/completion_repair/real/B/reviews/R04.json",
+      "recovery": {
+        "read_doc_ids": [
+          "D01",
+          "D02"
+        ],
+        "citation_doc_ids": [],
+        "evidence_repair_observed": true,
+        "fault_exercised": false,
+        "label": "proactive_rewrite",
+        "successful_dynamic_recovery": false,
+        "recovery_after_observation": false,
+        "original_first_search": false,
+        "first_search_failed_or_unrelated": false,
+        "first_search_empty": false,
+        "first_search_unrelated": false,
+        "search_queries": [
+          "出差差旅费报销 票据提交 截止时间 最晚报账期限"
+        ],
+        "second_query_changed": false,
+        "new_relevant_doc_ids": [],
+        "failure_observation_delivered": false,
+        "same_query_tool_retry": false,
+        "final_retrieved_doc_ids": [
+          "D01",
+          "D02"
+        ],
+        "full_target_recall": true,
+        "business_evidence_gate": false
+      }
+    },
+    {
+      "case_id": "R05",
+      "batch": "B",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R06",
+      "batch": "B",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R07",
+      "batch": "C",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R08",
+      "batch": "B",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R09",
+      "batch": "A",
+      "execution_status": "executed",
+      "evaluation_mode": "real",
+      "status": "insufficient_evidence",
+      "technical_pass": true,
+      "http_attempts": 4,
+      "total_tokens": 10954,
+      "http_elapsed_seconds": 11.713700300006167,
+      "rejected_proposals": 1,
+      "citations": 1,
+      "output": "examples/completion_repair/real/A/outputs/R09-7060be57765345b5b6847d4f2bb0245a.json",
+      "review": "examples/completion_repair/real/A/reviews/R09.json",
+      "recovery": {
+        "read_doc_ids": [
+          "APPROVAL_POLICY"
+        ],
+        "citation_doc_ids": [
+          "APPROVAL_POLICY"
+        ],
+        "evidence_repair_observed": true,
+        "fault_exercised": false,
+        "label": "proactive_rewrite",
+        "successful_dynamic_recovery": false,
+        "recovery_after_observation": false,
+        "original_first_search": false,
+        "first_search_failed_or_unrelated": false,
+        "first_search_empty": false,
+        "first_search_unrelated": false,
+        "search_queries": [
+          "申请提交后生效时间 审批通过后生效"
+        ],
+        "second_query_changed": false,
+        "new_relevant_doc_ids": [],
+        "failure_observation_delivered": false,
+        "same_query_tool_retry": false,
+        "final_retrieved_doc_ids": [
+          "APPROVAL_POLICY"
+        ],
+        "full_target_recall": true,
+        "business_evidence_gate": true
+      }
+    },
+    {
+      "case_id": "R10",
+      "batch": "C",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R11",
+      "batch": "A",
+      "execution_status": "executed",
+      "evaluation_mode": "real",
+      "status": "completed",
+      "technical_pass": true,
+      "http_attempts": 3,
+      "total_tokens": 6919,
+      "http_elapsed_seconds": 5.886407499998313,
+      "rejected_proposals": 0,
+      "citations": 1,
+      "output": "examples/completion_repair/real/A/outputs/R11-2a0e4e9c49a14eeab14ff980746e4566.json",
+      "review": "examples/completion_repair/real/A/reviews/R11.json",
+      "recovery": {
+        "read_doc_ids": [
+          "APPROVAL_POLICY"
+        ],
+        "citation_doc_ids": [
+          "APPROVAL_POLICY"
+        ],
+        "evidence_repair_observed": false,
+        "fault_exercised": false,
+        "label": "proactive_rewrite",
+        "successful_dynamic_recovery": false,
+        "recovery_after_observation": false,
+        "original_first_search": false,
+        "first_search_failed_or_unrelated": false,
+        "first_search_empty": false,
+        "first_search_unrelated": false,
+        "search_queries": [
+          "申请提交后是否立即生效"
+        ],
+        "second_query_changed": false,
+        "new_relevant_doc_ids": [],
+        "failure_observation_delivered": false,
+        "same_query_tool_retry": false,
+        "final_retrieved_doc_ids": [
+          "APPROVAL_POLICY"
+        ],
+        "full_target_recall": true,
+        "business_evidence_gate": true
+      }
+    },
+    {
+      "case_id": "R12",
+      "batch": "A",
+      "execution_status": "executed",
+      "evaluation_mode": "real",
+      "status": "completed",
+      "technical_pass": true,
+      "http_attempts": 8,
+      "total_tokens": 48367,
+      "http_elapsed_seconds": 99.58264320000308,
+      "rejected_proposals": 3,
+      "citations": 1,
+      "output": "examples/completion_repair/real/A/outputs/R12-987f9dad504f4b8f8bc19ea3ca983e2f.json",
+      "review": "examples/completion_repair/real/A/reviews/R12.json",
+      "recovery": {
+        "read_doc_ids": [
+          "D04",
+          "D05"
+        ],
+        "citation_doc_ids": [
+          "D04"
+        ],
+        "evidence_repair_observed": true,
+        "fault_exercised": false,
+        "label": "proactive_rewrite",
+        "successful_dynamic_recovery": false,
+        "recovery_after_observation": false,
+        "original_first_search": false,
+        "first_search_failed_or_unrelated": false,
+        "first_search_empty": false,
+        "first_search_unrelated": false,
+        "search_queries": [
+          "公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程",
+          "IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定"
+        ],
+        "second_query_changed": true,
+        "new_relevant_doc_ids": [],
+        "failure_observation_delivered": false,
+        "same_query_tool_retry": false,
+        "final_retrieved_doc_ids": [
+          "D04",
+          "D05"
+        ],
+        "full_target_recall": true,
+        "business_evidence_gate": true
+      }
+    },
+    {
+      "case_id": "R13",
+      "batch": "C",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R14",
+      "batch": "C",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R15",
+      "batch": "C",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R16",
+      "batch": "D",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R17",
+      "batch": "D",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R18",
+      "batch": "D",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R19",
+      "batch": "D",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R20",
+      "batch": "D",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R21",
+      "batch": "E",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R22",
+      "batch": "E",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R23",
+      "batch": "E",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    },
+    {
+      "case_id": "R24",
+      "batch": "E",
+      "execution_status": "not_executed",
+      "technical_pass": false
+    }
+  ],
+  "stability": [
+    {
+      "kind": "normal",
+      "required_runs": 3,
+      "executed": 1,
+      "same_input": true,
+      "same_kb": true,
+      "same_candidate": true,
+      "passed": false,
+      "statuses": [
+        "completed"
+      ]
+    },
+    {
+      "kind": "conflict",
+      "required_runs": 3,
+      "executed": 1,
+      "same_input": true,
+      "same_kb": true,
+      "same_candidate": true,
+      "passed": false,
+      "statuses": [
+        "needs_clarification"
+      ]
+    },
+    {
+      "kind": "out_of_scope",
+      "required_runs": 3,
+      "executed": 1,
+      "same_input": true,
+      "same_kb": true,
+      "same_candidate": true,
+      "passed": false,
+      "statuses": [
+        "insufficient_evidence"
+      ]
+    }
+  ],
+  "successful_recovery_cases": [],
+  "natural_recovery_cases": [],
+  "controlled_recovery_case": null,
+  "batch_ledger_states": {
+    "A": {
+      "attempts": 27,
+      "execution_enabled": false,
+      "stop_reason": "batch_completed_and_technically_reviewed"
+    },
+    "B": {
+      "attempts": 13,
+      "execution_enabled": false,
+      "stop_reason": "semantic_acceptance_failed"
+    }
+  },
+  "halt_records": [
+    {
+      "case_id": "R04",
+      "status": "max_steps_reached",
+      "reason": "status_or_service_failure_requires_offline_review"
+    }
+  ],
+  "scope_note": "Only explicitly reviewed same-candidate real runs count. Original two runs are historical; faults/controlled injection remain labeled. GitHub and truthful personal fields still deferred by user."
+}

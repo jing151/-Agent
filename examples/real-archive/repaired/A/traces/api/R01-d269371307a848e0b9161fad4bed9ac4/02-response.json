@@ -1,0 +1,28 @@
+{
+  "execution_id": "R01-d269371307a848e0b9161fad4bed9ac4",
+  "decision_index": 2,
+  "budget_request_number": 2,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "a3007d20-01de-4028-8594-97b46e8f509f",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2175,
+    "completion_tokens": 71,
+    "total_tokens": 2246,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 21
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 255
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D03\",\"section_id\":null},\"decision_summary\":\"检索到与公司设备报修入口直接相关的 FAQ，需读取原文以核对提交入口及填写要求后作答。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 2.0798138999998628
+}

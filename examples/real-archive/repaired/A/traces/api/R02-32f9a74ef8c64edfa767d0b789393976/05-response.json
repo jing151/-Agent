@@ -1,0 +1,28 @@
+{
+  "execution_id": "R02-32f9a74ef8c64edfa767d0b789393976",
+  "decision_index": 5,
+  "budget_request_number": 10,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "c2cee1ba-da81-4ecf-a024-8ee82936f392",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 4364,
+    "completion_tokens": 3245,
+    "total_tokens": 7609,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2641
+    },
+    "prompt_cache_hit_tokens": 2688,
+    "prompt_cache_miss_tokens": 1676
+  },
+  "raw_action_json": "{\"action\":\"ASK_CLARIFICATION\",\"arguments\":{\"question\":\"请确认贵司适用《费用报销制度 A》还是《费用报销制度 B》，以及各自适用的部门、费用类型或人员范围？\",\"reason\":\"根据已读取的两份制度，无法确认应适用哪一份制度。\",\"answer\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请。《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。根据已读取的两份制度，无法确认应适用哪一份制度。\",\"citations\":[{\"doc_id\":\"D01\",\"version_date\":\"2025-01-01\",\"quote\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\"},{\"doc_id\":\"D02\",\"version_date\":\"2025-03-01\",\"quote\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}],\"gaps\":[\"《费用报销制度 A》与《费用报销制度 B》各自的适用范围（部门、费用类型、人员等）\",\"两份制度之间是否存在优先级或替代关系\",\"当前对员工实际适用的报销制度\"],\"claims\":[{\"claim_id\":\"c1\",\"text\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"《费用报销制度 A》原文\"},{\"claim_id\":\"c2\",\"text\":\"《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"《费用报销制度 B》原文\"},{\"claim_id\":\"c3\",\"text\":\"根据已读取的两份制度，无法确认应适用哪一份制度\",\"kind\":\"UNKNOWN\",\"citation_indices\":[],\"rationale\":\"两份文件均无 scope、priority、supersedes 信息，适用关系无法确认\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"根据已读取的两份制度，无法确认应适用哪一份制度。\",\"claim_ids\":[\"c3\"]},{\"segment_id\":\"r1\",\"part\":\"reason\",\"text\":\"根据已读取的两份制度，无法确认应适用哪一份制度。\",\"claim_ids\":[\"c3\"]}]},\"decision_summary\":\"两份制度对报销期限规定不同，且文件未提供适用范围、优先级或替代关系，需请用户确认适用制度。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 19.45695540000088
+}

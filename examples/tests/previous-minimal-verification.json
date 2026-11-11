@@ -1,0 +1,70 @@
+{
+  "scope": "minimal_package_offline_acceptance",
+  "actual_api_calls": 0,
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "package_checksums",
+      "passed": true
+    },
+    {
+      "name": "normal",
+      "passed": true,
+      "status": "completed"
+    },
+    {
+      "name": "conflict",
+      "passed": true,
+      "status": "needs_clarification"
+    },
+    {
+      "name": "out_of_scope",
+      "passed": true,
+      "status": "insufficient_evidence"
+    },
+    {
+      "name": "paraphrase",
+      "passed": true,
+      "status": "needs_clarification"
+    },
+    {
+      "name": "follow_up",
+      "passed": true,
+      "status": "completed"
+    },
+    {
+      "name": "tool_failure",
+      "passed": true,
+      "status": "completed"
+    },
+    {
+      "name": "document_replacement",
+      "passed": true,
+      "status": "completed"
+    },
+    {
+      "name": "step_limit",
+      "passed": true,
+      "status": "max_steps_reached"
+    },
+    {
+      "name": "tool_limit",
+      "passed": true,
+      "status": "max_steps_reached"
+    },
+    {
+      "name": "persistent_read_failure",
+      "passed": true,
+      "status": "tool_failed"
+    },
+    {
+      "name": "retrieval_baseline_comparison",
+      "passed": true,
+      "cases": 12
+    }
+  ],
+  "source_candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "enhanced_real_matrix_complete": false,
+  "note": "Mock checks and saved real evidence are separate. See docs/03-evaluation.md for the real failure and stop condition."
+}

@@ -1,0 +1,28 @@
+{
+  "execution_id": "R02-4aa12d15cec743399e9922c6e87bd4b0",
+  "decision_index": 2,
+  "budget_request_number": 6,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "2040face-2234-4fe3-8b6c-b3815a43ac5e",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2295,
+    "completion_tokens": 103,
+    "total_tokens": 2398,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 503
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D01\",\"section_id\":null},\"decision_summary\":\"检索发现两份同主题制度，分别规定30日和15日，且均无适用范围、优先级或替代关系说明；需读取双方原文以判断冲突并准备澄清。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.0665652999996382
+}

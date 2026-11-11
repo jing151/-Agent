@@ -1,0 +1,52 @@
+[
+  {
+    "run_id": "de5b1688-9bd5-4bfa-9c0b-fbadb7e65264",
+    "model_mode": "mock",
+    "model_name": "scripted-offline-contract",
+    "step": 1,
+    "action": "ANSWER",
+    "arguments": {
+      "answer": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+      "citations": [
+        {
+          "doc_id": "D03",
+          "version_date": "2025-02-10",
+          "quote": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。"
+        }
+      ],
+      "gaps": [],
+      "status": "completed",
+      "claims": [
+        {
+          "text": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+          "kind": "DIRECT",
+          "citation_indices": [
+            0
+          ],
+          "rationale": ""
+        }
+      ]
+    },
+    "tool_name": null,
+    "tool_arguments": {},
+    "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"citation_validation_failed\", \"validation_stage\": \"citation_integrity\", \"details\": [\"document_not_read:D03\"], \"submitted_to_user\": false, \"repair_hint\": \"修正文档/版本/逐字片段和claim引用索引；引文必须来自本次成功READ。\"}}",
+    "observation": {
+      "ok": false,
+      "error": {
+        "code": "citation_validation_failed",
+        "validation_stage": "citation_integrity",
+        "details": [
+          "document_not_read:D03"
+        ],
+        "submitted_to_user": false,
+        "repair_hint": "修正文档/版本/逐字片段和claim引用索引；引文必须来自本次成功READ。"
+      }
+    },
+    "decision_summary": "离线脚本化测试动作，不是真实模型新决策。",
+    "next_action": "END",
+    "timestamp": "2026-11-11T06:29:29.808018+00:00",
+    "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\",\"citations\":[{\"doc_id\":\"D03\",\"version_date\":\"2025-02-10\",\"quote\":\"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\"}],\"gaps\":[],\"status\":\"completed\",\"claims\":[{\"text\":\"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"\"}]},\"decision_summary\":\"离线脚本化测试动作，不是真实模型新决策。\"}",
+    "model_metadata": {},
+    "final_status": "max_steps_reached"
+  }
+]

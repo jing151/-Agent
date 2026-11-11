@@ -1,0 +1,48 @@
+{
+  "case_id": "R09",
+  "technical_pass": true,
+  "reviewer": "AI_assisted_technical_review",
+  "human_approval": false,
+  "semantic_review": "已READ审批A原文并引用主管审批要求；对提交后是否立即生效及具体时点明确限定本次资料为UNKNOWN，列出对应gaps，没有把审批要求推出立即或不立即。insufficient_evidence符合预冻结业务条件。",
+  "independent_audit": {
+    "case_id": "R09",
+    "execution_id": "R09-7060be57765345b5b6847d4f2bb0245a",
+    "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+    "output_sha256": "2b8866c19e765c7fa8b4bbf37477824e7f1112ea7426886c027c00275c5a608b",
+    "integrity_pass": true,
+    "not_a_semantic_approval": true,
+    "http_attempts": 4,
+    "usage_total_tokens": 10954,
+    "http_elapsed_seconds": 11.713700300006167,
+    "read_doc_ids": [
+      "APPROVAL_POLICY"
+    ],
+    "citations_verified": [
+      {
+        "citation_index": 0,
+        "doc_id": "APPROVAL_POLICY",
+        "quote_sha256": "bd02519b7960b54d4a81020fa76ad37006324a2e4afe2a2c9fe693aea813a03b"
+      }
+    ],
+    "rejected_proposals": [
+      {
+        "step": 3,
+        "action": "ANSWER",
+        "stage": "answer_claim_coverage",
+        "details": [
+          "claim_1:not_in_answer",
+          "unmapped_answer_text",
+          "segment_s2:claim_text_mismatch"
+        ]
+      }
+    ],
+    "final_status": "insufficient_evidence",
+    "response_ids": [
+      "a96224e7-693f-45f7-ab64-74b0a5d1e514",
+      "90be85db-d400-4a30-9fe7-65449c831b25",
+      "6e88cc4d-32ab-40f1-96fc-43a22eff4a2a",
+      "87392ad6-e8e1-4e2a-a483-0af554404ecd"
+    ]
+  },
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33"
+}

@@ -1,0 +1,28 @@
+{
+  "execution_id": "R02-4aa12d15cec743399e9922c6e87bd4b0",
+  "decision_index": 4,
+  "budget_request_number": 8,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "aca970e5-fac9-470c-babc-54d8159913b0",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2721,
+    "completion_tokens": 727,
+    "total_tokens": 3448,
+    "prompt_tokens_details": {
+      "cached_tokens": 2432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43
+    },
+    "prompt_cache_hit_tokens": 2432,
+    "prompt_cache_miss_tokens": 289
+  },
+  "raw_action_json": "{\"action\":\"ASK_CLARIFICATION\",\"arguments\":{\"question\":\"请问贵公司适用的是《费用报销制度 A》（30 个自然日）还是《费用报销制度 B》（15 个自然日）？\",\"reason\":\"这两份制度都规定了报销提交期限，但规则不同；且两份原文均未标明适用范围、优先级或替代关系，因此无法判定应以哪份为准。\",\"answer\":\"本次查到两份制度，它们对员工费用报销提交期限的规定不一致：依据《费用报销制度 A》，员工应在费用发生之日起 30 个自然日内提交报销申请；依据《费用报销制度 B》，员工应在费用发生之日起 15 个自然日内提交报销申请。由于两份原文均未明确各自的适用对象、优先级，也没有说明是否替代对方，目前不能确定应以哪一项期限为准。\",\"citations\":[{\"doc_id\":\"D01\",\"version_date\":\"2025-01-01\",\"quote\":\"员工应在费用发生之日起 30 个自然日内提交报销申请。\"},{\"doc_id\":\"D02\",\"version_date\":\"2025-03-01\",\"quote\":\"员工应在费用发生之日起 15 个自然日内提交报销申请。\"}],\"gaps\":[\"两份制度未注明适用范围\",\"两份制度未注明优先级或替代关系\",\"缺少可判断哪份制度适用于该员工的依据\"],\"claims\":[{\"claim_id\":\"c1\",\"text\":\"《费用报销制度 A》规定员工应在费用发生之日起 30 个自然日内提交报销申请。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"D01 报销提交期限原文\"},{\"claim_id\":\"c2\",\"text\":\"《费用报销制度 B》规定员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"D02 报销提交期限原文\"},{\"claim_id\":\"c3\",\"text\":\"两份制度对报销期限的规定不一致，且均未明确适用范围、优先级或替代关系，因此无法确认应以哪一项为准。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0,1],\"rationale\":\"两份原文的 scope、priority、supersedes 均无说明\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"本次查到两份制度，它们对员工费用报销提交期限的规定不一致：\",\"claim_ids\":[]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"依据《费用报销制度 A》，员工应在费用发生之日起 30 个自然日内提交报销申请；\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s3\",\"part\":\"answer\",\"text\":\"依据《费用报销制度 B》，员工应在费用发生之日起 15 个自然日内提交报销申请。\",\"claim_ids\":[\"c2\"]},{\"segment_id\":\"s4\",\"part\":\"answer\",\"text\":\"由于两份原文均未明确各自的适用对象、优先级，也没有说明是否替代对方，目前不能确定应以哪一项期限为准。\",\"claim_ids\":[\"c3\"]}]},\"decision_summary\":\"已成功读取 D01、D02，二者分别规定 30 天和 15 天，且均无 scope、priority、supersedes 说明；属于规则冲突且无法判定适用关系，需向用户确认适用制度。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 3.6275447999978496
+}

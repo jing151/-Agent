@@ -1,0 +1,28 @@
+{
+  "execution_id": "R01-d269371307a848e0b9161fad4bed9ac4",
+  "decision_index": 1,
+  "budget_request_number": 1,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "84895665-d7d9-4162-abdd-ad050c7c3dd6",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1869,
+    "completion_tokens": 71,
+    "total_tokens": 1940,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 19
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 205
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"公司设备故障报修提交入口 报修流程\",\"top_k\":3},\"decision_summary\":\"先检索设备报修入口与流程相关资料，再根据命中结果读取原文确认。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.2072451000021829
+}

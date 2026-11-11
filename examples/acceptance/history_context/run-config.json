@@ -1,0 +1,6 @@
+{
+  "mode": "scripted_offline",
+  "new_real_api_calls": 0,
+  "strict_claims": true,
+  "quality": "enforce"
+}

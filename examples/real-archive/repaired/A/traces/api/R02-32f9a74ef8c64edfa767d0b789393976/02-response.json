@@ -1,0 +1,28 @@
+{
+  "execution_id": "R02-32f9a74ef8c64edfa767d0b789393976",
+  "decision_index": 2,
+  "budget_request_number": 7,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "2fa7d610-a686-44ac-aab4-68c675c31702",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2291,
+    "completion_tokens": 159,
+    "total_tokens": 2450,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 105
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 499
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D01\",\"section_id\":null},\"decision_summary\":\"检索发现两份费用报销制度分别规定30日和15日，适用范围与优先级未明；需先读取原文核实全文及适用关系。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 2.121296399996936
+}

@@ -1,0 +1,28 @@
+{
+  "execution_id": "R09-7060be57765345b5b6847d4f2bb0245a",
+  "decision_index": 4,
+  "budget_request_number": 16,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "87392ad6-e8e1-4e2a-a483-0af554404ecd",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 3135,
+    "completion_tokens": 562,
+    "total_tokens": 3697,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 260
+    },
+    "prompt_cache_hit_tokens": 2304,
+    "prompt_cache_miss_tokens": 831
+  },
+  "raw_action_json": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"申请需要经过直属主管审批。本次资料未规定申请提交后是否立即生效，也未明确具体生效时点。\",\"citations\":[{\"doc_id\":\"APPROVAL_POLICY\",\"version_date\":\"2026-01-01\",\"quote\":\"申请需要经过直属主管审批。\"}],\"gaps\":[\"申请提交后是否立即生效\",\"申请的具体生效时点\"],\"status\":\"insufficient_evidence\",\"claims\":[{\"claim_id\":\"c1\",\"text\":\"申请需要经过直属主管审批。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"制度原文直接规定\"},{\"claim_id\":\"c2\",\"text\":\"本次资料未规定申请提交后是否立即生效，也未明确具体生效时点。\",\"kind\":\"UNKNOWN\",\"citation_indices\":[0],\"rationale\":\"已读原文仅规定审批要求，未规定生效时点\"}],\"answer_segments\":[{\"segment_id\":\"s1\",\"part\":\"answer\",\"text\":\"申请需要经过直属主管审批。\",\"claim_ids\":[\"c1\"]},{\"segment_id\":\"s2\",\"part\":\"answer\",\"text\":\"本次资料未规定申请提交后是否立即生效，也未明确具体生效时点。\",\"claim_ids\":[\"c2\"]}]},\"decision_summary\":\"已读取唯一相关制度原文，仅规定需直属主管审批，未规定提交后生效时点；据实回答并修复claim与段落映射。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 3.4899946000005
+}

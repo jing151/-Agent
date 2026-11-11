@@ -1,0 +1,28 @@
+{
+  "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+  "decision_index": 3,
+  "budget_request_number": 22,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "155091b0-a1aa-42b7-a5a3-3034ecc35658",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2509,
+    "completion_tokens": 540,
+    "total_tokens": 3049,
+    "prompt_tokens_details": {
+      "cached_tokens": 2176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 455
+    },
+    "prompt_cache_hit_tokens": 2176,
+    "prompt_cache_miss_tokens": 333
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"IT服务工单 人工身份核验 企业邮箱 密码重置 备用手机号 邮箱绑定\",\"top_k\":5},\"decision_summary\":\"已读取《企业邮箱密码重置 FAQ》，明确原绑定手机号失效应走 IT 服务工单人工核验；再检索是否有备用手机号或未绑定邮箱的具体处理说明。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 4.749547999999777
+}

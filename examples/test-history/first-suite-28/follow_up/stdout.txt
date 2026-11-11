@@ -1,0 +1,439 @@
+{
+  "answer": "依据 D05（2025-04-01）：员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\n依据 D04（2025-02-15）：忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+  "citations": [
+    {
+      "doc_id": "D05",
+      "version_date": "2025-04-01",
+      "quote": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+    },
+    {
+      "doc_id": "D04",
+      "version_date": "2025-02-15",
+      "quote": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+    }
+  ],
+  "gaps": [],
+  "status": "completed",
+  "trace": [
+    {
+      "run_id": "0eb4902a-c693-467b-8fa9-85d01dd44e7d",
+      "model_mode": "mock",
+      "model_name": "offline-observation-fixture-v1",
+      "step": 1,
+      "action": "SEARCH",
+      "arguments": {
+        "query": "公司邮箱忘记密码了怎么办？ 那手机上也可以操作吗？",
+        "top_k": 3
+      },
+      "tool_name": "search_documents",
+      "tool_arguments": {
+        "query": "公司邮箱忘记密码了怎么办？ 那手机上也可以操作吗？",
+        "top_k": 3
+      },
+      "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"公司邮箱忘记密码了怎么办？ 那手机上也可以操作吗？\", \"results\": [{\"doc_id\": \"D05\", \"title\": \"企业邮箱密码重置移动端 FAQ\", \"version_date\": \"2025-04-01\", \"scope\": \"企业邮箱移动端密码重置\", \"priority\": null, \"supersedes\": [], \"section_id\": \"mobile\", \"snippet\": \"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\", \"score\": 1.0, \"channel_scores\": {\"bm25\": 8.3547, \"expanded_bm25\": 10.0332, \"ngram_dice\": 0.2208, \"relative_support\": 1.0, \"route_support\": {\"original\": 0.35, \"concept_0\": 0.65}}}, {\"doc_id\": \"D04\", \"title\": \"企业邮箱密码重置 FAQ\", \"version_date\": \"2025-02-15\", \"scope\": \"企业邮箱账户\", \"priority\": null, \"supersedes\": [], \"section_id\": \"web\", \"snippet\": \"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+      "observation": {
+        "ok": true,
+        "result": {
+          "query": "公司邮箱忘记密码了怎么办？ 那手机上也可以操作吗？",
+          "results": [
+            {
+              "doc_id": "D05",
+              "title": "企业邮箱密码重置移动端 FAQ",
+              "version_date": "2025-04-01",
+              "scope": "企业邮箱移动端密码重置",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "mobile",
+              "snippet": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 8.3547,
+                "expanded_bm25": 10.0332,
+                "ngram_dice": 0.2208,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            },
+            {
+              "doc_id": "D04",
+              "title": "企业邮箱密码重置 FAQ",
+              "version_date": "2025-02-15",
+              "scope": "企业邮箱账户",
+              "priority": null,
+              "supersedes": [],
+              "section_id": "web",
+              "snippet": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。",
+              "score": 0.723672,
+              "channel_scores": {
+                "bm25": 5.6445,
+                "expanded_bm25": 7.2551,
+                "ngram_dice": 0.184,
+                "relative_support": 0.658,
+                "route_support": {
+                  "original": 0.29597254,
+                  "concept_0": 0.42769923
+                }
+              }
+            }
+          ]
+        },
+        "progress": {
+          "new_candidate_fragments": 2,
+          "new_read_fragments": 0,
+          "decisions_remaining": 7,
+          "tool_calls_remaining": 5,
+          "no_new_search_count": 0
+        }
+      },
+      "decision_summary": "离线测试策略：结合历史问题构造检索输入。",
+      "next_action": "READ",
+      "timestamp": "2026-11-11T06:26:48.236797+00:00",
+      "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"公司邮箱忘记密码了怎么办？ 那手机上也可以操作吗？\",\"top_k\":3},\"decision_summary\":\"离线测试策略：结合历史问题构造检索输入。\"}",
+      "model_metadata": {},
+      "final_status": "completed"
+    },
+    {
+      "run_id": "0eb4902a-c693-467b-8fa9-85d01dd44e7d",
+      "model_mode": "mock",
+      "model_name": "offline-observation-fixture-v1",
+      "step": 2,
+      "action": "READ",
+      "arguments": {
+        "doc_id": "D05",
+        "section_id": null
+      },
+      "tool_name": "read_document",
+      "tool_arguments": {
+        "doc_id": "D05",
+        "section_id": null
+      },
+      "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D05\", \"title\": \"企业邮箱密码重置移动端 FAQ\", \"doc_type\": \"FAQ\", \"version_date\": \"2025-04-01\", \"scope\": \"企业邮箱移动端密码重置\", \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"mobile\", \"title\": \"手机操作\", \"content\": \"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\"}], \"content\": \"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 6, \"tool_calls_remaining\": 4, \"no_new_search_count\": 0}}",
+      "observation": {
+        "ok": true,
+        "result": {
+          "document": {
+            "doc_id": "D05",
+            "title": "企业邮箱密码重置移动端 FAQ",
+            "doc_type": "FAQ",
+            "version_date": "2025-04-01",
+            "scope": "企业邮箱移动端密码重置",
+            "priority": null,
+            "supersedes": [],
+            "sections": [
+              {
+                "section_id": "mobile",
+                "title": "手机操作",
+                "content": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+              }
+            ],
+            "content": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+            "section_id": null
+          }
+        },
+        "progress": {
+          "new_candidate_fragments": 0,
+          "new_read_fragments": 1,
+          "decisions_remaining": 6,
+          "tool_calls_remaining": 4,
+          "no_new_search_count": 0
+        }
+      },
+      "decision_summary": "离线测试策略：读取实际检索到且尚未阅读的候选原文。",
+      "next_action": "READ",
+      "timestamp": "2026-11-11T06:26:48.237139+00:00",
+      "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D05\",\"section_id\":null},\"decision_summary\":\"离线测试策略：读取实际检索到且尚未阅读的候选原文。\"}",
+      "model_metadata": {},
+      "final_status": "completed"
+    },
+    {
+      "run_id": "0eb4902a-c693-467b-8fa9-85d01dd44e7d",
+      "model_mode": "mock",
+      "model_name": "offline-observation-fixture-v1",
+      "step": 3,
+      "action": "READ",
+      "arguments": {
+        "doc_id": "D04",
+        "section_id": null
+      },
+      "tool_name": "read_document",
+      "tool_arguments": {
+        "doc_id": "D04",
+        "section_id": null
+      },
+      "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D04\", \"title\": \"企业邮箱密码重置 FAQ\", \"doc_type\": \"FAQ\", \"version_date\": \"2025-02-15\", \"scope\": \"企业邮箱账户\", \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"web\", \"title\": \"网页端密码重置\", \"content\": \"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\"}, {\"section_id\": \"support\", \"title\": \"验证失败\", \"content\": \"若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"}], \"content\": \"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 5, \"tool_calls_remaining\": 3, \"no_new_search_count\": 0}}",
+      "observation": {
+        "ok": true,
+        "result": {
+          "document": {
+            "doc_id": "D04",
+            "title": "企业邮箱密码重置 FAQ",
+            "doc_type": "FAQ",
+            "version_date": "2025-02-15",
+            "scope": "企业邮箱账户",
+            "priority": null,
+            "supersedes": [],
+            "sections": [
+              {
+                "section_id": "web",
+                "title": "网页端密码重置",
+                "content": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。"
+              },
+              {
+                "section_id": "support",
+                "title": "验证失败",
+                "content": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+              }
+            ],
+            "content": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+            "section_id": null
+          }
+        },
+        "progress": {
+          "new_candidate_fragments": 0,
+          "new_read_fragments": 1,
+          "decisions_remaining": 5,
+          "tool_calls_remaining": 3,
+          "no_new_search_count": 0
+        }
+      },
+      "decision_summary": "离线测试策略：读取实际检索到且尚未阅读的候选原文。",
+      "next_action": "ANSWER",
+      "timestamp": "2026-11-11T06:26:48.237238+00:00",
+      "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D04\",\"section_id\":null},\"decision_summary\":\"离线测试策略：读取实际检索到且尚未阅读的候选原文。\"}",
+      "model_metadata": {},
+      "final_status": "completed"
+    },
+    {
+      "run_id": "0eb4902a-c693-467b-8fa9-85d01dd44e7d",
+      "model_mode": "mock",
+      "model_name": "offline-observation-fixture-v1",
+      "step": 4,
+      "action": "ANSWER",
+      "arguments": {
+        "answer": "依据 D05（2025-04-01）：员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\n依据 D04（2025-02-15）：忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+        "citations": [
+          {
+            "doc_id": "D05",
+            "version_date": "2025-04-01",
+            "quote": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+          },
+          {
+            "doc_id": "D04",
+            "version_date": "2025-02-15",
+            "quote": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+          }
+        ],
+        "gaps": [],
+        "status": "completed",
+        "claims": [
+          {
+            "text": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+            "kind": "DIRECT",
+            "citation_indices": [
+              0
+            ],
+            "rationale": ""
+          },
+          {
+            "text": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+            "kind": "DIRECT",
+            "citation_indices": [
+              1
+            ],
+            "rationale": ""
+          }
+        ]
+      },
+      "tool_name": null,
+      "tool_arguments": {},
+      "observation_summary": "{\"ok\": true, \"result\": {\"status\": \"completed\", \"evidence_review\": {\"coverage\": \"declared_claims_checked\", \"errors\": [], \"warnings\": [], \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [], \"bindings\": [{\"claim_id\": \"legacy_0\", \"claim_index\": 0, \"claim_text\": \"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 50]]}, {\"claim_id\": \"legacy_1\", \"claim_index\": 1, \"claim_text\": \"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\", \"alignment\": \"bounded_normalized\", \"public_relation_t",
+      "observation": {
+        "ok": true,
+        "result": {
+          "status": "completed",
+          "evidence_review": {
+            "coverage": "declared_claims_checked",
+            "errors": [],
+            "warnings": [],
+            "layers": {
+              "schema": "passed_before_review",
+              "citation_integrity": "passed_before_review",
+              "answer_claim_coverage": {
+                "errors": [],
+                "bindings": [
+                  {
+                    "claim_id": "legacy_0",
+                    "claim_index": 0,
+                    "claim_text": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        0,
+                        50
+                      ]
+                    ]
+                  },
+                  {
+                    "claim_id": "legacy_1",
+                    "claim_index": 1,
+                    "claim_text": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+                    "alignment": "bounded_normalized",
+                    "public_relation_texts": [],
+                    "answer_spans_normalized": [
+                      [
+                        50,
+                        120
+                      ]
+                    ]
+                  }
+                ],
+                "unmapped_fragments": [],
+                "control_bindings": []
+              },
+              "evidence_support": {
+                "errors": [],
+                "bindings": []
+              }
+            },
+            "mechanism": "checked IDs/segments, bounded normalized alignment, independent claim support",
+            "limitation": "Not general entailment; unsupported/unrecognized relations require repair or review.",
+            "answer_quality": {
+              "mode": "enforce",
+              "gate": "enforced",
+              "findings": [],
+              "error_codes": [],
+              "human_review_required": false,
+              "task_coverage": {
+                "targets": [
+                  {
+                    "topic": "mail",
+                    "attribute": "mobile",
+                    "request_text": "那手机上也可以操作吗",
+                    "matching_claim_indices": [
+                      0
+                    ],
+                    "resolution": "supported_fact",
+                    "covered": true
+                  }
+                ],
+                "findings": [],
+                "coverage": "bounded_topic_attribute_checks",
+                "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+              },
+              "contextualized_background": [],
+              "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+            }
+          }
+        }
+      },
+      "decision_summary": "离线测试策略：直接引用本次成功读取的原文，不预置文档答案。",
+      "next_action": "END",
+      "timestamp": "2026-11-11T06:26:48.245435+00:00",
+      "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"依据 D05（2025-04-01）：员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\\n依据 D04（2025-02-15）：忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"citations\":[{\"doc_id\":\"D05\",\"version_date\":\"2025-04-01\",\"quote\":\"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\"},{\"doc_id\":\"D04\",\"version_date\":\"2025-02-15\",\"quote\":\"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\"}],\"gaps\":[],\"status\":\"completed\",\"claims\":[{\"text\":\"员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"\"},{\"text\":\"忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。\",\"kind\":\"DIRECT\",\"citation_indices\":[1],\"rationale\":\"\"}]},\"decision_summary\":\"离线测试策略：直接引用本次成功读取的原文，不预置文档答案。\"}",
+      "model_metadata": {},
+      "final_status": "completed"
+    }
+  ],
+  "run_id": "0eb4902a-c693-467b-8fa9-85d01dd44e7d",
+  "model_mode": "mock",
+  "model_name": "offline-observation-fixture-v1",
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+  "claims": [
+    {
+      "text": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+      "kind": "DIRECT",
+      "citation_indices": [
+        0
+      ],
+      "rationale": "",
+      "claim_id": null
+    },
+    {
+      "text": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+      "kind": "DIRECT",
+      "citation_indices": [
+        1
+      ],
+      "rationale": "",
+      "claim_id": null
+    }
+  ],
+  "evidence_review": {
+    "coverage": "declared_claims_checked",
+    "errors": [],
+    "warnings": [],
+    "layers": {
+      "schema": "passed_before_review",
+      "citation_integrity": "passed_before_review",
+      "answer_claim_coverage": {
+        "errors": [],
+        "bindings": [
+          {
+            "claim_id": "legacy_0",
+            "claim_index": 0,
+            "claim_text": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。",
+            "alignment": "bounded_normalized",
+            "public_relation_texts": [],
+            "answer_spans_normalized": [
+              [
+                0,
+                50
+              ]
+            ]
+          },
+          {
+            "claim_id": "legacy_1",
+            "claim_index": 1,
+            "claim_text": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。",
+            "alignment": "bounded_normalized",
+            "public_relation_texts": [],
+            "answer_spans_normalized": [
+              [
+                50,
+                120
+              ]
+            ]
+          }
+        ],
+        "unmapped_fragments": [],
+        "control_bindings": []
+      },
+      "evidence_support": {
+        "errors": [],
+        "bindings": []
+      }
+    },
+    "mechanism": "checked IDs/segments, bounded normalized alignment, independent claim support",
+    "limitation": "Not general entailment; unsupported/unrecognized relations require repair or review.",
+    "answer_quality": {
+      "mode": "enforce",
+      "gate": "enforced",
+      "findings": [],
+      "error_codes": [],
+      "human_review_required": false,
+      "task_coverage": {
+        "targets": [
+          {
+            "topic": "mail",
+            "attribute": "mobile",
+            "request_text": "那手机上也可以操作吗",
+            "matching_claim_indices": [
+              0
+            ],
+            "resolution": "supported_fact",
+            "covered": true
+          }
+        ],
+        "findings": [],
+        "coverage": "bounded_topic_attribute_checks",
+        "limitation": "Necessary lexical/topic constraints, not general semantic entailment or unrestricted entity resolution."
+      },
+      "contextualized_background": [],
+      "scope": "bounded contact binding, topic/attribute and global absence checks; not general entailment"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+  "case_id": "R12",
+  "input": {
+    "question": "原绑定手机号已停用，备用手机号能收到验证码，但还没有绑定邮箱。我怎么找回公司邮箱密码？",
+    "history": []
+  },
+  "previous_agent_run_id": null,
+  "evaluation_mode": "real",
+  "config": {
+    "max_steps": 8,
+    "max_tool_calls": 6,
+    "require_claims": true,
+    "answer_quality_mode": "enforce"
+  },
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18"
+}

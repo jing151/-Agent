@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-knowledge-agent"
+version = "0.1.0"
+description = "Evidence-grounded enterprise QA with a native Python ReAct loop"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.28,<0.29", "pydantic>=2.10,<3", "jieba==0.42.1", "python-dotenv>=1.0,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+knowledge-agent = "knowledge_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["src"]

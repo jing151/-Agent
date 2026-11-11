@@ -1,0 +1,152 @@
+{
+  "scope": "standalone_submission_tests",
+  "exit_code": 0,
+  "collected": 28,
+  "passed": 28,
+  "failed": 0,
+  "skipped": 0,
+  "new_real_api_calls": 0,
+  "records": [
+    {
+      "nodeid": "tests/test_acceptance.py::test_six_required_scenarios[normal]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_six_required_scenarios[conflict]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_six_required_scenarios[out_of_scope]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_six_required_scenarios[paraphrase]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_six_required_scenarios[follow_up]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_six_required_scenarios[tool_failure]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_single_D01_has_no_invented_conflict",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_document_replacement_changes_actual_answer_quote_and_action_arguments",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_limits_and_unrecoverable_failure_are_explicit[step_limit-args0-conflict]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_limits_and_unrecoverable_failure_are_explicit[tool_limit-args1-normal]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_limits_and_unrecoverable_failure_are_explicit[persistent_read_failure-args2-normal]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_invalid_citations_and_unsupported_answer_never_reach_user[unread]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_invalid_citations_and_unsupported_answer_never_reach_user[invented_quote]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_invalid_citations_and_unsupported_answer_never_reach_user[wrong_version]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_invalid_citations_and_unsupported_answer_never_reach_user[unsupported_claim]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_validator_feedback_allows_model_to_repair_its_next_action",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_section_read_grants_only_the_returned_fragment[False]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_section_read_grants_only_the_returned_fragment[True]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_loop_does_not_force_one_business_action_sequence[empty_search_then_requery]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_loop_does_not_force_one_business_action_sequence[read_then_repeated_search]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_history_enters_model_context_without_becoming_policy_evidence",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_saved_real_records_are_actual_distinct_paths_and_keep_failure[normal]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_saved_real_records_are_actual_distinct_paths_and_keep_failure[conflict]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_saved_real_records_are_actual_distinct_paths_and_keep_failure[out_of_scope]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_saved_real_records_are_actual_distinct_paths_and_keep_failure[paraphrase_failed]",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_retrieval_baseline_report_is_recomputable_offline",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_submission_manifest_and_unchanged_runtime_sources",
+      "outcome": "passed",
+      "phase": "call"
+    },
+    {
+      "nodeid": "tests/test_acceptance.py::test_review_document_links_resolve_inside_submission",
+      "outcome": "passed",
+      "phase": "call"
+    }
+  ],
+  "boundary": "Mock/scripted fixtures and read-only saved Real records; this is not new real-model validation."
+}

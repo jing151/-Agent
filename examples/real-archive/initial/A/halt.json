@@ -1,0 +1,6 @@
+{
+  "case_id": "R02",
+  "reason": "technical_business_review_failed_missing_confirmation_question",
+  "attempts": 10,
+  "repair_cycle": 1
+}

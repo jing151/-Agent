@@ -1,0 +1,28 @@
+{
+  "execution_id": "R11-2a0e4e9c49a14eeab14ff980746e4566",
+  "decision_index": 2,
+  "budget_request_number": 18,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "4d7a54b2-7c23-4436-8ec5-665b0a8b60a8",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2116,
+    "completion_tokens": 102,
+    "total_tokens": 2218,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 39
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 324
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"APPROVAL_POLICY\",\"section_id\":\"rule\"},\"decision_summary\":\"检索到唯一直接相关文档《申请与补贴生效说明》，其片段称“申请提交后立即生效”。需读取原文确认完整表述与适用范围后再作答。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.6476419999999052
+}

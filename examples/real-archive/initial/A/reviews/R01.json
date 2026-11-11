@@ -1,0 +1,50 @@
+{
+  "case_id": "R01",
+  "technical_pass": true,
+  "reviewer": "AI_assisted_technical_review",
+  "human_approval": false,
+  "evidence": {
+    "case_id": "R01",
+    "execution_id": "R01-209fda1051cb46dbae36aac930ee9c22",
+    "candidate_sha256": "91f06b2c33244b220dbe360c74798e106c8565048ed11c8c10f2a8cd4d927ee1",
+    "output_sha256": "f16a42a97e0f381c0b54fc2f3c0de7b5dc599ae6a41e1625a93648326d9cb2ac",
+    "integrity_pass": true,
+    "not_a_semantic_approval": true,
+    "http_attempts": 4,
+    "usage_total_tokens": 10807,
+    "http_elapsed_seconds": 8.513485199997376,
+    "read_doc_ids": [
+      "D03"
+    ],
+    "citations_verified": [
+      {
+        "citation_index": 0,
+        "doc_id": "D03",
+        "quote_sha256": "f6ccd6080e9a78386490185ece581828fb3eb7e5ff42ab3c5cf112c7f9e60334"
+      }
+    ],
+    "rejected_proposals": [
+      {
+        "step": 3,
+        "action": "ANSWER",
+        "stage": "answer_claim_coverage",
+        "details": [
+          "claim_0:not_in_answer",
+          "unmapped_answer_text",
+          "segment_s1:claim_text_mismatch"
+        ]
+      }
+    ],
+    "final_status": "completed",
+    "response_ids": [
+      "90146dd1-d5f6-4cca-a3f4-5a4e69a48b62",
+      "1e4afb85-7f81-4f49-bec6-dc9edb18aa51",
+      "7338c119-12aa-40ed-a075-3cb2b7c3b9c7",
+      "b0bbbc4f-d721-4235-b7b0-738260b4c05d"
+    ]
+  },
+  "semantic_review": "已实际READ D03，最终答案准确给出企业服务门户→IT服务→设备报修入口及资产编号/故障描述；单条DIRECT与正文一致，无额外制度事实。第3轮因claim比正文多出条件被拒，第4轮自行修正声明映射，原始失败保留。",
+  "core_business_gate": true,
+  "severe_errors": [],
+  "remaining_limit": "正常路径单次通过，不证明稳定性；主动改写首查成功，不计动态恢复。"
+}

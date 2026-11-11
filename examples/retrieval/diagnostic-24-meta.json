@@ -1,0 +1,7 @@
+{
+  "dataset_sha256": "60f8960b50d8426b466550310ff747c8cc072cf2b03653cbbe7ba15fd04cac93",
+  "original_role": "historical_prefrozen_holdout_now_public",
+  "current_role": "public_diagnostic_replay_not_new_blind_test",
+  "labels_changed": false,
+  "retriever_tuned": false
+}

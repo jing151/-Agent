@@ -1,0 +1,13 @@
+{
+  "question": "那怎么报修？",
+  "history": [
+    {
+      "role": "user",
+      "content": "电脑无法启动。"
+    },
+    {
+      "role": "assistant",
+      "content": "还需要查阅资料。"
+    }
+  ]
+}

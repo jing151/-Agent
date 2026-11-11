@@ -1,0 +1,28 @@
+{
+  "execution_id": "R09-7060be57765345b5b6847d4f2bb0245a",
+  "decision_index": 2,
+  "budget_request_number": 14,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "90be85db-d400-4a30-9fe7-65449c831b25",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2126,
+    "completion_tokens": 90,
+    "total_tokens": 2216,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 40
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 334
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"APPROVAL_POLICY\",\"section_id\":\"rule\"},\"decision_summary\":\"检索到《申请与补贴生效说明》候选，需读取原文确认申请提交后的生效条件。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.3576913000033528
+}

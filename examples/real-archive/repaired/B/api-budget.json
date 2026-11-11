@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "phase": "final_validation",
+  "ledger_mode": "real",
+  "max_calls": 40,
+  "attempts": 13,
+  "events": [
+    {
+      "number": 1,
+      "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+      "case_id": "R03",
+      "started_at": "2026-11-11T05:43:07.788321+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "e9ff9bf8-4509-4ea7-a0e7-44594a79547b",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1868,
+        "completion_tokens": 63,
+        "total_tokens": 1931,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 204
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 1.1299724999989849,
+      "finished_at": "2026-11-11T05:43:08.929711+00:00"
+    },
+    {
+      "number": 2,
+      "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+      "case_id": "R03",
+      "started_at": "2026-11-11T05:43:09.024228+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "1fb7727c-3759-494f-b92b-ebb6b3467876",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1985,
+        "completion_tokens": 91,
+        "total_tokens": 2076,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 29
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 193
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 1.5132616000009875,
+      "finished_at": "2026-11-11T05:43:10.549600+00:00"
+    },
+    {
+      "number": 3,
+      "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+      "case_id": "R03",
+      "started_at": "2026-11-11T05:43:10.656194+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "c53a5dc9-e8d5-4596-95a7-2d46fd4f3cf2",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2148,
+        "completion_tokens": 203,
+        "total_tokens": 2351,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 115
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 228
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 1.6983317999984138,
+      "finished_at": "2026-11-11T05:43:12.366491+00:00"
+    },
+    {
+      "number": 4,
+      "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+      "case_id": "R03",
+      "started_at": "2026-11-11T05:43:12.474469+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "ed90bced-0ced-4b55-8863-6179555181ea",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2309,
+        "completion_tokens": 330,
+        "total_tokens": 2639,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 90
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 261
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 2.511734299998352,
+      "finished_at": "2026-11-11T05:43:15.000188+00:00"
+    },
+    {
+      "number": 5,
+      "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+      "case_id": "R03",
+      "started_at": "2026-11-11T05:43:15.118292+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "b0d27458-90f5-4efa-a5b0-2b80e008f511",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2947,
+        "completion_tokens": 494,
+        "total_tokens": 3441,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 252
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 899
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 3.2281246000020474,
+      "finished_at": "2026-11-11T05:43:18.360152+00:00"
+    },
+    {
+      "number": 6,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:43:56.990218+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "5f3d6583-62e9-4c5f-9b57-9e6e86b1fac6",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1872,
+        "completion_tokens": 107,
+        "total_tokens": 1979,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 208
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 1.2195850999996765,
+      "finished_at": "2026-11-11T05:43:58.218946+00:00"
+    },
+    {
+      "number": 7,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:43:58.313729+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "86dece31-9966-451d-86c9-d9274b46220b",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2313,
+        "completion_tokens": 136,
+        "total_tokens": 2449,
+        "prompt_tokens_details": {
+          "cached_tokens": 1792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 77
+        },
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 521
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 1.1575014000009105,
+      "finished_at": "2026-11-11T05:43:59.481043+00:00"
+    },
+    {
+      "number": 8,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:43:59.564862+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "31ea6944-ece0-4b97-a4b3-1c1eb5dc9a61",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2526,
+        "completion_tokens": 138,
+        "total_tokens": 2664,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 66
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 478
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 1.7256827000019257,
+      "finished_at": "2026-11-11T05:44:01.301500+00:00"
+    },
+    {
+      "number": 9,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:44:01.380598+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "bc0c92ac-8ffe-49ba-96f4-eeaacc58cc44",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2739,
+        "completion_tokens": 523,
+        "total_tokens": 3262,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 307
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 3.385750800000096,
+      "finished_at": "2026-11-11T05:44:04.776806+00:00"
+    },
+    {
+      "number": 10,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:44:04.902977+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "cd014397-bbb1-47b5-a8be-9c54c6fc192a",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3889,
+        "completion_tokens": 1594,
+        "total_tokens": 5483,
+        "prompt_tokens_details": {
+          "cached_tokens": 2688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 968
+        },
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 1201
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 8.171547799996915,
+      "finished_at": "2026-11-11T05:44:13.085200+00:00"
+    },
+    {
+      "number": 11,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:44:13.175262+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "ebfc8961-306a-4581-82e1-7078ef451749",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 5079,
+        "completion_tokens": 1548,
+        "total_tokens": 6627,
+        "prompt_tokens_details": {
+          "cached_tokens": 3840
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 923
+        },
+        "prompt_cache_hit_tokens": 3840,
+        "prompt_cache_miss_tokens": 1239
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 8.430512599999929,
+      "finished_at": "2026-11-11T05:44:21.615851+00:00"
+    },
+    {
+      "number": 12,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:44:21.715897+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "a9d65d87-ad00-432a-b941-e445dd91208e",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 6280,
+        "completion_tokens": 3068,
+        "total_tokens": 9348,
+        "prompt_tokens_details": {
+          "cached_tokens": 4992
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2595
+        },
+        "prompt_cache_hit_tokens": 4992,
+        "prompt_cache_miss_tokens": 1288
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 17.56452250000075,
+      "finished_at": "2026-11-11T05:44:39.292296+00:00"
+    },
+    {
+      "number": 13,
+      "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+      "case_id": "R04",
+      "started_at": "2026-11-11T05:44:39.408092+00:00",
+      "state": "finished",
+      "request_kind": "real",
+      "http_status": 200,
+      "response_id": "32d9de9b-ddb6-4bdd-bd92-94b7237b86de",
+      "provider_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 7192,
+        "completion_tokens": 3730,
+        "total_tokens": 10922,
+        "prompt_tokens_details": {
+          "cached_tokens": 6016
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2918
+        },
+        "prompt_cache_hit_tokens": 6016,
+        "prompt_cache_miss_tokens": 1176
+      },
+      "outcome": "completed",
+      "error_code": null,
+      "elapsed_seconds": 19.5334397000006,
+      "finished_at": "2026-11-11T05:44:58.956865+00:00"
+    }
+  ],
+  "budget_exhausted": false,
+  "execution_enabled": false,
+  "authorization_status": "authorized",
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "authorization": {
+    "authorized_by": "user",
+    "user_instruction": "授权这次修复版复验，总额仍不超过200次",
+    "originating_question": "是否授权用原200次总额中剩余最多190次，执行这次唯一修复版的24场景复验？旧版已用10次保留计数；每批仍最多40次，关键失败立即停止，不追加总额度，也不再开启第二轮循环修复。",
+    "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+    "authorized_batches": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "max_total_http_attempts": 190,
+    "max_batch_http_attempts": 40,
+    "cross_version_retests_authorized": true,
+    "original_attempts_spent": 10,
+    "combined_max_http_attempts": 200,
+    "repair_cycles_authorized": 1,
+    "further_repair_cycles_authorized": false,
+    "failed_attempts_count": true
+  },
+  "stop_reason": "semantic_acceptance_failed"
+}

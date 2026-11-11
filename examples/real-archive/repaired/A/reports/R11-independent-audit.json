@@ -1,0 +1,28 @@
+{
+  "case_id": "R11",
+  "execution_id": "R11-2a0e4e9c49a14eeab14ff980746e4566",
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "output_sha256": "227f188c919ca94eddb1eee99d6148c8c167fb43a5b5c71bea35477ca65c9319",
+  "integrity_pass": true,
+  "not_a_semantic_approval": true,
+  "http_attempts": 3,
+  "usage_total_tokens": 6919,
+  "http_elapsed_seconds": 5.886407499998313,
+  "read_doc_ids": [
+    "APPROVAL_POLICY"
+  ],
+  "citations_verified": [
+    {
+      "citation_index": 0,
+      "doc_id": "APPROVAL_POLICY",
+      "quote_sha256": "527f2889bbac2de23a8198d156cee99f2255346778bb6fc5e5a00c7d354adb6e"
+    }
+  ],
+  "rejected_proposals": [],
+  "final_status": "completed",
+  "response_ids": [
+    "95270613-51fd-4fdc-ba6f-c96b9d558185",
+    "4d7a54b2-7c23-4436-8ec5-665b0a8b60a8",
+    "246c9fd6-fe52-479e-bf63-866de4b4f195"
+  ]
+}

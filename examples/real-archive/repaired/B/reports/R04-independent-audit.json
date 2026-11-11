@@ -1,0 +1,77 @@
+{
+  "case_id": "R04",
+  "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "output_sha256": "49cfa37b8a895fb390ad44337ce01e06e9399bb2911079a68db7cb1488630a03",
+  "integrity_pass": true,
+  "not_a_semantic_approval": true,
+  "http_attempts": 8,
+  "usage_total_tokens": 42734,
+  "http_elapsed_seconds": 61.1885426000008,
+  "read_doc_ids": [
+    "D01",
+    "D02"
+  ],
+  "citations_verified": [],
+  "rejected_proposals": [
+    {
+      "step": 4,
+      "action": "ASK_CLARIFICATION",
+      "stage": "answer_claim_coverage",
+      "details": [
+        "claim_0:not_in_answer",
+        "claim_1:not_in_answer",
+        "claim_2:not_in_answer",
+        "unmapped_answer_text",
+        "claim_0:direct_not_in_cited_quote",
+        "claim_1:direct_not_in_cited_quote"
+      ]
+    },
+    {
+      "step": 5,
+      "action": "ASK_CLARIFICATION",
+      "stage": "answer_claim_coverage",
+      "details": [
+        "unmapped_answer_text",
+        "segments_do_not_cover_reason"
+      ]
+    },
+    {
+      "step": 6,
+      "action": "ASK_CLARIFICATION",
+      "stage": "answer_claim_coverage",
+      "details": [
+        "unmapped_answer_text",
+        "segment_s4:claim_text_mismatch"
+      ]
+    },
+    {
+      "step": 7,
+      "action": "ASK_CLARIFICATION",
+      "stage": "answer_claim_coverage",
+      "details": [
+        "unmapped_answer_text"
+      ]
+    },
+    {
+      "step": 8,
+      "action": "ASK_CLARIFICATION",
+      "stage": "answer_claim_coverage",
+      "details": [
+        "unmapped_answer_text",
+        "claim_2:necessary_condition_direction_not_supported"
+      ]
+    }
+  ],
+  "final_status": "max_steps_reached",
+  "response_ids": [
+    "5f3d6583-62e9-4c5f-9b57-9e6e86b1fac6",
+    "86dece31-9966-451d-86c9-d9274b46220b",
+    "31ea6944-ece0-4b97-a4b3-1c1eb5dc9a61",
+    "bc0c92ac-8ffe-49ba-96f4-eeaacc58cc44",
+    "cd014397-bbb1-47b5-a8be-9c54c6fc192a",
+    "ebfc8961-306a-4581-82e1-7078ef451749",
+    "a9d65d87-ad00-432a-b941-e445dd91208e",
+    "32d9de9b-ddb6-4bdd-bd92-94b7237b86de"
+  ]
+}

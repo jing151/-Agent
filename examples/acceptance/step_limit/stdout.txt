@@ -1,0 +1,151 @@
+{
+  "answer": "已达到最大决策步数，任务尚未完成。",
+  "citations": [],
+  "gaps": [
+    "决策预算已用尽，尚未形成通过校验的结果"
+  ],
+  "status": "max_steps_reached",
+  "trace": [
+    {
+      "run_id": "e34a175f-25b0-46f0-83e9-0d9d1db9bfea",
+      "model_mode": "mock",
+      "model_name": "offline-observation-fixture-v1",
+      "step": 1,
+      "action": "SEARCH",
+      "arguments": {
+        "query": "员工费用报销期限是多少？",
+        "top_k": 3
+      },
+      "tool_name": "search_documents",
+      "tool_arguments": {
+        "query": "员工费用报销期限是多少？",
+        "top_k": 3
+      },
+      "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"员工费用报销期限是多少？\", \"results\": [{\"doc_id\": \"D01\", \"title\": \"费用报销制度 A\", \"version_date\": \"2025-01-01\", \"scope\": null, \"priority\": null, \"supersedes\": [], \"section_id\": \"deadline\", \"snippet\": \"员工应在费用发生之日起 30 个自然日内提交报销申请。\", \"score\": 1.0, \"channel_scores\": {\"bm25\": 5.814, \"expanded_bm25\": 5.814, \"ngram_dice\": 0.1593, \"relative_support\": 1.0, \"route_support\": {\"original\": 0.35, \"concept_0\": 0.65}}}, {\"doc_id\": \"D02\", \"title\": \"费用报销制度 B\", \"version_date\": \"2025-03-01\", \"scope\": null, \"priority\": null, \"supersedes\": [], \"section_id\": \"deadline\", \"snippet\": \"员工应在费用发生之日起 15 个自然日内提交报销申请。\", \"score\": 1.0, \"channel_scores\": {\"bm25\": 5.814, \"expanded_bm25\": 5.814, \"ngram_dice\": ",
+      "observation": {
+        "ok": true,
+        "result": {
+          "query": "员工费用报销期限是多少？",
+          "results": [
+            {
+              "doc_id": "D01",
+              "title": "费用报销制度 A",
+              "version_date": "2025-01-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1593,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            },
+            {
+              "doc_id": "D02",
+              "title": "费用报销制度 B",
+              "version_date": "2025-03-01",
+              "scope": null,
+              "priority": null,
+              "supersedes": [],
+              "section_id": "deadline",
+              "snippet": "员工应在费用发生之日起 15 个自然日内提交报销申请。",
+              "score": 1.0,
+              "channel_scores": {
+                "bm25": 5.814,
+                "expanded_bm25": 5.814,
+                "ngram_dice": 0.1593,
+                "relative_support": 1.0,
+                "route_support": {
+                  "original": 0.35,
+                  "concept_0": 0.65
+                }
+              }
+            }
+          ]
+        },
+        "progress": {
+          "new_candidate_fragments": 2,
+          "new_read_fragments": 0,
+          "decisions_remaining": 1,
+          "tool_calls_remaining": 5,
+          "no_new_search_count": 0,
+          "notice": "候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。"
+        }
+      },
+      "decision_summary": "离线测试策略：结合历史问题构造检索输入。",
+      "next_action": "READ",
+      "timestamp": "2026-11-11T06:29:26.954064+00:00",
+      "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"员工费用报销期限是多少？\",\"top_k\":3},\"decision_summary\":\"离线测试策略：结合历史问题构造检索输入。\"}",
+      "model_metadata": {},
+      "final_status": "max_steps_reached"
+    },
+    {
+      "run_id": "e34a175f-25b0-46f0-83e9-0d9d1db9bfea",
+      "model_mode": "mock",
+      "model_name": "offline-observation-fixture-v1",
+      "step": 2,
+      "action": "READ",
+      "arguments": {
+        "doc_id": "D01",
+        "section_id": null
+      },
+      "tool_name": "read_document",
+      "tool_arguments": {
+        "doc_id": "D01",
+        "section_id": null
+      },
+      "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D01\", \"title\": \"费用报销制度 A\", \"doc_type\": \"POLICY\", \"version_date\": \"2025-01-01\", \"scope\": null, \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"deadline\", \"title\": \"报销提交期限\", \"content\": \"员工应在费用发生之日起 30 个自然日内提交报销申请。\"}], \"content\": \"员工应在费用发生之日起 30 个自然日内提交报销申请。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 0, \"tool_calls_remaining\": 4, \"no_new_search_count\": 0, \"notice\": \"候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。\"}}",
+      "observation": {
+        "ok": true,
+        "result": {
+          "document": {
+            "doc_id": "D01",
+            "title": "费用报销制度 A",
+            "doc_type": "POLICY",
+            "version_date": "2025-01-01",
+            "scope": null,
+            "priority": null,
+            "supersedes": [],
+            "sections": [
+              {
+                "section_id": "deadline",
+                "title": "报销提交期限",
+                "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+              }
+            ],
+            "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。",
+            "section_id": null
+          }
+        },
+        "progress": {
+          "new_candidate_fragments": 0,
+          "new_read_fragments": 1,
+          "decisions_remaining": 0,
+          "tool_calls_remaining": 4,
+          "no_new_search_count": 0,
+          "notice": "候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。"
+        }
+      },
+      "decision_summary": "离线测试策略：读取实际检索到且尚未阅读的候选原文。",
+      "next_action": "END",
+      "timestamp": "2026-11-11T06:29:26.954320+00:00",
+      "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D01\",\"section_id\":null},\"decision_summary\":\"离线测试策略：读取实际检索到且尚未阅读的候选原文。\"}",
+      "model_metadata": {},
+      "final_status": "max_steps_reached"
+    }
+  ],
+  "run_id": "e34a175f-25b0-46f0-83e9-0d9d1db9bfea",
+  "model_mode": "mock",
+  "model_name": "offline-observation-fixture-v1",
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+  "claims": [],
+  "evidence_review": {}
+}

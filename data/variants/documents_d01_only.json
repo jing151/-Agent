@@ -1,0 +1,19 @@
+[
+  {
+    "doc_id": "D01",
+    "title": "费用报销制度 A",
+    "doc_type": "POLICY",
+    "version_date": "2025-01-01",
+    "scope": null,
+    "priority": null,
+    "supersedes": [],
+    "sections": [
+      {
+        "section_id": "deadline",
+        "title": "报销提交期限",
+        "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+      }
+    ],
+    "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+  }
+]

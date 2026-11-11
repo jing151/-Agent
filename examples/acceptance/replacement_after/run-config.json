@@ -1,0 +1,31 @@
+{
+  "mode": "mock",
+  "arguments": [
+    "--kb",
+    "examples/variants/documents_v2.json"
+  ],
+  "command": [
+    "D:\\Agent\\.eka-minimal-check\\env\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\scripts\\offline_python.py",
+    "--audit-report",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\replacement_after\\network.json",
+    "--module",
+    "knowledge_agent",
+    "--",
+    "--mode",
+    "mock",
+    "--answer-quality",
+    "enforce",
+    "--input",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\replacement_after\\input.json",
+    "--kb",
+    "examples/variants/documents_v2.json",
+    "--output",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\replacement_after\\output.json",
+    "--trace",
+    "D:\\Agent\\deliverables\\enterprise-knowledge-agent-submission-20261111\\examples\\acceptance\\replacement_after\\trace.json"
+  ],
+  "new_real_api_calls": 0
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "version": "initial",
+    "case_id": "R01",
+    "execution_id": "R01-209fda1051cb46dbae36aac930ee9c22",
+    "status": "completed",
+    "input": "examples/real-archive/initial/A/inputs/R01-209fda1051cb46dbae36aac930ee9c22.json",
+    "output": "examples/real-archive/initial/A/outputs/R01-209fda1051cb46dbae36aac930ee9c22.json",
+    "trace": "examples/real-archive/initial/A/traces/R01-209fda1051cb46dbae36aac930ee9c22.json",
+    "review": "examples/real-archive/initial/A/reviews/R01.json"
+  },
+  {
+    "version": "initial",
+    "case_id": "R02",
+    "execution_id": "R02-4aa12d15cec743399e9922c6e87bd4b0",
+    "status": "needs_clarification",
+    "input": "examples/real-archive/initial/A/inputs/R02-4aa12d15cec743399e9922c6e87bd4b0.json",
+    "output": "examples/real-archive/initial/A/outputs/R02-4aa12d15cec743399e9922c6e87bd4b0.json",
+    "trace": "examples/real-archive/initial/A/traces/R02-4aa12d15cec743399e9922c6e87bd4b0.json",
+    "review": "examples/real-archive/initial/A/reviews/R02.json"
+  },
+  {
+    "version": "repaired",
+    "case_id": "R01",
+    "execution_id": "R01-d269371307a848e0b9161fad4bed9ac4",
+    "status": "completed",
+    "input": "examples/real-archive/repaired/A/inputs/R01-d269371307a848e0b9161fad4bed9ac4.json",
+    "output": "examples/real-archive/repaired/A/outputs/R01-d269371307a848e0b9161fad4bed9ac4.json",
+    "trace": "examples/real-archive/repaired/A/traces/R01-d269371307a848e0b9161fad4bed9ac4.json",
+    "review": "examples/real-archive/repaired/A/reviews/R01.json"
+  },
+  {
+    "version": "repaired",
+    "case_id": "R02",
+    "execution_id": "R02-32f9a74ef8c64edfa767d0b789393976",
+    "status": "needs_clarification",
+    "input": "examples/real-archive/repaired/A/inputs/R02-32f9a74ef8c64edfa767d0b789393976.json",
+    "output": "examples/real-archive/repaired/A/outputs/R02-32f9a74ef8c64edfa767d0b789393976.json",
+    "trace": "examples/real-archive/repaired/A/traces/R02-32f9a74ef8c64edfa767d0b789393976.json",
+    "review": "examples/real-archive/repaired/A/reviews/R02.json"
+  },
+  {
+    "version": "repaired",
+    "case_id": "R09",
+    "execution_id": "R09-7060be57765345b5b6847d4f2bb0245a",
+    "status": "insufficient_evidence",
+    "input": "examples/real-archive/repaired/A/inputs/R09-7060be57765345b5b6847d4f2bb0245a.json",
+    "output": "examples/real-archive/repaired/A/outputs/R09-7060be57765345b5b6847d4f2bb0245a.json",
+    "trace": "examples/real-archive/repaired/A/traces/R09-7060be57765345b5b6847d4f2bb0245a.json",
+    "review": "examples/real-archive/repaired/A/reviews/R09.json"
+  },
+  {
+    "version": "repaired",
+    "case_id": "R11",
+    "execution_id": "R11-2a0e4e9c49a14eeab14ff980746e4566",
+    "status": "completed",
+    "input": "examples/real-archive/repaired/A/inputs/R11-2a0e4e9c49a14eeab14ff980746e4566.json",
+    "output": "examples/real-archive/repaired/A/outputs/R11-2a0e4e9c49a14eeab14ff980746e4566.json",
+    "trace": "examples/real-archive/repaired/A/traces/R11-2a0e4e9c49a14eeab14ff980746e4566.json",
+    "review": "examples/real-archive/repaired/A/reviews/R11.json"
+  },
+  {
+    "version": "repaired",
+    "case_id": "R12",
+    "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+    "status": "completed",
+    "input": "examples/real-archive/repaired/A/inputs/R12-987f9dad504f4b8f8bc19ea3ca983e2f.json",
+    "output": "examples/real-archive/repaired/A/outputs/R12-987f9dad504f4b8f8bc19ea3ca983e2f.json",
+    "trace": "examples/real-archive/repaired/A/traces/R12-987f9dad504f4b8f8bc19ea3ca983e2f.json",
+    "review": "examples/real-archive/repaired/A/reviews/R12.json"
+  },
+  {
+    "version": "repaired",
+    "case_id": "R03",
+    "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+    "status": "insufficient_evidence",
+    "input": "examples/real-archive/repaired/B/inputs/R03-0e5712fb60de4a8e9b4f20b762cc9769.json",
+    "output": "examples/real-archive/repaired/B/outputs/R03-0e5712fb60de4a8e9b4f20b762cc9769.json",
+    "trace": "examples/real-archive/repaired/B/traces/R03-0e5712fb60de4a8e9b4f20b762cc9769.json",
+    "review": "examples/real-archive/repaired/B/reviews/R03.json"
+  },
+  {
+    "version": "repaired",
+    "case_id": "R04",
+    "execution_id": "R04-3ccf4a5a795d47658e346a5df3d7c06e",
+    "status": "max_steps_reached",
+    "input": "examples/real-archive/repaired/B/inputs/R04-3ccf4a5a795d47658e346a5df3d7c06e.json",
+    "output": "examples/real-archive/repaired/B/outputs/R04-3ccf4a5a795d47658e346a5df3d7c06e.json",
+    "trace": "examples/real-archive/repaired/B/traces/R04-3ccf4a5a795d47658e346a5df3d7c06e.json",
+    "review": "examples/real-archive/repaired/B/reviews/R04.json"
+  }
+]

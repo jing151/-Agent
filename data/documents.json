@@ -1,0 +1,47 @@
+[
+  {
+    "doc_id": "D01", "title": "费用报销制度 A", "doc_type": "POLICY",
+    "version_date": "2025-01-01", "scope": null, "priority": null, "supersedes": [],
+    "sections": [{"section_id": "deadline", "title": "报销提交期限", "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。"}],
+    "content": "员工应在费用发生之日起 30 个自然日内提交报销申请。"
+  },
+  {
+    "doc_id": "D02", "title": "费用报销制度 B", "doc_type": "POLICY",
+    "version_date": "2025-03-01", "scope": null, "priority": null, "supersedes": [],
+    "sections": [{"section_id": "deadline", "title": "报销提交期限", "content": "员工应在费用发生之日起 15 个自然日内提交报销申请。"}],
+    "content": "员工应在费用发生之日起 15 个自然日内提交报销申请。"
+  },
+  {
+    "doc_id": "D03", "title": "办公设备故障报修 FAQ", "doc_type": "FAQ",
+    "version_date": "2025-02-10", "scope": "全体员工的公司办公设备", "priority": null, "supersedes": [],
+    "sections": [{"section_id": "ticket", "title": "报修入口", "content": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。"}],
+    "content": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。"
+  },
+  {
+    "doc_id": "D04", "title": "企业邮箱密码重置 FAQ", "doc_type": "FAQ",
+    "version_date": "2025-02-15", "scope": "企业邮箱账户", "priority": null, "supersedes": [],
+    "sections": [
+      {"section_id": "web", "title": "网页端密码重置", "content": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。"},
+      {"section_id": "support", "title": "验证失败", "content": "若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"}
+    ],
+    "content": "忘记公司邮箱密码时，可在企业门户登录页点击“找回密码”，通过绑定的工作手机号验证身份后设置新密码。\n若绑定手机号已失效，请通过 IT 服务工单申请人工身份核验。"
+  },
+  {
+    "doc_id": "D05", "title": "企业邮箱密码重置移动端 FAQ", "doc_type": "FAQ",
+    "version_date": "2025-04-01", "scope": "企业邮箱移动端密码重置", "priority": null, "supersedes": [],
+    "sections": [{"section_id": "mobile", "title": "手机操作", "content": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"}],
+    "content": "员工可以通过企业微信移动端重置邮箱密码。操作路径为“工作台 → 账号服务 → 重置密码”，完成绑定手机号验证后设置新密码。"
+  },
+  {
+    "doc_id": "D06", "title": "带薪年假申请制度", "doc_type": "POLICY",
+    "version_date": "2025-01-20", "scope": "全体正式员工", "priority": null, "supersedes": [],
+    "sections": [{"section_id": "apply", "title": "年假申请入口", "content": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。"}],
+    "content": "申请年假时，请在企业服务门户的“人事服务 → 请假申请”提交申请，由直属主管审批。"
+  },
+  {
+    "doc_id": "D07", "title": "远程 VPN 连接 FAQ", "doc_type": "FAQ",
+    "version_date": "2025-03-12", "scope": "已开通远程访问权限的员工", "priority": null, "supersedes": [],
+    "sections": [{"section_id": "connect", "title": "远程访问", "content": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。"}],
+    "content": "远程办公访问内网前，请启动公司 VPN 客户端，输入企业账号并完成双因素验证。尚未开通权限时，请向直属主管申请远程访问授权。"
+  }
+]

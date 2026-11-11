@@ -1,0 +1,375 @@
+{
+  "actual_api_calls": 0,
+  "mode": "offline_fixed_candidate_expressions",
+  "count": 20,
+  "cases": [
+    {
+      "id": "Q01",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": false,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": false,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": false,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": false,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q09",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q10",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q11",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": true,
+          "correct": false,
+          "status": "needs_clarification"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q12",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q13",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q14",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": false,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q15",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q16",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": false,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    },
+    {
+      "id": "Q17",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q18",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q19",
+      "expected_accepted": false,
+      "outcomes": {
+        "before": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        },
+        "after": {
+          "accepted": false,
+          "correct": true,
+          "status": "max_steps_reached"
+        }
+      }
+    },
+    {
+      "id": "Q20",
+      "expected_accepted": true,
+      "outcomes": {
+        "before": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        },
+        "after": {
+          "accepted": true,
+          "correct": true,
+          "status": "needs_clarification"
+        }
+      }
+    }
+  ],
+  "correct": {
+    "before": 13,
+    "after": 20
+  },
+  "dataset_sha256": "2f1f9861d404a361e8548c37f288582fc83117fdeb7379b7fe6e85c27f3de66e",
+  "source_sha256": {
+    "src/knowledge_agent/agent.py": "7708912e30638d4e173b53348288c5895fc1caca18cb8b2cc49fc53754b5b4fb",
+    "src/knowledge_agent/answer_quality.py": "18f537c57864783c22e5869b6175ab87fbf950a819cb53dcf81b8fdde43fbd27",
+    "src/knowledge_agent/citation_validator.py": "cc78d417433cabec5592815d747b89ae21467660b30f4cb7b789319bfed94a3f",
+    "src/knowledge_agent/claim_mapping.py": "b6aac120b1b4ef33c111ada0b1f57677825c6f04343ae590da2a472b37a5cf66",
+    "src/knowledge_agent/claim_support.py": "dbd2c17638d31dbe775f4e9210ffe03c32193b454048e4eb99a81b83c3fc8f8d",
+    "src/knowledge_agent/clarification_guard.py": "ae6110b0ebce36d1a198c51610da5cc3cc2c6422bcfc100cc527bd1c9b6ba6e6",
+    "src/knowledge_agent/cli.py": "c554e97b58ac0d1fec630cf9395bdd2c5c03f6ecab96b5773b0ac66f142af605",
+    "src/knowledge_agent/config.py": "364de58c94ae463948f48fabfe35c432e873dea2c45ec1afd657f589570f1605",
+    "src/knowledge_agent/contact_state.py": "89f4047263999a564c0e5574201036eb796ec8f7f07291457884b6e7ccecc0bc",
+    "src/knowledge_agent/evaluation.py": "38b31bcdfe71de0181c620de2a54fb678889c27d69493d461cef065571f3a36a",
+    "src/knowledge_agent/evaluation_v2.py": "9050de4ca00deb6dc5a2ce1aa9ed83fbc2668f29fe287fbaca911b53f8097d8d",
+    "src/knowledge_agent/evidence_rules.py": "666fce81a56935ffb5f0a0afb7218a3f17206cdc53d2a1f3d131b9a1ab18e8df",
+    "src/knowledge_agent/evidence_support.py": "fc8ea1b8ff0e60c503c7cc59a4a6d64e71c4b3811f6c329980a3f43e2528221b",
+    "src/knowledge_agent/real_validation.py": "a8f2916bcfa0276950a64fd31f73fc4e1b9a4ef2ae6c6877f8fceeaba3aeb744",
+    "src/knowledge_agent/schemas.py": "68912b06740244719f3e2c926cab542430b719f128f96b7ec06509a4afa99502",
+    "src/knowledge_agent/semantic_audit.py": "cb06371e8d53d0018e3974966891cb6d66dfd63100020dab60fbe2adad96fc83",
+    "src/knowledge_agent/task_coverage.py": "4d700861ae7b3d6fcaf8143b7b809ffb89b29474c58214a391633efe0d6abcd0",
+    "src/knowledge_agent/terminal_control.py": "4ea2188954dbb6d82a592cde5bf5f6b4ca55eb0f6de0faf43ab3dc4315f065d6",
+    "src/knowledge_agent/workflow_evidence.py": "2de1834a10325276178e7ede5111483ab2061889032d698b9d3b67be9ff3ea8d",
+    "src/knowledge_agent/__init__.py": "bd551eb51c11aa899de8830d2e0469e5f3ad61cae516119578b1f39d3d083fa9",
+    "src/knowledge_agent/__main__.py": "c68a8e9e04205b5f68ece4b752ff7999e23f09cd8e0b600cb7c71b11591790a1",
+    "src/knowledge_agent/evaluation_v5/budget.py": "41a4288f98d0b8dab69e2b026b0495f637f89ca9fbaa1f72034f412bb79381d5",
+    "src/knowledge_agent/evaluation_v5/runner.py": "bfd39c810245b126eea894689028742ca463662bbfd0f3ee53a4c661e42b9b4b",
+    "src/knowledge_agent/evaluation_v5/__init__.py": "2069dc335849c3e9ec9298ac86d3d93481cdf220b68966b5595a2b3a8ac1f010",
+    "src/knowledge_agent/llm/base.py": "52e3ec1db9a461db9e2c11bd3ca30e89277f0969c6a487df4cad5f19acac3263",
+    "src/knowledge_agent/llm/mock_llm.py": "8158d7b11384ffd87fc3b768790d3a6ac0126534e947492fbedda7b98ad9519b",
+    "src/knowledge_agent/llm/real_llm.py": "e628bbe497d8498af4c29394ef8f88c2940e0913ba3818115b261c478ca4afdd",
+    "src/knowledge_agent/llm/__init__.py": "b992db4daf8dc8cfc9cb30e1f51c070461cb23d71efc569d80864236ec503ffb",
+    "src/knowledge_agent/retrieval/benchmark.py": "cc455f4e68e30894b1c614656b9cb1893554ba4ef8808278d99a8bf32b20b50a",
+    "src/knowledge_agent/retrieval/generalized.py": "7431c7dfb8f66363437ba903d50995bb31014a6ceb78b66cf2f0642684a2f187",
+    "src/knowledge_agent/retrieval/metrics_v4.py": "a10d60abdf8a977c44229e4ae7b5509ccd9de743b54a0a6bc9772a4745b6b8f4",
+    "src/knowledge_agent/retrieval/normalization.py": "301abbb7a29c1a60a85dcc507399b636c447dcb3033aaccaf7d613bfc1b78fdf",
+    "src/knowledge_agent/retrieval/original.py": "668e51ad305e9547120d7cd9fcf521b38da0f15c235e23539ac6129a7dae314e",
+    "src/knowledge_agent/retrieval/original_tokenizer.py": "45ffc2ed5149c3c4572d0b04610e9d1a56ecaef57e2adfabb52fa39b2802b8e8",
+    "src/knowledge_agent/retrieval/retriever.py": "e1eaca7397ff856e9f54da41698d9c9f03438f7d6f065662d76c57a914d8c947",
+    "src/knowledge_agent/retrieval/tokenizer.py": "45ffc2ed5149c3c4572d0b04610e9d1a56ecaef57e2adfabb52fa39b2802b8e8",
+    "src/knowledge_agent/retrieval/__init__.py": "e6b863743ddb4c01f0575f71d855dce87d440d5eb535343c537558c2b82b7c39",
+    "src/knowledge_agent/tools/document_reader.py": "7280d23e18827fef167f0da5ef2f77f0d9512ad11847dd23ee4b7053b0b7d7f9",
+    "src/knowledge_agent/tools/document_search.py": "9e36b4dffeb66c6fc51e14915ff9b9dafa543468733f5600def52d53360e548c",
+    "src/knowledge_agent/tools/result_validator.py": "0286dfb9384bec405a4ae1ae560df843e20f2190fd31d3533bef470868f1330e",
+    "src/knowledge_agent/tools/__init__.py": "3794ad71947500683b12430ca1108f838c4091973462d8791d434983695f1b96"
+  }
+}

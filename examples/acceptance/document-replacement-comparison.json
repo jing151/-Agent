@@ -1,0 +1,23 @@
+{
+  "mode": "mock",
+  "new_real_api_calls": 0,
+  "same_input": true,
+  "answer_changed": true,
+  "citation_changed": true,
+  "read_observation_changed": true,
+  "terminal_action_arguments_changed": true,
+  "before_actions": [
+    "SEARCH",
+    "READ",
+    "READ",
+    "ANSWER"
+  ],
+  "after_actions": [
+    "SEARCH",
+    "READ",
+    "READ",
+    "ANSWER"
+  ],
+  "action_sequence_changed": false,
+  "note": "Same source locations may retain the same tool sequence. No claim of real-model replacement or changed action count."
+}

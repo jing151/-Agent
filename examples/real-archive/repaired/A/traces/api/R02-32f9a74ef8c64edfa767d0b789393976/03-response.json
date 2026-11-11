@@ -1,0 +1,28 @@
+{
+  "execution_id": "R02-32f9a74ef8c64edfa767d0b789393976",
+  "decision_index": 3,
+  "budget_request_number": 8,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "d65607bf-f5e2-4145-a835-248244330cfd",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 2504,
+    "completion_tokens": 119,
+    "total_tokens": 2623,
+    "prompt_tokens_details": {
+      "cached_tokens": 2176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55
+    },
+    "prompt_cache_hit_tokens": 2176,
+    "prompt_cache_miss_tokens": 328
+  },
+  "raw_action_json": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D02\",\"section_id\":null},\"decision_summary\":\"检索发现 D01 与 D02 对报销期限规定不一致（30 天与 15 天），需读取 D02 原文核实后再判断是否存在适用范围或优先级说明。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.3721445000010135
+}

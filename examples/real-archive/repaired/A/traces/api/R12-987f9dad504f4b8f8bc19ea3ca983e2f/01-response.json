@@ -1,0 +1,28 @@
+{
+  "execution_id": "R12-987f9dad504f4b8f8bc19ea3ca983e2f",
+  "decision_index": 1,
+  "budget_request_number": 20,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "ef001a72-e6c8-41b7-9241-c887d8b2380d",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1885,
+    "completion_tokens": 146,
+    "total_tokens": 2031,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 73
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 221
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"公司邮箱密码找回 原绑定手机号停用 备用手机号可收验证码 未绑定邮箱 身份验证流程\",\"top_k\":5},\"decision_summary\":\"先检索公司邮箱密码找回及手机/邮箱验证方式的制度，确认备用手机号能否作为验证途径。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.9423199000011664
+}

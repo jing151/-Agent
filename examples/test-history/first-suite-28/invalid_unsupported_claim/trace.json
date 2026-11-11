@@ -1,0 +1,136 @@
+[
+  {
+    "run_id": "bb0fbe6c-6a9f-4c86-ba15-fac5d9aad60a",
+    "model_mode": "mock",
+    "model_name": "scripted-offline-contract",
+    "step": 1,
+    "action": "READ",
+    "arguments": {
+      "doc_id": "D03",
+      "section_id": null
+    },
+    "tool_name": "read_document",
+    "tool_arguments": {
+      "doc_id": "D03",
+      "section_id": null
+    },
+    "observation_summary": "{\"ok\": true, \"result\": {\"document\": {\"doc_id\": \"D03\", \"title\": \"办公设备故障报修 FAQ\", \"doc_type\": \"FAQ\", \"version_date\": \"2025-02-10\", \"scope\": \"全体员工的公司办公设备\", \"priority\": null, \"supersedes\": [], \"sections\": [{\"section_id\": \"ticket\", \"title\": \"报修入口\", \"content\": \"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\"}], \"content\": \"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\", \"section_id\": null}}, \"progress\": {\"new_candidate_fragments\": 0, \"new_read_fragments\": 1, \"decisions_remaining\": 1, \"tool_calls_remaining\": 5, \"no_new_search_count\": 0, \"notice\": \"候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。\"}}",
+    "observation": {
+      "ok": true,
+      "result": {
+        "document": {
+          "doc_id": "D03",
+          "title": "办公设备故障报修 FAQ",
+          "doc_type": "FAQ",
+          "version_date": "2025-02-10",
+          "scope": "全体员工的公司办公设备",
+          "priority": null,
+          "supersedes": [],
+          "sections": [
+            {
+              "section_id": "ticket",
+              "title": "报修入口",
+              "content": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。"
+            }
+          ],
+          "content": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+          "section_id": null
+        }
+      },
+      "progress": {
+        "new_candidate_fragments": 0,
+        "new_read_fragments": 1,
+        "decisions_remaining": 1,
+        "tool_calls_remaining": 5,
+        "no_new_search_count": 0,
+        "notice": "候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。"
+      }
+    },
+    "decision_summary": "离线脚本化测试动作，不是真实模型新决策。",
+    "next_action": "ANSWER",
+    "timestamp": "2026-11-11T06:26:56.586369+00:00",
+    "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D03\",\"section_id\":null},\"decision_summary\":\"离线脚本化测试动作，不是真实模型新决策。\"}",
+    "model_metadata": {},
+    "final_status": "max_steps_reached"
+  },
+  {
+    "run_id": "bb0fbe6c-6a9f-4c86-ba15-fac5d9aad60a",
+    "model_mode": "mock",
+    "model_name": "scripted-offline-contract",
+    "step": 2,
+    "action": "ANSWER",
+    "arguments": {
+      "answer": "公司对所有维修设备提供十年保修。",
+      "citations": [
+        {
+          "doc_id": "D03",
+          "version_date": "2025-02-10",
+          "quote": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。"
+        }
+      ],
+      "gaps": [],
+      "status": "completed",
+      "claims": [
+        {
+          "text": "公司对所有维修设备提供十年保修。",
+          "kind": "DIRECT",
+          "citation_indices": [
+            0
+          ],
+          "rationale": ""
+        }
+      ]
+    },
+    "tool_name": null,
+    "tool_arguments": {},
+    "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"evidence_support_failed\", \"validation_stage\": \"evidence_support\", \"details\": [\"claim_0:direct_not_in_cited_quote\"], \"submitted_to_user\": false, \"repair_hint\": \"映射成功不代表引文支持。限定结论、公开标明推论或承认未知；需要时由你决定补读。\", \"layers\": {\"schema\": \"passed_before_review\", \"citation_integrity\": \"passed_before_review\", \"answer_claim_coverage\": {\"errors\": [], \"bindings\": [{\"claim_id\": \"legacy_0\", \"claim_index\": 0, \"claim_text\": \"公司对所有维修设备提供十年保修。\", \"alignment\": \"bounded_normalized\", \"public_relation_texts\": [], \"answer_spans_normalized\": [[0, 15]]}], \"unmapped_fragments\": [], \"control_bindings\": []}, \"evidence_support\": {\"errors\": [\"claim_0:direct_not_in_cited_quote\"], \"bindings\": []}}}}",
+    "observation": {
+      "ok": false,
+      "error": {
+        "code": "evidence_support_failed",
+        "validation_stage": "evidence_support",
+        "details": [
+          "claim_0:direct_not_in_cited_quote"
+        ],
+        "submitted_to_user": false,
+        "repair_hint": "映射成功不代表引文支持。限定结论、公开标明推论或承认未知；需要时由你决定补读。",
+        "layers": {
+          "schema": "passed_before_review",
+          "citation_integrity": "passed_before_review",
+          "answer_claim_coverage": {
+            "errors": [],
+            "bindings": [
+              {
+                "claim_id": "legacy_0",
+                "claim_index": 0,
+                "claim_text": "公司对所有维修设备提供十年保修。",
+                "alignment": "bounded_normalized",
+                "public_relation_texts": [],
+                "answer_spans_normalized": [
+                  [
+                    0,
+                    15
+                  ]
+                ]
+              }
+            ],
+            "unmapped_fragments": [],
+            "control_bindings": []
+          },
+          "evidence_support": {
+            "errors": [
+              "claim_0:direct_not_in_cited_quote"
+            ],
+            "bindings": []
+          }
+        }
+      }
+    },
+    "decision_summary": "离线脚本化测试动作，不是真实模型新决策。",
+    "next_action": "END",
+    "timestamp": "2026-11-11T06:26:56.590474+00:00",
+    "model_response": "{\"action\":\"ANSWER\",\"arguments\":{\"answer\":\"公司对所有维修设备提供十年保修。\",\"citations\":[{\"doc_id\":\"D03\",\"version_date\":\"2025-02-10\",\"quote\":\"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\"}],\"gaps\":[],\"status\":\"completed\",\"claims\":[{\"text\":\"公司对所有维修设备提供十年保修。\",\"kind\":\"DIRECT\",\"citation_indices\":[0],\"rationale\":\"\"}]},\"decision_summary\":\"离线脚本化测试动作，不是真实模型新决策。\"}",
+    "model_metadata": {},
+    "final_status": "max_steps_reached"
+  }
+]

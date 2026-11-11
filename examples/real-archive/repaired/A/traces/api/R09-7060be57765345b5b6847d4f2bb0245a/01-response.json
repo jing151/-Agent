@@ -1,0 +1,28 @@
+{
+  "execution_id": "R09-7060be57765345b5b6847d4f2bb0245a",
+  "decision_index": 1,
+  "budget_request_number": 13,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "a96224e7-693f-45f7-ab64-74b0a5d1e514",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1865,
+    "completion_tokens": 115,
+    "total_tokens": 1980,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 58
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 201
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"申请提交后生效时间 审批通过后生效\",\"top_k\":3},\"decision_summary\":\"问题未指明申请类型，先用关键词检索知识库中关于申请生效时点的规定，再决定是否追问。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.6298997000012605
+}

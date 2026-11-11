@@ -1,0 +1,28 @@
+{
+  "execution_id": "R02-32f9a74ef8c64edfa767d0b789393976",
+  "decision_index": 1,
+  "budget_request_number": 6,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "c970de21-fae3-49ce-921d-7a5624627a3b",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1864,
+    "completion_tokens": 95,
+    "total_tokens": 1959,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 42
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 200
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"员工费用报销期限 报销时限 规定\",\"top_k\":3},\"decision_summary\":\"问题询问员工费用报销期限，需先检索知识库中的报销管理制度或费用报销时限条款。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 1.3759489000003668
+}

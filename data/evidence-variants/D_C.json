@@ -1,0 +1,19 @@
+[
+  {
+    "doc_id": "APPROVAL_POLICY",
+    "title": "申请与补贴生效说明",
+    "doc_type": "POLICY",
+    "version_date": "2026-01-01",
+    "scope": null,
+    "priority": null,
+    "supersedes": [],
+    "sections": [
+      {
+        "section_id": "rule",
+        "title": "制度原文",
+        "content": "申请提交后立即生效。"
+      }
+    ],
+    "content": "申请提交后立即生效。"
+  }
+]

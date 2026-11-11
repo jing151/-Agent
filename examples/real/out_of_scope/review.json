@@ -1,0 +1,40 @@
+{
+  "case_id": "R03",
+  "technical_pass": true,
+  "reviewer": "AI_assisted_technical_review",
+  "human_approval": false,
+  "semantic_review": "三次不同查询均无相关结果，最终UNKNOWN限定于本次检索，明确无法确认2026年年终奖金额；无引用、无金额或绩效职级等未经证实公司规则，gaps为所需制度和正式依据。检索改写后仍无证据不计成功恢复。",
+  "independent_audit": {
+    "case_id": "R03",
+    "execution_id": "R03-0e5712fb60de4a8e9b4f20b762cc9769",
+    "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+    "output_sha256": "fd1ce27a78cb175fcc6ec7b01b3290485c738351094e9155f400fb7c0981d8f9",
+    "integrity_pass": true,
+    "not_a_semantic_approval": true,
+    "http_attempts": 5,
+    "usage_total_tokens": 12438,
+    "http_elapsed_seconds": 10.081424799998786,
+    "read_doc_ids": [],
+    "citations_verified": [],
+    "rejected_proposals": [
+      {
+        "step": 4,
+        "action": "ANSWER",
+        "stage": "answer_claim_coverage",
+        "details": [
+          "claim_0:not_in_answer",
+          "unmapped_answer_text"
+        ]
+      }
+    ],
+    "final_status": "insufficient_evidence",
+    "response_ids": [
+      "e9ff9bf8-4509-4ea7-a0e7-44594a79547b",
+      "1fb7727c-3759-494f-b92b-ebb6b3467876",
+      "c53a5dc9-e8d5-4596-95a7-2d46fd4f3cf2",
+      "ed90bced-0ced-4b55-8863-6179555181ea",
+      "b0d27458-90f5-4efa-a5b0-2b80e008f511"
+    ]
+  },
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33"
+}

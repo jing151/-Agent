@@ -1,0 +1,306 @@
+{
+  "timestamp": "2026-11-11T05:57:45.023531+00:00",
+  "top_k": 3,
+  "knowledge_base_sha256": "b0520212b19af306e4aa3bc3b1c24b5ac1d294014c50fea73d5b14b08bdb4a18",
+  "case_count": 12,
+  "definition": "Recall@3=mean(|relevant ∩ top3|/|relevant|); MRR=mean(1/first_relevant_rank), rank within top3",
+  "systems": {
+    "baseline_bm25": {
+      "recall_at_3": 0.75,
+      "mrr": 0.7083333333333334,
+      "cases": [
+        {
+          "query": "报销期限是多少？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "报销需要几天内完成？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "员工垫付费用后最晚什么时候交票？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "费用报销的提交时限是什么？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "交票最迟是什么时候？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [],
+          "recall_at_3": 0.0,
+          "reciprocal_rank": 0.0
+        },
+        {
+          "query": "电脑坏了找谁修理？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "retrieved_doc_ids": [],
+          "recall_at_3": 0.0,
+          "reciprocal_rank": 0.0
+        },
+        {
+          "query": "笔记本不能开机去哪里处理？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "retrieved_doc_ids": [],
+          "recall_at_3": 0.0,
+          "reciprocal_rank": 0.0
+        },
+        {
+          "query": "公司设备故障如何报修？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "retrieved_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "邮箱密码忘了如何找回？",
+          "relevant_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "retrieved_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "手机端修改密码的入口在哪？",
+          "relevant_doc_ids": [
+            "D05"
+          ],
+          "retrieved_doc_ids": [
+            "D05",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "掌上能找回密码吗？",
+          "relevant_doc_ids": [
+            "D05"
+          ],
+          "retrieved_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 0.5
+        },
+        {
+          "query": "带薪假在哪里申请？",
+          "relevant_doc_ids": [
+            "D06"
+          ],
+          "retrieved_doc_ids": [
+            "D06"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      ]
+    },
+    "hybrid": {
+      "recall_at_3": 1.0,
+      "mrr": 0.9583333333333334,
+      "cases": [
+        {
+          "query": "报销期限是多少？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "报销需要几天内完成？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "员工垫付费用后最晚什么时候交票？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "费用报销的提交时限是什么？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "交票最迟是什么时候？",
+          "relevant_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "retrieved_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "电脑坏了找谁修理？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "retrieved_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "笔记本不能开机去哪里处理？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "retrieved_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "公司设备故障如何报修？",
+          "relevant_doc_ids": [
+            "D03"
+          ],
+          "retrieved_doc_ids": [
+            "D03"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "邮箱密码忘了如何找回？",
+          "relevant_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "retrieved_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "手机端修改密码的入口在哪？",
+          "relevant_doc_ids": [
+            "D05"
+          ],
+          "retrieved_doc_ids": [
+            "D05",
+            "D04"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "query": "掌上能找回密码吗？",
+          "relevant_doc_ids": [
+            "D05"
+          ],
+          "retrieved_doc_ids": [
+            "D04",
+            "D05"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 0.5
+        },
+        {
+          "query": "带薪假在哪里申请？",
+          "relevant_doc_ids": [
+            "D06"
+          ],
+          "retrieved_doc_ids": [
+            "D06"
+          ],
+          "recall_at_3": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      ]
+    }
+  }
+}

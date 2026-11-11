@@ -1,0 +1,71 @@
+{
+  "case_id": "R02",
+  "execution_id": "R02-32f9a74ef8c64edfa767d0b789393976",
+  "candidate_sha256": "3dbdfbe336569dc00ed39c77d5591c479d0c7d549faf25befdf1283532ec0c33",
+  "output_sha256": "5ac31e3885856a6249e164edd895ca00db9cd3430f2186538c12948db2899d74",
+  "integrity_pass": true,
+  "not_a_semantic_approval": true,
+  "http_attempts": 7,
+  "usage_total_tokens": 37269,
+  "http_elapsed_seconds": 68.98591429999942,
+  "read_doc_ids": [
+    "D01",
+    "D02"
+  ],
+  "citations_verified": [
+    {
+      "citation_index": 0,
+      "doc_id": "D01",
+      "quote_sha256": "0db3ee436c9089dbf613898442c56cf05fb4da24b654565e82a52f802f6d3711"
+    },
+    {
+      "citation_index": 1,
+      "doc_id": "D02",
+      "quote_sha256": "8d29c491a306fb03360a265c976cad436b8644fc67d22b711d4ba214131c05d7"
+    }
+  ],
+  "rejected_proposals": [
+    {
+      "step": 4,
+      "action": "ASK_CLARIFICATION",
+      "stage": "answer_claim_coverage",
+      "details": [
+        "claim_2:not_in_answer",
+        "unmapped_answer_text",
+        "segments_do_not_cover_reason",
+        "segment_s1:claim_text_mismatch",
+        "segment_s2:claim_text_mismatch",
+        "segment_s3:claim_text_mismatch",
+        "segment_s4:claim_text_mismatch",
+        "claim_2:unknown_requires_explicit_uncertainty"
+      ]
+    },
+    {
+      "step": 5,
+      "action": "ASK_CLARIFICATION",
+      "stage": "evidence_support",
+      "details": [
+        "claim_0:direct_not_in_cited_quote",
+        "claim_1:direct_not_in_cited_quote"
+      ]
+    },
+    {
+      "step": 6,
+      "action": "ASK_CLARIFICATION",
+      "stage": "answer_claim_coverage",
+      "details": [
+        "unmapped_answer_text"
+      ]
+    }
+  ],
+  "final_status": "needs_clarification",
+  "response_ids": [
+    "c970de21-fae3-49ce-921d-7a5624627a3b",
+    "2fa7d610-a686-44ac-aab4-68c675c31702",
+    "d65607bf-f5e2-4145-a835-248244330cfd",
+    "9e3723a6-03de-4467-9d10-73524203bfed",
+    "c2cee1ba-da81-4ecf-a024-8ee82936f392",
+    "a298b3f7-b8bd-451a-b9f1-1fb1c5dc446c",
+    "b4a4ba84-8361-41a0-af59-fdbf28bdbe4a"
+  ]
+}

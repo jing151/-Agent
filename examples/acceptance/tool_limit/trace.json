@@ -1,0 +1,92 @@
+[
+  {
+    "run_id": "fd01e803-d42f-49ea-9cc6-6896f2d1580b",
+    "model_mode": "mock",
+    "model_name": "offline-observation-fixture-v1",
+    "step": 1,
+    "action": "SEARCH",
+    "arguments": {
+      "query": "公司设备出现故障，应该在哪里提交报修？",
+      "top_k": 3
+    },
+    "tool_name": "search_documents",
+    "tool_arguments": {
+      "query": "公司设备出现故障，应该在哪里提交报修？",
+      "top_k": 3
+    },
+    "observation_summary": "{\"ok\": true, \"result\": {\"query\": \"公司设备出现故障，应该在哪里提交报修？\", \"results\": [{\"doc_id\": \"D03\", \"title\": \"办公设备故障报修 FAQ\", \"version_date\": \"2025-02-10\", \"scope\": \"全体员工的公司办公设备\", \"priority\": null, \"supersedes\": [], \"section_id\": \"ticket\", \"snippet\": \"公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。\", \"score\": 1.0, \"channel_scores\": {\"bm25\": 10.3134, \"expanded_bm25\": 10.3134, \"ngram_dice\": 0.2286, \"relative_support\": 1.0, \"route_support\": {\"original\": 0.35, \"concept_0\": 0.65}}}]}, \"progress\": {\"new_candidate_fragments\": 1, \"new_read_fragments\": 0, \"decisions_remaining\": 7, \"tool_calls_remaining\": 0, \"no_new_search_count\": 0, \"notice\": \"候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保",
+    "observation": {
+      "ok": true,
+      "result": {
+        "query": "公司设备出现故障，应该在哪里提交报修？",
+        "results": [
+          {
+            "doc_id": "D03",
+            "title": "办公设备故障报修 FAQ",
+            "version_date": "2025-02-10",
+            "scope": "全体员工的公司办公设备",
+            "priority": null,
+            "supersedes": [],
+            "section_id": "ticket",
+            "snippet": "公司设备出现故障时，请进入企业服务门户，依次选择“IT 服务 → 设备报修”提交工单，并填写设备资产编号和故障描述。",
+            "score": 1.0,
+            "channel_scores": {
+              "bm25": 10.3134,
+              "expanded_bm25": 10.3134,
+              "ngram_dice": 0.2286,
+              "relative_support": 1.0,
+              "route_support": {
+                "original": 0.35,
+                "concept_0": 0.65
+              }
+            }
+          }
+        ]
+      },
+      "progress": {
+        "new_candidate_fragments": 1,
+        "new_read_fragments": 0,
+        "decisions_remaining": 7,
+        "tool_calls_remaining": 0,
+        "no_new_search_count": 0,
+        "notice": "候选主题相关不等于所问属性有证据。请评估现有证据和剩余校验轮次，避免重复无新增信息的尝试；下一动作由模型自主决定，未知项保持具体缺口。"
+      }
+    },
+    "decision_summary": "离线测试策略：结合历史问题构造检索输入。",
+    "next_action": "READ",
+    "timestamp": "2026-11-11T06:29:27.984708+00:00",
+    "model_response": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"公司设备出现故障，应该在哪里提交报修？\",\"top_k\":3},\"decision_summary\":\"离线测试策略：结合历史问题构造检索输入。\"}",
+    "model_metadata": {},
+    "final_status": "max_steps_reached"
+  },
+  {
+    "run_id": "fd01e803-d42f-49ea-9cc6-6896f2d1580b",
+    "model_mode": "mock",
+    "model_name": "offline-observation-fixture-v1",
+    "step": 2,
+    "action": "READ",
+    "arguments": {
+      "doc_id": "D03",
+      "section_id": null
+    },
+    "tool_name": "read_document",
+    "tool_arguments": {
+      "doc_id": "D03",
+      "section_id": null
+    },
+    "observation_summary": "{\"ok\": false, \"error\": {\"code\": \"tool_call_limit\", \"executed\": false}}",
+    "observation": {
+      "ok": false,
+      "error": {
+        "code": "tool_call_limit",
+        "executed": false
+      }
+    },
+    "decision_summary": "离线测试策略：读取实际检索到且尚未阅读的候选原文。",
+    "next_action": "END",
+    "timestamp": "2026-11-11T06:29:27.984845+00:00",
+    "model_response": "{\"action\":\"READ\",\"arguments\":{\"doc_id\":\"D03\",\"section_id\":null},\"decision_summary\":\"离线测试策略：读取实际检索到且尚未阅读的候选原文。\"}",
+    "model_metadata": {},
+    "final_status": "max_steps_reached"
+  }
+]

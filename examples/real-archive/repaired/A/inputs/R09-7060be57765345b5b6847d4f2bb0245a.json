@@ -1,0 +1,17 @@
+{
+  "execution_id": "R09-7060be57765345b5b6847d4f2bb0245a",
+  "case_id": "R09",
+  "input": {
+    "question": "申请提交后是否立即生效？",
+    "history": []
+  },
+  "previous_agent_run_id": null,
+  "evaluation_mode": "real",
+  "config": {
+    "max_steps": 8,
+    "max_tool_calls": 6,
+    "require_claims": true,
+    "answer_quality_mode": "enforce"
+  },
+  "knowledge_base_sha256": "8d7d1f6841fcf71a6ca76cdb61989bb631a5b3f17584c042eebcd1ac6828758e"
+}

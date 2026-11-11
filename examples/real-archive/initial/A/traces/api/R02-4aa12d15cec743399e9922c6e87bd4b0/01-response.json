@@ -1,0 +1,28 @@
+{
+  "execution_id": "R02-4aa12d15cec743399e9922c6e87bd4b0",
+  "decision_index": 1,
+  "budget_request_number": 5,
+  "model_mode": "real",
+  "evaluation_mode": "real",
+  "http_status": 200,
+  "response_id": "02eee420-87a0-45a6-9bdb-bdd9e1a65673",
+  "provider_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 1864,
+    "completion_tokens": 74,
+    "total_tokens": 1938,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 22
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 200
+  },
+  "raw_action_json": "{\"action\":\"SEARCH\",\"arguments\":{\"query\":\"员工费用报销期限 报销时限 多久内提交\",\"top_k\":3},\"decision_summary\":\"用户询问员工费用报销期限，先检索知识库中的报销制度与时限规定。\"}",
+  "finish_reason": "stop",
+  "outcome": "completed",
+  "error_code": null,
+  "elapsed_seconds": 0.9729163000010885
+}

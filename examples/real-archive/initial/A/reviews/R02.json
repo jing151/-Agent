@@ -1,0 +1,81 @@
+{
+  "case_id": "R02",
+  "technical_pass": false,
+  "reviewer": "AI_assisted_technical_review",
+  "human_approval": false,
+  "evidence": {
+    "case_id": "R02",
+    "execution_id": "R02-4aa12d15cec743399e9922c6e87bd4b0",
+    "candidate_sha256": "91f06b2c33244b220dbe360c74798e106c8565048ed11c8c10f2a8cd4d927ee1",
+    "output_sha256": "462052673bf655ab96e21fd7400dd1698a06fc4720790e37aca0ca3b61caacc6",
+    "integrity_pass": true,
+    "not_a_semantic_approval": true,
+    "http_attempts": 6,
+    "usage_total_tokens": 25555,
+    "http_elapsed_seconds": 38.855834199996025,
+    "read_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "citations_verified": [
+      {
+        "citation_index": 0,
+        "doc_id": "D01",
+        "quote_sha256": "0db3ee436c9089dbf613898442c56cf05fb4da24b654565e82a52f802f6d3711"
+      },
+      {
+        "citation_index": 1,
+        "doc_id": "D02",
+        "quote_sha256": "8d29c491a306fb03360a265c976cad436b8644fc67d22b711d4ba214131c05d7"
+      }
+    ],
+    "rejected_proposals": [
+      {
+        "step": 4,
+        "action": "ASK_CLARIFICATION",
+        "stage": "answer_claim_coverage",
+        "details": [
+          "claim_0:not_in_answer",
+          "claim_1:not_in_answer",
+          "claim_2:not_in_answer",
+          "unmapped_answer_text",
+          "segments_do_not_cover_reason",
+          "segment_s1:unmapped_fact",
+          "segment_s1:claim_text_mismatch",
+          "segment_s2:claim_text_mismatch",
+          "segment_s3:claim_text_mismatch",
+          "segment_s4:claim_text_mismatch",
+          "claim_0:direct_not_in_cited_quote",
+          "claim_1:direct_not_in_cited_quote"
+        ]
+      },
+      {
+        "step": 5,
+        "action": "ASK_CLARIFICATION",
+        "stage": "answer_claim_coverage",
+        "details": [
+          "unmapped_answer_text"
+        ]
+      }
+    ],
+    "final_status": "needs_clarification",
+    "response_ids": [
+      "02eee420-87a0-45a6-9bdb-bdd9e1a65673",
+      "2040face-2234-4fe3-8b6c-b3815a43ac5e",
+      "5fed07b6-9d43-4546-a2f7-1446f1cdf16e",
+      "aca970e5-fac9-470c-babc-54d8159913b0",
+      "5ca8ecec-c4e4-47b1-a6ca-bcdd6a70987a",
+      "61525834-f80b-40da-9d71-492cd9fa8be0"
+    ]
+  },
+  "core_business_gate": false,
+  "severe_errors": [],
+  "semantic_review": "实际READ/引用D01和D02，30/15天与范围/优先级/替代关系缺口正确，无擅自选边或虚假引用。但两次ASK_CLARIFICATION被拒后，改用ANSWER且仅设置needs_clarification；交付文本未提出确认问题，未满足请求确认的业务条件。",
+  "failure_kind": "incomplete_clarification_after_validation_feedback",
+  "positive_evidence": [
+    "authentic_dual_citations",
+    "no_date_priority_adjudication",
+    "accurate_gaps"
+  ],
+  "next_action": "Stop further API calls; offline diagnosis of rejected clarification and accepted question-free terminal. No cross-version requests under original authorization."
+}
